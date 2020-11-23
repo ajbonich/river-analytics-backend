@@ -56,10 +56,20 @@ def getDailyStatistics(df: pd.DataFrame = getDailyAverageData(), userDate: datet
     yearsRunnable = len(df[df[(userDate.month, userDate.day)] > minimumRunnable])
     totalYears = len(df)
     percentageOfYearsRunnable = 100 * yearsRunnable / totalYears
-    
-    return pd.Series([dayMean, percentageOfYearsRunnable], index=['mean', 'percentageOfYearsRunnable'])
+    standardDeviation = df[(userDate.month, userDate.day)].std()
+
+    return pd.Series([dayMean, percentageOfYearsRunnable, standardDeviation], index=['mean', 'percentageOfYearsRunnable', 'standardDeviation'])
 
     
+def getDailyRunnablePercentages(df: pd.DataFrame = getDailyAverageData(), minimumRunnable: int = 300) -> pd.Series, pd.Series:
+    '''Takes in a dataframe and a minimum for the section and returns
+    a graph displaying the odds the section is runnable for each day
+    '''
+
+    f = lambda row: (row > minimumRunnable).mean()
+    percentages = df.apply(f)
+    daysOver50 = percentages[percentages > 50]
+    return percentages, daysOver50
 
 # # Basic chart
 # # df=pd.DataFrame({'x': range(1,101), 'y': np.random.randn(100)*15+range(1,101) })
