@@ -3,6 +3,9 @@ import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from flask import flask
+from flask import request
+from flask import jsonify
 #from pandas.plotting import register_matplotlib_converters
 
 #TODO: make a call to get the period data is available
@@ -16,7 +19,16 @@ defaultParameter = '00060' #cubic feet per second (cfs)
 
 defaultStatsDate = datetime.date(1000, 6, 4)
 
+app = Flask(__name__)
+@app.after_request
+def add_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    response.headers['Access-Control-Allow-Methods'] = 'POST, GET, PUT, DELETE, OPTIONS'
+    return response
+
 #test from console with exec(open('usgs-controller.py').read())
+@app.route('/getAverageData', methods=['GET'])
 def getDailyAverageData(useTestData: bool = False,
                         startDate: datetime.date = defaultStartDate, 
                         endDate: datetime.date = defaultEndDate, 
@@ -47,6 +59,7 @@ def getDailyAverageData(useTestData: bool = False,
     return df   
 
 #input a df and a date
+@app.route('/getDailyStatistics', methods=['GET'])
 def getDailyStatistics(df: pd.DataFrame = getDailyAverageData(), userDate: datetime.date = defaultStatsDate, minimumRunnable: int = 300) -> pd.Series:
     '''Takes in a dataframe and a date to return the average flow, 
     percent of years above the minimum, and the standard deviation flow
@@ -61,7 +74,7 @@ def getDailyStatistics(df: pd.DataFrame = getDailyAverageData(), userDate: datet
     return pd.Series([dayMean, percentageOfYearsRunnable, standardDeviation], index=['mean', 'percentageOfYearsRunnable', 'standardDeviation'])
 
     
-def getDailyRunnablePercentages(df: pd.DataFrame = getDailyAverageData(), minimumRunnable: int = 300) -> pd.Series, pd.Series:
+def getDailyRunnablePercentages(df: pd.DataFrame = getDailyAverageData(), minimumRunnable: int = 300):
     '''Takes in a dataframe and a minimum for the section and returns
     a graph displaying the odds the section is runnable for each day
     '''
