@@ -4,6 +4,8 @@ import pandas as pd
 from flask import Flask
 from flask import request
 from flask import jsonify
+
+# Uncomment if graphs need to be tested locally for some reason
 # import matplotlib.dates as mdates
 # import matplotlib.pyplot as plt
 #from pandas.plotting import register_matplotlib_converters
@@ -11,7 +13,7 @@ from flask import jsonify
 #TODO: make a call to get the period data is available
 
 #default data
-useTestData = True
+defaultUseTestData = True
 defaultStartDate = datetime.date(1888, 1, 1)
 defaultEndDate = datetime.date(2020, 10, 25)
 defaultSiteId = '06719505' #Clear Creek at Golden
@@ -29,16 +31,17 @@ def add_headers(response):
 
 #test from console with exec(open('usgs-controller.py').read())
 @app.route('/')
-def getDailyAverageData(useTestData: bool = False,
+def getDailyAverageData(useTestData: bool = defaultUseTestData,
                         startDate: datetime.date = defaultStartDate, 
                         endDate: datetime.date = defaultEndDate, 
                         siteId: str = defaultSiteId, 
                         gaugeParameter: str = defaultParameter) -> json:
     '''Makes a usgs call with given or default parameters to create a clean dataframe object
     '''
-
+    
     if useTestData:
         with open('testFile.json') as tf:
+            print('Using test data.')
             valueData = json.load(tf)
     else:
         url = f'https://waterservices.usgs.gov/nwis/dv/?format=json&startDT={startDate}&endDT={endDate}&parameterCd={gaugeParameter}&site={siteId}'
@@ -57,14 +60,14 @@ def getDailyAverageData(useTestData: bool = False,
     df = df.T
     
     return df.to_json() 
+    
 
-'''
 #input a df and a date
 @app.route('/getDailyStatistics', methods=['GET'])
 def getDailyStatistics(df: pd.DataFrame = pd.read_json(getDailyAverageData()), userDate: datetime.date = defaultStatsDate, minimumRunnable: int = 300) -> pd.Series:
-    ''Takes in a dataframe and a date to return the average flow, 
+    '''Takes in a dataframe and a date to return the average flow, 
     percent of years above the minimum, and the standard deviation flow
-    ''
+    '''
 
     dayMean = df[(userDate.month, userDate.day)].mean()
     yearsRunnable = len(df[df[(userDate.month, userDate.day)] > minimumRunnable])
@@ -76,9 +79,9 @@ def getDailyStatistics(df: pd.DataFrame = pd.read_json(getDailyAverageData()), u
 
     
 def getDailyRunnablePercentages(df: pd.DataFrame = pd.read_json(getDailyAverageData()), minimumRunnable: int = 300):
-    ''Takes in a dataframe and a minimum for the section and returns
+    '''Takes in a dataframe and a minimum for the section and returns
     a graph displaying the odds the section is runnable for each day
-    ''
+    '''
 
     f = lambda row: (row > minimumRunnable).mean()
     percentages = df.apply(f)
@@ -96,7 +99,7 @@ def getDailyRunnablePercentages(df: pd.DataFrame = pd.read_json(getDailyAverageD
 # flowGraph.plot(dates, flow, marker='o', markersize=1)
 
 # plt.show()
-'''
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=8888)
