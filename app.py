@@ -18,7 +18,7 @@ from flask import jsonify
 defaultUseTestData = True
 defaultSiteId = '06719505'  # Clear Creek at Golden
 defaultStartDate = datetime.date(1888, 1, 1)
-defaultEndDate = datetime.date(2020, 10, 25)
+defaultEndDate = datetime.date(2100, 12, 31)
 defaultParameter = '00060'  # cubic feet per second (cfs)
 
 defaultStatsDate = datetime.date(1000, 6, 4)
@@ -91,17 +91,20 @@ def formatUSGSData(jsonData):
     df = df.assign(month=months, day=days, year=years)
     df = df.drop('dateTime', axis=1)
     df = df.pivot(index=['month', 'day'], columns='year', values='value')
-    df = df.T
+    df.index = df.index.map(lambda t: f'{t[0]}/{t[1]}')
+    avg = df.mean(axis=1)
+    avg = avg.to_frame('value')
 
-    return df.to_json()
+    return avg.reset_index().to_json(orient='records')
 
 
+'''
 # input a df and a date
 @app.route('/getDailyStatistics', methods=['GET'])
 def getDailyStatistics(df: pd.DataFrame = pd.read_json(getUSGSDefaultData()), userDate: datetime.date = defaultStatsDate, minimumRunnable: int = 300) -> pd.Series:
-    '''Takes in a dataframe and a date to return the average flow, 
-    percent of years above the minimum, and the standard deviation flow
-    '''
+    ''Takes in a dataframe and a date to return the average flow,
+percent of years above the minimum, and the standard deviation flow
+''
 
     dayMean = df[(userDate.month, userDate.day)].mean()
     yearsRunnable = len(
@@ -114,15 +117,15 @@ def getDailyStatistics(df: pd.DataFrame = pd.read_json(getUSGSDefaultData()), us
 
 
 def getDailyRunnablePercentages(df: pd.DataFrame = pd.read_json(getUSGSDefaultData()), minimumRunnable: int = 300):
-    '''Takes in a dataframe and a minimum for the section and returns
-    a graph displaying the odds the section is runnable for each day
-    '''
+    ''Takes in a dataframe and a minimum for the section and returns
+a graph displaying the odds the section is runnable for each day
+''
 
     def f(row): return (row > minimumRunnable).mean()
     percentages = df.apply(f)
     daysOver50 = percentages[percentages > 50]
     return percentages, daysOver50
-
+'''
 
 if __name__ == '__main__':
     app.run(debug=True, port=8888)
