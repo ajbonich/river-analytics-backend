@@ -20,6 +20,8 @@ defaultSiteId = '06719505'  # Clear Creek at Golden
 defaultStartDate = datetime.date(1888, 1, 1)
 defaultEndDate = datetime.date(2100, 12, 31)
 defaultParameter = '00060'  # cubic feet per second (cfs)
+defaultMinFlow = 0
+defaultMaxFlow = 100000
 
 defaultStatsDate = datetime.date(1000, 6, 4)
 
@@ -38,7 +40,9 @@ def add_headers(response):
 
 @app.route('/')
 def getUSGSDefaultData():
-    return formatUSGSData(getUSGSData())
+    cleanData = cleanUSGSData(getUSGSData())
+    avg = cleanData.mean(axis=1)
+    return formatOutput(avg)
 
 
 @app.route('/getDailyAverageData')
@@ -50,15 +54,40 @@ def getDailyAverageData() -> json:
     startDate = request.args.get('startDate') or defaultStartDate
     endDate = request.args.get('endDate') or defaultEndDate
     gaugeParameter = request.args.get('gaugeParameter') or defaultParameter
+    testDataFlag = request.args.get('useTestData') == 'True'
 
-    if request.args.get('useTestData') == 'True':
-        with open('testFile.json') as tf:
-            print('Using test data.')
-            data = json.load(tf)
-    else:
-        data = getUSGSData(False, siteId, startDate, endDate, gaugeParameter)
+    data = getUSGSData(testDataFlag, siteId, startDate,
+                       endDate, gaugeParameter)
+    cleanData = cleanUSGSData(data)
+    avg = cleanData.mean(axis=1)
+    return formatOutput(avg)
 
-    return formatUSGSData(data)
+
+@app.route('/getRunnablePercentages')
+def getDailyRunnablePercentages():
+    '''Takes in a mimimum and maximum value for the section and returns
+    a graph displaying the odds the section is runnable for each day
+    '''
+
+    siteId = request.args.get('siteId') or defaultSiteId
+    minFlow = float(request.args.get('minFlow')) or defaultMinFlow
+    maxFlow = float(request.args.get('maxFlow')) or defaultMaxFlow
+    testDataFlag = request.args.get('useTestData') == 'True'
+
+    data = getUSGSData(testDataFlag, siteId)
+    averageData = cleanUSGSData(data)
+
+    # def f(row): return (row > minFlow).mean(axis=1)
+    boolGrid = averageData.apply(lambda row: (row > minFlow) & (row < maxFlow))
+    dailyPercent = boolGrid.mean(axis=1)
+    #daysOver50 = percentages[percentages > 50]
+    return formatOutput(dailyPercent)  # , daysOver50
+
+
+def formatOutput(data):
+    '''Creates json dictionary with value label on value objects
+    '''
+    return data.to_frame('value').reset_index().to_json(orient='records')
 
 
 def getUSGSData(useTestData: bool = defaultUseTestData,
@@ -66,8 +95,13 @@ def getUSGSData(useTestData: bool = defaultUseTestData,
                 startDate: datetime.date = defaultStartDate,
                 endDate: datetime.date = defaultEndDate,
                 gaugeParameter: str = defaultParameter) -> json:
-    '''Call USGS
+    '''Call USGS or get test data
     '''
+
+    if useTestData:
+        with open('testFile.json') as tf:
+            print('Using test data.')
+            return json.load(tf)
 
     url = f'https://waterservices.usgs.gov/nwis/dv/?format=json&site={siteId}&startDT={startDate}&endDT={endDate}&parameterCd={gaugeParameter}'
     response = requests.get(url)
@@ -78,8 +112,8 @@ def getUSGSData(useTestData: bool = defaultUseTestData,
     return valueData
 
 
-def formatUSGSData(jsonData):
-    '''Format USGS Data
+def cleanUSGSData(jsonData):
+    '''Clean USGS Data
     '''
 
     df = pd.DataFrame(jsonData)
@@ -93,10 +127,7 @@ def formatUSGSData(jsonData):
     df = df.pivot(index=['month', 'day'], columns='year', values='value')
     df.index = df.index.map(lambda t: f'{t[0]}/{t[1]}')
     df[df < 0] = np.nan
-    avg = df.mean(axis=1)
-    avg = avg.to_frame('value')
-
-    return avg.reset_index().to_json(orient='records')
+    return df
 
 
 '''
@@ -115,18 +146,8 @@ percent of years above the minimum, and the standard deviation flow
     standardDeviation = df[(userDate.month, userDate.day)].std()
 
     return pd.Series([dayMean, percentageOfYearsRunnable, standardDeviation], index=['mean', 'percentageOfYearsRunnable', 'standardDeviation'])
-
-
-def getDailyRunnablePercentages(df: pd.DataFrame = pd.read_json(getUSGSDefaultData()), minimumRunnable: int = 300):
-    ''Takes in a dataframe and a minimum for the section and returns
-a graph displaying the odds the section is runnable for each day
-''
-
-    def f(row): return (row > minimumRunnable).mean()
-    percentages = df.apply(f)
-    daysOver50 = percentages[percentages > 50]
-    return percentages, daysOver50
 '''
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=8888)
