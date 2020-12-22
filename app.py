@@ -70,8 +70,8 @@ def getDailyRunnablePercentages():
     '''
 
     siteId = request.args.get('siteId') or defaultSiteId
-    minFlow = float(request.args.get('minFlow')) or defaultMinFlow
-    maxFlow = float(request.args.get('maxFlow')) or defaultMaxFlow
+    minFlow = float(request.args.get('minFlow') or defaultMinFlow)
+    maxFlow = float(request.args.get('maxFlow') or defaultMaxFlow)
     testDataFlag = request.args.get('useTestData') == 'True'
 
     data = getUSGSData(testDataFlag, siteId)
@@ -81,14 +81,15 @@ def getDailyRunnablePercentages():
     boolGrid = averageData.apply(lambda row: (row > minFlow) & (row < maxFlow))
     dailyPercent = boolGrid.mean(axis=1)
     #daysOver50 = percentages[percentages > 50]
-    return formatOutput(dailyPercent)  # , daysOver50
+
+    return formatOutput(dailyPercent * 100)  # , daysOver50
 
 
-def formatOutput(data):
+def formatOutput(data, decimals: int = 0):
     '''Creates json dictionary with value label on value objects
     '''
 
-    return data.round(0).astype(int).to_frame('value').reset_index().to_json(orient='records')
+    return data.round(1).to_frame('value').reset_index().to_json(orient='records')
 
 
 def getUSGSData(useTestData: bool = defaultUseTestData,
