@@ -20,8 +20,8 @@ defaultSiteId = '06719505'  # Clear Creek at Golden
 defaultStartDate = datetime.date(1888, 1, 1)
 defaultEndDate = datetime.date(2100, 12, 31)
 defaultParameter = '00060'  # cubic feet per second (cfs)
-defaultMinFlow = 0
-defaultMaxFlow = 100000
+defaultMinFlow = 400
+defaultMaxFlow = 1500
 
 defaultStatsDate = datetime.date(1000, 6, 4)
 
