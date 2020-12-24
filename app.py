@@ -10,7 +10,7 @@ from flask import jsonify
 # Uncomment if graphs need to be tested locally for some reason
 # import matplotlib.dates as mdates
 # import matplotlib.pyplot as plt
-#from pandas.plotting import register_matplotlib_converters
+# from pandas.plotting import register_matplotlib_converters
 
 # TODO: make a call to get the period data is available
 
@@ -59,14 +59,13 @@ def getDailyAverageData() -> json:
     data = getUSGSData(testDataFlag, siteId, startDate,
                        endDate, gaugeParameter)
     cleanData = cleanUSGSData(data)
-    returnData = pd.DataFrame()
-    returnData['mean'] = cleanData.mean(axis=1)
+    returnData = pd.DataFrame(cleanData.mean(axis=1), columns=['average'])
     returnData['quantile20'] = cleanData.quantile(0.2, axis=1)
     returnData['quantile80'] = cleanData.quantile(0.8, axis=1)
     return formatOutput(returnData)
 
 
-@app.route('/getRunnablePercentages')
+@ app.route('/getRunnablePercentages')
 def getDailyRunnablePercentages():
     '''Takes in a mimimum and maximum value for the section and returns
     a graph displaying the odds the section is runnable for each day
@@ -83,7 +82,7 @@ def getDailyRunnablePercentages():
     # def f(row): return (row > minFlow).mean(axis=1)
     boolGrid = averageData.apply(lambda row: (row > minFlow) & (row < maxFlow))
     dailyPercent = pd.DataFrame(boolGrid.mean(axis=1), columns=['mean'])
-    #daysOver50 = percentages[percentages > 50]
+    # daysOver50 = percentages[percentages > 50]
 
     return formatOutput(dailyPercent * 100)  # , daysOver50
 
