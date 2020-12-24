@@ -20,8 +20,8 @@ defaultSiteId = '06719505'  # Clear Creek at Golden
 defaultStartDate = datetime.date(1888, 1, 1)
 defaultEndDate = datetime.date(2100, 12, 31)
 defaultParameter = '00060'  # cubic feet per second (cfs)
-defaultMinFlow = 0
-defaultMaxFlow = 100000
+defaultMinFlow = 400
+defaultMaxFlow = 1500
 
 defaultStatsDate = datetime.date(1000, 6, 4)
 
@@ -59,8 +59,11 @@ def getDailyAverageData() -> json:
     data = getUSGSData(testDataFlag, siteId, startDate,
                        endDate, gaugeParameter)
     cleanData = cleanUSGSData(data)
-    avg = cleanData.mean(axis=1)
-    return formatOutput(avg)
+    returnData = pd.DataFrame()
+    returnData['mean'] = cleanData.mean(axis=1)
+    returnData['quantile20'] = cleanData.quantile(0.2, axis=1)
+    returnData['quantile80'] = cleanData.quantile(0.8, axis=1)
+    return formatOutput(returnData)
 
 
 @app.route('/getRunnablePercentages')
@@ -79,7 +82,7 @@ def getDailyRunnablePercentages():
 
     # def f(row): return (row > minFlow).mean(axis=1)
     boolGrid = averageData.apply(lambda row: (row > minFlow) & (row < maxFlow))
-    dailyPercent = boolGrid.mean(axis=1)
+    dailyPercent = pd.DataFrame(boolGrid.mean(axis=1), columns=['mean'])
     #daysOver50 = percentages[percentages > 50]
 
     return formatOutput(dailyPercent * 100)  # , daysOver50
@@ -89,7 +92,7 @@ def formatOutput(data, decimals: int = 0):
     '''Creates json dictionary with value label on value objects
     '''
 
-    return data.round(1).to_frame('value').reset_index().to_json(orient='records')
+    return data.round(1).reset_index().to_json(orient='records')
 
 
 def getUSGSData(useTestData: bool = defaultUseTestData,
