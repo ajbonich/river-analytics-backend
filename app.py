@@ -81,7 +81,7 @@ def getDailyRunnablePercentages():
 
     # def f(row): return (row > minFlow).mean(axis=1)
     boolGrid = averageData.apply(lambda row: (row > minFlow) & (row < maxFlow))
-    dailyPercent = pd.DataFrame(boolGrid.mean(axis=1), columns=['mean'])
+    dailyPercent = pd.DataFrame(boolGrid.mean(axis=1), columns=['percent'])
     # daysOver50 = percentages[percentages > 50]
 
     return formatOutput(dailyPercent * 100)  # , daysOver50
