@@ -61,7 +61,8 @@ def getDailyAverageData() -> json:
     cleanData = cleanUSGSData(data)
     returnData = pd.DataFrame(cleanData.mean(axis=1), columns=['average'])
     returnData['quantile20'] = cleanData.quantile(0.2, axis=1)
-    returnData['quantile80'] = cleanData.quantile(0.8, axis=1)
+    returnData['quantile80minus20'] = cleanData.quantile(
+        0.8, axis=1) - returnData['quantile20']
     return formatOutput(returnData)
 
 
