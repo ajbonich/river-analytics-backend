@@ -1,6 +1,6 @@
 # serverless.yml
 
-service: serverless-flask
+service: python-api
 
 plugins:
   - serverless-python-requirements
