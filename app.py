@@ -5,7 +5,6 @@ import numpy as np
 import pandas as pd
 from flask import Flask
 from flask import request
-from flask import jsonify
 
 # Uncomment if graphs need to be tested locally for some reason
 # import matplotlib.dates as mdates
@@ -50,7 +49,7 @@ def getDailyAverageData() -> json:
     '''Makes a usgs call with given or default parameters to create a clean dataframe object
     '''
 
-    siteId = request.args.get('siteId') or defaultSiteId
+    siteId = event.get('siteId') or defaultSiteId
     startDate = request.args.get('startDate') or defaultStartDate
     endDate = request.args.get('endDate') or defaultEndDate
     gaugeParameter = request.args.get('gaugeParameter') or defaultParameter
