@@ -3,15 +3,15 @@
 service: python-api
 
 provider:
-	name: aws
-	runtime: python3.8
-	stage: dev
-	region: us-east-2
+    name: aws
+    runtime: python3.8
+    stage: dev
+    region: us-east-2
 
 functions:
-  usgsDataAccess:
-    handler: usgsController.getUSGSDefaultData
-    events:
-      - http: 
-            path: /
-            method: get
+    usgsDataAccess:
+        handler: usgsController.getUSGSDefaultData
+        events:
+            - http:
+                path: /
+                method: get
