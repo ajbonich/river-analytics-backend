@@ -2,17 +2,6 @@
 
 service: python-api
 
-plugins:
-  - serverless-python-requirements
-  - serverless-wsgi
-
-custom:
-  wsgi:
-    app: app.app
-    packRequirements: false
-  pythonRequirements:
-    dockerizePip: non-linux
-
 provider:
   name: aws
   runtime: python3.8
@@ -20,8 +9,9 @@ provider:
   region: us-east-2
 
 functions:
-  app:
-    handler: wsgi_handler.handler
+  usgsDataAccess:
+    handler: usgsController.getUSGSDefaultData
     events:
-      - http: ANY /
-      - http: 'ANY {proxy+}'
+      - http: 
+            path: /
+            method: get

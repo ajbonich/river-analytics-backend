@@ -25,10 +25,10 @@ defaultMaxFlow = 1500
 
 defaultStatsDate = datetime.date(1000, 6, 4)
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
 
-@app.after_request
+# @app.after_request
 def add_headers(response):
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
@@ -38,7 +38,7 @@ def add_headers(response):
 # test from console with exec(open('usgs-controller.py').read())
 
 
-@app.route('/')
+# @app.route('/')
 def getUSGSDefaultData():
     cleanData = cleanUSGSData(getUSGSData())
     avg = cleanData.mean(axis=1)
@@ -153,5 +153,5 @@ percent of years above the minimum, and the standard deviation flow
 '''
 
 
-if __name__ == '__main__':
-    app.run(debug=True, port=8888)
+# if __name__ == '__main__':
+#     app.run(debug=True, port=8888)
