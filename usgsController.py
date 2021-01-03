@@ -43,7 +43,7 @@ def getUSGSDefaultData(event, object):
 
 
 # @app.route('/getDailyAverageData')
-def getDailyAverageData() -> json:
+def getDailyAverageData(event, object):
     '''Makes a usgs call with given or default parameters to create a clean dataframe object
     '''
 
@@ -63,7 +63,7 @@ def getDailyAverageData() -> json:
 
 
 # @ app.route('/getRunnablePercentages')
-def getDailyRunnablePercentages():
+def getDailyRunnablePercentages(event, object):
     '''Takes in a mimimum and maximum value for the section and returns
     a graph displaying the odds the section is runnable for each day
     '''
