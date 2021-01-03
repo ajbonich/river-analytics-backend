@@ -1,4 +1,6 @@
-import datetime, json, requests
+import datetime
+import json
+import requests
 import numpy as np
 import pandas as pd
 from flask import Flask
@@ -19,16 +21,9 @@ defaultParameter = '00060' #cubic feet per second (cfs)
 
 defaultStatsDate = datetime.date(1000, 6, 4)
 
-app = Flask(__name__)
-@app.after_request
-def add_headers(response):
-    response.headers['Access-Control-Allow-Origin'] = '*'
-    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
-    response.headers['Access-Control-Allow-Methods'] = 'POST, GET, PUT, DELETE, OPTIONS'
-    return response
 
 #test from console with exec(open('usgs-controller.py').read())
-@app.route('/')
+# @app.route('/')
 def getDailyAverageData(useTestData: bool = False,
                         startDate: datetime.date = defaultStartDate, 
                         endDate: datetime.date = defaultEndDate, 
@@ -97,6 +92,3 @@ def getDailyRunnablePercentages(df: pd.DataFrame = pd.read_json(getDailyAverageD
 
 # plt.show()
 '''
-
-if __name__ == '__main__':
-    app.run(debug=True, port=8888)
