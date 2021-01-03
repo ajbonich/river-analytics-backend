@@ -87,8 +87,12 @@ def getDailyRunnablePercentages():
 def formatOutput(data, decimals: int = 0):
     '''Creates json dictionary with value label on value objects
     '''
-
-    return data.round(1).reset_index().to_json(orient='records')
+    response = {
+        'statusCode': 200,
+        'body': data.round(1).reset_index().to_json(orient='records')
+    }
+    
+    return response
 
 
 def getUSGSData(useTestData: bool = defaultUseTestData,
