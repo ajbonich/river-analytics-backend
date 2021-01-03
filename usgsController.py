@@ -65,7 +65,7 @@ def getDailyAverageData(event, object):
 
 
 # @ app.route('/getRunnablePercentages')
-def getDailyRunnablePercentages(event, object):
+def getDailyRunnablePercentage(event, object):
     '''Takes in a mimimum and maximum value for the section and returns
     a graph displaying the odds the section is runnable for each day
     '''
