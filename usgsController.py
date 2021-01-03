@@ -59,7 +59,8 @@ def getDailyAverageData(event, object):
     cleanData = cleanUSGSData(data)
     returnData = pd.DataFrame(cleanData.mean(axis=1), columns=['average'])
     returnData['quantile20'] = cleanData.quantile(0.2, axis=1)
-    returnData['quantile80'] = cleanData.quantile(0.8, axis=1)
+    returnData['quantile80minus20'] = cleanData.quantile(
+        0.8, axis=1) - returnData['quantile20']
     return formatOutput(returnData)
 
 
@@ -135,6 +136,3 @@ def cleanUSGSData(jsonData):
     df.index = df.index.map(lambda t: f'{t[0]}/{t[1]}')
     df[df < 0] = np.nan
     return df
-
-    if __name__== "__main__":
-        getUSGSDefaultData("","")
