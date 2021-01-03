@@ -37,6 +37,7 @@ def add_headers(response):
 # @app.route('/')
 def getUSGSDefaultData(event, object):
     cleanData = cleanUSGSData(getUSGSData())
+    print('Data cleaned')
     avg = cleanData.mean(axis=1)
     return formatOutput(avg)
 
@@ -128,3 +129,6 @@ def cleanUSGSData(jsonData):
     df.index = df.index.map(lambda t: f'{t[0]}/{t[1]}')
     df[df < 0] = np.nan
     return df
+
+    if __name__== "__main__":
+        getUSGSDefaultData("","")
