@@ -8,7 +8,7 @@ provider:
     stage: dev
     region: us-east-2
     deploymentBucket:
-        name: static-arns-bucket
+        name: python-api-dev-serverlessdeploymentbucket-1f0rtnw6vwgt3
 
 plugins:
   - serverless-layers
