@@ -3,5 +3,8 @@
   "description": "",
   "version": "1.0.0",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-layers": "^2.3.3"
+  }
 }

@@ -9,8 +9,7 @@ provider:
     region: us-east-2
 
 plugins:
-    - serverless-layers
-
+  - serverless-layers
 custom:
     serverless-layers:
         - staticArn:
