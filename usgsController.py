@@ -91,6 +91,10 @@ def formatOutput(data, decimals: int = 0):
     '''
     response = {
         'statusCode': 200,
+        'headers': {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Credentials': True,
+        },
         'body': data.round(1).reset_index().to_json(orient='records')
     }
     
