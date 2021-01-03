@@ -36,16 +36,19 @@ functions:
             - http:
                 path: /
                 method: get
+                cors: true
     usgsDailyAverageData:
         handler: usgsController.getDailyAverageData
         events:
             - http:
                 path: /getDailyAverageData
                 method: get
+                cors: true
     usgsDailyRunnablePercentages:
         handler: usgsController.getDailyRunnablePercentages
         events:
             - http:
                 path: /getRunnablePercentages
                 method: get
+                cors: true
             
