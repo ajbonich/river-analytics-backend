@@ -94,6 +94,8 @@ def formatOutput(data, decimals: int = 0):
         'headers': {
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Credentials': True,
+            'Access-Control-Allow-Headers': 'Content-Type',
+            'Access-Control-Allow-Methods': 'GET'
         },
         'body': data.round(1).reset_index().to_json(orient='records')
     }
