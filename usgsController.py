@@ -2,6 +2,7 @@ import datetime
 import json
 import numpy as np
 import pandas as pd
+import urllib3
 
 # Uncomment if graphs need to be tested locally for some reason
 # import matplotlib.dates as mdates
@@ -108,9 +109,10 @@ def getUSGSData(useTestData: bool = defaultUseTestData,
             print('Using test data.')
             return json.load(tf)
 
-    url = f'https://waterservices.usgs.gov/nwis/dv/?format=json&site={siteId}&startDT={startDate}&endDT={endDate}&parameterCd={gaugeParameter}'
-    response = requests.get(url)
-    responseJson = response.json()
+    url = f'http://waterservices.usgs.gov/nwis/dv/?format=json&site={siteId}&startDT={startDate}&endDT={endDate}&parameterCd={gaugeParameter}'
+    http = urllib3.PoolManager()
+    response = http.request('GET', url)
+    responseJson = json.loads(response.data.decode('utf-8'))
     # may have to change this if the json format is different
     valueData = responseJson['value']['timeSeries'][0]['values'][0]['value']
 
