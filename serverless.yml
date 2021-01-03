@@ -8,6 +8,7 @@ provider:
     stage: dev
     region: us-east-2
     deploymentBucket:
+        name: static-arns-bucket
 
 plugins:
   - serverless-layers
