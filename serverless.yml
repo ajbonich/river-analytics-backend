@@ -7,9 +7,13 @@ provider:
     runtime: python3.8
     stage: dev
     region: us-east-2
+    deploymentBucket:
+        name: static-arn-bucket
 
 plugins:
   - serverless-layers
+  - serverless-deployment-bucket
+
 custom:
     serverless-layers:
         - staticArn:
