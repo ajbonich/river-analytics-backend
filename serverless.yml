@@ -33,10 +33,10 @@ functions:
             - http:
                 path: /getDailyAverageData
                 method: get
-    usgsDefaultDataAccess:
-        handler: usgsController.getUSGSDefaultData
+    usgsDailyRunnablePercentages:
+        handler: usgsController.getDailyRunnablePercentages
         events:
             - http:
-                path: /
+                path: /getRunnablePercentages
                 method: get
             
