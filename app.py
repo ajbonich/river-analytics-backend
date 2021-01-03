@@ -5,7 +5,6 @@ import numpy as np
 import pandas as pd
 from flask import Flask
 from flask import request
-from flask import jsonify
 
 # Uncomment if graphs need to be tested locally for some reason
 # import matplotlib.dates as mdates
@@ -25,10 +24,10 @@ defaultMaxFlow = 1500
 
 defaultStatsDate = datetime.date(1000, 6, 4)
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
 
-@app.after_request
+# @app.after_request
 def add_headers(response):
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
@@ -38,7 +37,7 @@ def add_headers(response):
 # test from console with exec(open('usgs-controller.py').read())
 
 
-@app.route('/')
+# @app.route('/')
 def getUSGSDefaultData():
     cleanData = cleanUSGSData(getUSGSData())
     avg = cleanData.mean(axis=1)
@@ -50,7 +49,7 @@ def getDailyAverageData() -> json:
     '''Makes a usgs call with given or default parameters to create a clean dataframe object
     '''
 
-    siteId = request.args.get('siteId') or defaultSiteId
+    siteId = event.get('siteId') or defaultSiteId
     startDate = request.args.get('startDate') or defaultStartDate
     endDate = request.args.get('endDate') or defaultEndDate
     gaugeParameter = request.args.get('gaugeParameter') or defaultParameter
@@ -154,5 +153,5 @@ percent of years above the minimum, and the standard deviation flow
 '''
 
 
-if __name__ == '__main__':
-    app.run(debug=True, port=8888)
+# if __name__ == '__main__':
+#     app.run(debug=True, port=8888)
