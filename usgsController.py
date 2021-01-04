@@ -47,61 +47,13 @@ def getUSGSDefaultData(event, object):
 def getDailyAverageData(event, object):
     '''Makes a usgs call with given or default parameters to create a clean dataframe object
     '''
-    try:
-        print(0)
-        print(event['path'])
-    except Exception as e:
-        print(e)
-        pass
-
-    try:
-        print(1)    
-        print(event['pathParameter'])
-    except Exception as e:
-        print(e)        
-        pass
-
-    try:  
-        print(2)      
-        print(event['pathParameters']['siteId'])
-    except Exception as e:
-        print(e)
-        pass
-
-    try:
-        print(3)    
-        print(event['path']['siteId'])
-    except Exception as e:
-        print(e)
-        pass
-
-    try: 
-        print(4)   
-        print(event['siteId'])
-    except Exception as e:
-        print(e)
-        pass
-
-    try: 
-        print(5)   
-        print(event.get('siteId'))
-    except Exception as e:
-        print(e)
-        pass
-
-    try: 
-        print(6)   
-        print(event)
-    except Exception as e:
-        print(e)
-        pass
-    siteId = event['pathParameters']['siteId'] or defaultSiteId
-    print(event.get('siteId'))
-    startDate = event.get('startDate') or defaultStartDate
-    endDate = event.get('endDate') or defaultEndDate
-    gaugeParameter = event.get('gaugeParameter') or defaultParameter
-    testDataFlag = event.get('useTestData') == 'True'
-    print(testDataFlag)
+      
+    siteId = event['queryStringParameters']['siteId'] or defaultSiteId
+    startDate = event['queryStringParameters']['startDate'] or defaultStartDate # included for future ability to filter on years
+    endDate = event['queryStringParameters']['endDate'] or defaultEndDate # included for future ability to filter on years
+    gaugeParameter = event['queryStringParameters']['gaugeParameter'] or defaultParameter # included for future ability to use other params
+    testDataFlag = event['queryStringParameters']['siteId'] == 'True'
+    
     data = getUSGSData(testDataFlag, siteId, startDate,
                        endDate, gaugeParameter)
     cleanData = cleanUSGSData(data)

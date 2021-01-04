@@ -41,13 +41,9 @@ functions:
         handler: usgsController.getDailyAverageData
         events:
             - http:
-                  path: /getDailyAverageData/{siteId}
+                  path: /getDailyAverageData
                   method: get
                   cors: true
-                  request:
-                      parameters:
-                          paths:
-                              siteId: true
     usgsDailyRunnablePercentage:
         handler: usgsController.getDailyRunnablePercentage
         events:
