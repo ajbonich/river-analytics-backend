@@ -67,7 +67,6 @@ def getDailyAverageData(event, object):
     except:
         gaugeParameter = defaultParameter # included for future ability to use other params
     
-    
     try:
         testDataFlag = event['queryStringParameters']['testDataFlag']
     except:
@@ -88,37 +87,27 @@ def getDailyRunnablePercentage(event, object):
     '''Takes in a mimimum and maximum value for the section and returns
     a graph displaying the odds the section is runnable for each day
     '''
-    try: 
-        print(5)   
-        print(event['queryStringParameters'][0])
-    except Exception as e:
-        print(e)
-        pass
 
     try: 
-        print(6)   
-        print(event['queryStringParameters']['siteId'])
-    except Exception as e:
-        print(e)
+        siteId = event['queryStringParameters']['siteId']
+    except:
+        siteId = defaultSiteId
         pass
+  
     try: 
-        print(7)   
-        print(event['queryStringParameters']['minFlow'])
-    except Exception as e:
-        print(e)
-        pass
+        minFlow = event['queryStringParameters']['minFlow']
+    except:
+        minFlow = defaultMinFlow
 
     try: 
-        print(8)   
-        print(event['queryStringParameters']['maxFlow'])
-        print(float(event['queryStringParameters']['maxFlow']))
-    except Exception as e:
-        print(float(e))
-        pass
-    siteId = event.get('siteId') or defaultSiteId
-    minFlow = float(event.get('minFlow') or defaultMinFlow)
-    maxFlow = float(event.get('maxFlow') or defaultMaxFlow)
-    testDataFlag = event.get('useTestData') == 'True'
+        maxFlow = event['queryStringParameters']['maxFlow']
+    except:
+        maxFlow = defaultMaxFlow
+
+    try:
+        testDataFlag = event['queryStringParameters']['testDataFlag']
+    except:
+        testDataFlag = False
 
     data = getUSGSData(testDataFlag, siteId)
     averageData = cleanUSGSData(data)
