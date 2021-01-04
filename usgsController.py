@@ -48,10 +48,10 @@ def getDailyAverageData(event, object):
     '''Makes a usgs call with given or default parameters to create a clean dataframe object
     '''
     b = json.loads(event)
-    bb = b['path']['siteId'])
+    bb = b['path']['siteId']
     print(bb)
     c = json.loads(event)
-    cc = c['pathParamter']['siteId'])
+    cc = c['pathParamter']['siteId']
     print(cc)
     print(a)
     print(event['pathParameter']['siteId'])
