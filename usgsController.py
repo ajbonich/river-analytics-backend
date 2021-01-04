@@ -173,5 +173,5 @@ def cleanUSGSData(jsonData):
     df = df.drop('dateTime', axis=1)
     df = df.pivot(index=['month', 'day'], columns='year', values='value')
     df.index = df.index.map(lambda t: f'{t[0]}/{t[1]}')
-    df[df < 0] = np.nan
+    df[df <= 0] = np.nan
     return df
