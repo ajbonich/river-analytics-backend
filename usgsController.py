@@ -56,14 +56,14 @@ def getDailyAverageData(event, object):
 
     try:
         print(1)    
-        print(event['pathParamter'])
+        print(event['pathParameter'])
     except Exception as e:
         print(e)        
         pass
 
     try:  
         print(2)      
-        print(event['pathParamter']['siteId'])
+        print(event['pathParameters']['siteId'])
     except Exception as e:
         print(e)
         pass
@@ -95,13 +95,13 @@ def getDailyAverageData(event, object):
     except Exception as e:
         print(e)
         pass
-    siteId = event.get('siteId') or defaultSiteId
+    siteId = event['pathParameters']['siteId'] or defaultSiteId
     print(event.get('siteId'))
     startDate = event.get('startDate') or defaultStartDate
     endDate = event.get('endDate') or defaultEndDate
     gaugeParameter = event.get('gaugeParameter') or defaultParameter
     testDataFlag = event.get('useTestData') == 'True'
-
+    print(testDataFlag)
     data = getUSGSData(testDataFlag, siteId, startDate,
                        endDate, gaugeParameter)
     cleanData = cleanUSGSData(data)
