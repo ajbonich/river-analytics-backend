@@ -48,14 +48,17 @@ def getDailyAverageData(event, object):
     '''Makes a usgs call with given or default parameters to create a clean dataframe object
     '''
     try:
+        print(0)
         print(event['path'])
-    except:
+    except Exception as e:
+        print(e)
         pass
 
     try:
         print(1)    
         print(event['pathParamter'])
-    except:
+    except Exception as e:
+        print(e)        
         pass
 
     try:  
