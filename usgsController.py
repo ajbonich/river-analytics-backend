@@ -140,8 +140,9 @@ def getDailyRunnablePercentage(event, object):
     try: 
         print(8)   
         print(event['queryStringParameters']['maxFlow'])
+        print(float(event['queryStringParameters']['maxFlow']))
     except Exception as e:
-        print(e)
+        print(float(e))
         pass
     siteId = event.get('siteId') or defaultSiteId
     minFlow = float(event.get('minFlow') or defaultMinFlow)
