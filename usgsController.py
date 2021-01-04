@@ -117,7 +117,19 @@ def getDailyRunnablePercentage(event, object):
     '''Takes in a mimimum and maximum value for the section and returns
     a graph displaying the odds the section is runnable for each day
     '''
+    try: 
+        print(5)   
+        print(event['queryStringParameters'][0])
+    except Exception as e:
+        print(e)
+        pass
 
+    try: 
+        print(6)   
+        print(event['queryStringParameters']['siteId'])
+    except Exception as e:
+        print(e)
+        pass
     siteId = event.get('siteId') or defaultSiteId
     minFlow = float(event.get('minFlow') or defaultMinFlow)
     maxFlow = float(event.get('maxFlow') or defaultMaxFlow)

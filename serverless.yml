@@ -52,12 +52,6 @@ functions:
         handler: usgsController.getDailyRunnablePercentage
         events:
             - http:
-                path: /getRunnablePercentage/{siteId}/{minFlow}/{maxFlow}
-                method: get
-                cors: true
-                request:
-                    parameters:
-                        paths:
-                            siteId: true
-                            minFlow: true
-                            maxFlow: true
+                  path: /getRunnablePercentage
+                  method: get
+                  cors: true
