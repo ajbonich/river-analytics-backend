@@ -47,12 +47,31 @@ def getUSGSDefaultData(event, object):
 def getDailyAverageData(event, object):
     '''Makes a usgs call with given or default parameters to create a clean dataframe object
     '''
-      
-    siteId = event['queryStringParameters']['siteId'] or defaultSiteId
-    startDate = event['queryStringParameters']['startDate'] or defaultStartDate # included for future ability to filter on years
-    endDate = event['queryStringParameters']['endDate'] or defaultEndDate # included for future ability to filter on years
-    gaugeParameter = event['queryStringParameters']['gaugeParameter'] or defaultParameter # included for future ability to use other params
-    testDataFlag = event['queryStringParameters']['siteId'] == 'True'
+    try:
+        siteId = event['queryStringParameters']['siteId']
+    except:
+        siteId =  defaultSiteId
+    
+    try:
+        startDate = event['queryStringParameters']['startDate']
+    except:
+        startDate = defaultStartDate # included for future ability to filter on years
+    
+    try:
+        endDate = event['queryStringParameters']['endDate']
+    except:
+        endDate = defaultEndDate # included for future ability to filter on years
+    
+    try:
+        gaugeParameter = event['queryStringParameters']['gaugeParameter']
+    except:
+        gaugeParameter = defaultParameter # included for future ability to use other params
+    
+    
+    try:
+        testDataFlag = event['queryStringParameters']['testDataFlag']
+    except:
+        testDataFlag = False
     
     data = getUSGSData(testDataFlag, siteId, startDate,
                        endDate, gaugeParameter)
