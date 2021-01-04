@@ -111,13 +111,12 @@ def getDailyRunnablePercentage(event, object):
     data = getUSGSData(testDataFlag, siteId)
     averageData = cleanUSGSData(data)
 
-    # def f(row): return (row > minFlow).mean(axis=1)
-    averageData[(averageData > minFlow) & (averageData < maxFlow)] = True
-    averageData[averageData > 1] = False
-    dailyPercent = pd.DataFrame(averageData.mean(axis=1), columns=['percent'])
+    countInRange = averageData[(averageData > minFlow) & (averageData < maxFlow)].count(axis=1)
+    totalCount = averageData[averageData > 0].count()
+    dailyPercent = countInRange.div(totalCount)
     # daysOver50 = percentages[percentages > 50]
 
-    return formatOutput(dailyPercent * 100)  # , daysOver50
+    return formatOutput(dailyPercent * 100)  
 
 def formatOutput(data, decimals: int = 0):
     '''Creates json dictionary with value label on value objects
