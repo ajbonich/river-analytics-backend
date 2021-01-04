@@ -47,7 +47,12 @@ def getUSGSDefaultData(event, object):
 def getDailyAverageData(event, object):
     '''Makes a usgs call with given or default parameters to create a clean dataframe object
     '''
-    print(event['path']['siteId'])
+    b = json.loads(event['path']['siteId'])
+    a = event['path']['siteId']
+    c = json.loads(event['pathParamter']['siteId'])
+    print(a)
+    print(b)
+    print(c)
     print(event['pathParameter']['siteId'])
     siteId = event.get('siteId') or defaultSiteId
     print(event.get('siteId'))
