@@ -17,8 +17,8 @@ defaultSiteId = '06719505'  # Clear Creek at Golden
 defaultStartDate = datetime.date(1888, 1, 1)
 defaultEndDate = datetime.date(2100, 12, 31)
 defaultParameter = '00060'  # cubic feet per second (cfs)
-defaultMinFlow = 400
-defaultMaxFlow = 1500
+defaultMinFlow = 300
+defaultMaxFlow = 1000
 
 defaultStatsDate = datetime.date(1000, 6, 4)
 
@@ -47,7 +47,8 @@ def getUSGSDefaultData(event, object):
 def getDailyAverageData(event, object):
     '''Makes a usgs call with given or default parameters to create a clean dataframe object
     '''
-
+    print(event.get('siteId'))
+    print(event)
     siteId = event.get('siteId') or defaultSiteId
     startDate = event.get('startDate') or defaultStartDate
     endDate = event.get('endDate') or defaultEndDate
