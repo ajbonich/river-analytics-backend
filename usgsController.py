@@ -113,7 +113,8 @@ def getDailyRunnablePercentage(event, object):
 
     countInRange = averageData[(averageData > minFlow) & (averageData < maxFlow)].count(axis=1)
     totalCount = averageData[averageData > 0].count(axis=1)
-    dailyPercent = countInRange.div(totalCount)
+    dailyPercent = pd.DataFrame()
+    dailyPercent['value'] = countInRange.div(totalCount)
     # daysOver50 = percentages[percentages > 50]
 
     return formatOutput(dailyPercent * 100)  
