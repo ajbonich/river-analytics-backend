@@ -52,31 +52,46 @@ def getDailyAverageData(event, object):
     except:
         pass
 
-    try:    
+    try:
+        print(1)    
         print(event['pathParamter'])
     except:
         pass
 
-    try:    
+    try:  
+        print(2)      
         print(event['pathParamter']['siteId'])
-    except:
+    except Exception as e:
+        print(e)
         pass
 
-    try:    
+    try:
+        print(3)    
         print(event['path']['siteId'])
-    except:
+    except Exception as e:
+        print(e)
         pass
 
-    try:    
+    try: 
+        print(4)   
         print(event['siteId'])
-    except:
+    except Exception as e:
+        print(e)
         pass
 
-    try:    
+    try: 
+        print(5)   
         print(event.get('siteId'))
-    except:
+    except Exception as e:
+        print(e)
         pass
 
+    try: 
+        print(6)   
+        print(event)
+    except Exception as e:
+        print(e)
+        pass
     siteId = event.get('siteId') or defaultSiteId
     print(event.get('siteId'))
     startDate = event.get('startDate') or defaultStartDate
