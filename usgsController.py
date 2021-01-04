@@ -112,7 +112,7 @@ def getDailyRunnablePercentage(event, object):
     averageData = cleanUSGSData(data)
 
     countInRange = averageData[(averageData > minFlow) & (averageData < maxFlow)].count(axis=1)
-    totalCount = averageData[averageData > 0].count()
+    totalCount = averageData[averageData > 0].count(axis=1)
     dailyPercent = countInRange.div(totalCount)
     # daysOver50 = percentages[percentages > 50]
 
