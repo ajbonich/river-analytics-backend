@@ -92,15 +92,14 @@ def getDailyRunnablePercentage(event, object):
         siteId = event['queryStringParameters']['siteId']
     except:
         siteId = defaultSiteId
-        pass
   
     try: 
-        minFlow = event['queryStringParameters']['minFlow']
+        minFlow = int(event['queryStringParameters']['minFlow'])
     except:
         minFlow = defaultMinFlow
 
     try: 
-        maxFlow = event['queryStringParameters']['maxFlow']
+        maxFlow = int(event['queryStringParameters']['maxFlow'])
     except:
         maxFlow = defaultMaxFlow
 
