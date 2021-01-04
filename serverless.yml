@@ -54,10 +54,10 @@ functions:
             - http:
                 path: /getRunnablePercentage/{siteId}/{minFlow}/{maxFlow}
                 method: get
-                    cors: true
-                    request:
-                        parameters:
-                            paths:
-                                siteId: true
-                                minFlow: true
-                                maxFlow: true
+                cors: true
+                request:
+                    parameters:
+                        paths:
+                            siteId: true
+                            minFlow: true
+                            maxFlow: true
