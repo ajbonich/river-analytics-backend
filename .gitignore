@@ -11,6 +11,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Ser5verless directories
+.serverless
+
 # Distribution / packaging
 .Python
 build/
@@ -21,6 +24,7 @@ eggs/
 .eggs/
 lib/
 lib64/
+node_modules/
 parts/
 sdist/
 var/
