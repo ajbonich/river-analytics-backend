@@ -22,28 +22,29 @@ train = pd.read_csv('trainData.csv')
 test = pd.read_csv('testData.csv')
 train['dateTime'] = pd.to_datetime(train['dateTime'])
 test['dateTime'] = pd.to_datetime(test['dateTime'])
-df = train
+train.set_index('dateTime', inplace=True)
+test.set_index('dateTime', inplace=True)
+df = train.copy()
 df = df.asfreq('d')
+df = df.bfill()
 # Multiplicative Decomposition
-# result_mul = seasonal_decompose(
-#     df['value'], model='multiplicative', extrapolate_trend='freq')
+result_mul = seasonal_decompose(df['value'], model='multiplicative', extrapolate_trend='freq')
 
-# # Additive Decomposition
-# result_add = seasonal_decompose(
-#     df['value'], model='additive', extrapolate_trend='freq')
+# Additive Decomposition
+result_add = seasonal_decompose(df['value'], model='additive', extrapolate_trend='freq')
 
-# # Plot
-# plt.rcParams.update({'figure.figsize': (10, 10)})
-# result_mul.plot().suptitle('Multiplicative Decompose', fontsize=22)
-# result_add.plot().suptitle('Additive Decompose', fontsize=22)
-# plt.show()
+# Plot
+plt.rcParams.update({'figure.figsize': (10, 10)})
+result_mul.plot().suptitle('Multiplicative Decompose', fontsize=22)
+result_add.plot().suptitle('Additive Decompose', fontsize=22)
+plt.show()
 
 # train.value.plot(figsize=(15,8), title= 'Golden Flow History', fontsize=14)
 # test.value.plot(figsize=(15,8), title= 'Golden Flow History', fontsize=14)
 # plt.show()
 
-# sm.tsa.seasonal_decompose(train.value).plot()
-# result = sm.tsa.stattools.adfuller(train.value)
+# sm.tsa.seasonal_decompose(df.value).plot()
+# result = sm.tsa.stattools.adfuller(df.value)
 # plt.show()
 '''
 y_hat_avg = test.copy()
