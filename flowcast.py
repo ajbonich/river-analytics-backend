@@ -46,23 +46,28 @@ def getUSGSData(useTestData: bool = defaultUseTestData,
 
     return valueData
 
+
 def generateCSV():
     jsonData = getUSGSData()
     df = pd.DataFrame(jsonData)
     df = df.drop('qualifiers', axis=1)
     df['value'] = df['value'].astype(float)
-    df['dateTime'] = pd.to_datetime(df['dateTime'])   
+    df['dateTime'] = pd.to_datetime(df['dateTime'])
     df[df['value'] <= 0] = np.nan
     train = df[0:16500]
-    train.index = train.dateTime
+    train.set_index('dateTime', inplace=True)
     test = df[16500:]
-    test.index = test.dateTime
+    test.set_index('dateTime', inplace=True)
     train.to_csv('trainData.csv')
     test.to_csv('testData.csv')
     # train.value.plot(figsize=(15,8), title= 'Golden Flow History', fontsize=14)
     # test.value.plot(figsize=(15,8), title= 'Golden Flow History', fontsize=14)
     # plt.show()
     # return df, train, test
+
+
+generateCSV()
+
 
 def cleanUSGSData(jsonData):
     '''Clean USGS Data
@@ -71,6 +76,8 @@ def cleanUSGSData(jsonData):
     df = df.drop('qualifiers', axis=1)
     df['value'] = df['value'].astype(float)
     df['dateTime'] = pd.to_datetime(df['dateTime'])
+
+    # make below its own method
     months, days, years = zip(*[(d.month, d.day, d.year)
                                 for d in df['dateTime']])
     df = df.assign(month=months, day=days, year=years)

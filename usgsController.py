@@ -50,28 +50,29 @@ def getDailyAverageData(event, object):
     try:
         siteId = event['queryStringParameters']['siteId']
     except:
-        siteId =  defaultSiteId
-    
+        siteId = defaultSiteId
+
     try:
         startDate = event['queryStringParameters']['startDate']
     except:
-        startDate = defaultStartDate # included for future ability to filter on years
-    
+        startDate = defaultStartDate  # included for future ability to filter on years
+
     try:
         endDate = event['queryStringParameters']['endDate']
     except:
-        endDate = defaultEndDate # included for future ability to filter on years
-    
+        endDate = defaultEndDate  # included for future ability to filter on years
+
     try:
         gaugeParameter = event['queryStringParameters']['gaugeParameter']
     except:
-        gaugeParameter = defaultParameter # included for future ability to use other params
-    
+        # included for future ability to use other params
+        gaugeParameter = defaultParameter
+
     try:
         testDataFlag = event['queryStringParameters']['testDataFlag']
     except:
         testDataFlag = False
-    
+
     data = getUSGSData(testDataFlag, siteId, startDate,
                        endDate, gaugeParameter)
     cleanData = cleanUSGSData(data)
@@ -88,17 +89,17 @@ def getDailyRunnablePercentage(event, object):
     a graph displaying the odds the section is runnable for each day
     '''
 
-    try: 
+    try:
         siteId = event['queryStringParameters']['siteId']
     except:
         siteId = defaultSiteId
-  
-    try: 
+
+    try:
         minFlow = int(event['queryStringParameters']['minFlow'])
     except:
         minFlow = defaultMinFlow
 
-    try: 
+    try:
         maxFlow = int(event['queryStringParameters']['maxFlow'])
     except:
         maxFlow = defaultMaxFlow
@@ -111,13 +112,15 @@ def getDailyRunnablePercentage(event, object):
     data = getUSGSData(testDataFlag, siteId)
     averageData = cleanUSGSData(data)
 
-    countInRange = averageData[(averageData > minFlow) & (averageData < maxFlow)].count(axis=1)
+    countInRange = averageData[(averageData > minFlow) & (
+        averageData < maxFlow)].count(axis=1)
     totalCount = averageData[averageData > 0].count(axis=1)
     dailyPercent = pd.DataFrame()
     dailyPercent['percent'] = countInRange.div(totalCount)
     # daysOver50 = percentages[percentages > 50]
 
-    return formatOutput(dailyPercent * 100)  
+    return formatOutput(dailyPercent * 100)
+
 
 def formatOutput(data, decimals: int = 0):
     '''Creates json dictionary with value label on value objects
@@ -132,7 +135,7 @@ def formatOutput(data, decimals: int = 0):
         },
         'body': data.round(1).reset_index().to_json(orient='records')
     }
-    
+
     return response
 
 
@@ -167,6 +170,8 @@ def cleanUSGSData(jsonData):
     df = df.drop('qualifiers', axis=1)
     df['value'] = df['value'].astype(float)
     df['dateTime'] = pd.to_datetime(df['dateTime'])
+
+    # make below its own method
     months, days, years = zip(*[(d.month, d.day, d.year)
                                 for d in df['dateTime']])
     df = df.assign(month=months, day=days, year=years)
