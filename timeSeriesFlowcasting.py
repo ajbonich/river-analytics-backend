@@ -1,14 +1,10 @@
-from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
-from statsmodels.tsa.stattools import acf, pacf
-from pandas.plotting import autocorrelation_plot
+from tbats import TBATS, BATS
 from statsmodels.tsa.ar_model import AutoReg
-from random import random
 
 import datetime
 import json
 import numpy as np
 import pandas as pd
-import urllib3
 import matplotlib.pyplot as plt
 from statsmodels.tools.eval_measures import rmse
 # from sklearn.metrics import mean_squared_error
@@ -17,65 +13,80 @@ from statsmodels.tsa.api import ExponentialSmoothing, SimpleExpSmoothing, Holt
 import statsmodels.api as sm
 
 
-train = pd.read_csv('trainData.csv')
-test = pd.read_csv('testData.csv')
-train['dateTime'] = pd.to_datetime(train['dateTime'])
-test['dateTime'] = pd.to_datetime(test['dateTime'])
-train.set_index('dateTime', inplace=True)
-test.set_index('dateTime', inplace=True)
-df = train.copy()
-df = df.asfreq('d')
-df = df.bfill()
+def main():
+    train, test = get_data()
+    model = get_auto_arima_model(train)
+    forecasts = model.predict(test.shape[0])
+    plot_train_test_forecast(train, test, forecasts)
 
-# Showing seasonality
-'''
-plt.rcParams.update({'figure.figsize': (9, 5)})
-autocorrelation_plot(df.value.tolist())
-plt.show()
-'''
 
-# Calculate ACF and PACF upto 50 lags
-# acf_50 = acf(df.value, nlags=50)
-# pacf_50 = pacf(df.value, nlags=50)
+def get_data():
 
-fig, axes = plt.subplots(1, 2, figsize=(16, 3), dpi=100)
-plot_acf(df.value.tolist(), lags=50, ax=axes[0])
-plot_pacf(df.value.tolist(), lags=50, ax=axes[1])
-plt.show()
+    train = pd.read_csv('trainData.csv')
+    train['dateTime'] = pd.to_datetime(train['dateTime'])
+    train.set_index('dateTime', inplace=True)
+    train = train.asfreq('d')
+    train = train.bfill()
+    train_two_years = train.loc['2018-01-01':]
 
-# Analyzing stationary
-'''
-from statsmodels.tsa.stattools import adfuller
-result = adfuller(df.value.values, autolag='AIC')
-print(f'ADF Statistic: {result[0]}')
-print(f'p-value: {result[1]}')
-for key, value in result[4].items():
-    print('Critial Values:')
-    print(f'   {key}, {value}')
-'''
+    test = pd.read_csv('testData.csv')
+    test['dateTime'] = pd.to_datetime(test['dateTime'])
+    test.set_index('dateTime', inplace=True)
 
-# Decomposition
-'''
-from statsmodels.tsa.seasonal import seasonal_decompose
-result_mul = seasonal_decompose(
-    df['value'], model='multiplicative', extrapolate_trend='freq')
-result_add = seasonal_decompose(
-    df['value'], model='additive', extrapolate_trend='freq')
-plt.rcParams.update({'figure.figsize': (10, 10)})
-result_mul.plot().suptitle('Multiplicative Decompose', fontsize=22)
-result_add.plot().suptitle('Additive Decompose', fontsize=22)
-plt.show()
+    return train_two_years, test
 
-#Showing the decomp
-df_reconstructed = pd.concat(
-    [result_mul.seasonal, result_mul.trend, result_mul.resid, result_mul.observed], axis=1)
-df_reconstructed.columns = ['seas', 'trend', 'resid', 'actual_values']
-df_reconstructed.head()
-'''
 
-# train.value.plot(figsize=(15,8), title= 'Golden Flow History', fontsize=14)
-# test.value.plot(figsize=(15,8), title= 'Golden Flow History', fontsize=14)
-# plt.show()
+def get_auto_arima_model(train):
+
+    import pmdarima as pm
+    model = pm.auto_arima(train, start_p=1, start_q=1,
+                          test='adf',       # use adftest to find optimal 'd'
+                          #   max_p=5, max_q=5, # maximum p and q
+                          m=365,              # frequency of series
+                          d=1,           # let model determine 'd'
+                          seasonal=True,   # No Seasonality
+                          start_P=0,
+                          D=1,
+                          trace=True,
+                          suppress_warnings=True,
+                          stepwise=True)
+
+    print(model.summary())
+
+    return model
+
+
+def plot_train_test_forecast(train, test, forecast):
+    plt.plot(train, color='darkgreen', label='Training Data')
+    plt.plot(test.index, test, color='blue', label='Expected Flow')
+    plt.plot(test.index, forecast, color='orange', label='Predicted Flow')
+    plt.legend()
+    plt.show()
+    # Forecast
+    # n_periods = 24
+    # fitted, confint = sxmodel.predict(n_periods=n_periods,
+    #                                   exogenous=np.tile(
+    #                                       seasonal_index.value, 2).reshape(-1, 1),
+    #                                   return_conf_int=True)
+
+    # index_of_fc = pd.date_range(df.index[-1], periods=n_periods, freq='MS')
+
+    # make series for plotting purpose
+    # fitted_series = pd.Series(fitted, index=index_of_fc)
+    # lower_series = pd.Series(confint[:, 0], index=index_of_fc)
+    # upper_series = pd.Series(confint[:, 1], index=index_of_fc)
+
+    # # Plot
+    # plt.plot(df['value'])
+    # plt.plot(fitted_series, color='darkgreen')
+    # plt.fill_between(lower_series.index,
+    #                  lower_series,
+    #                  upper_series,
+    #                  color='k', alpha=.15)
+
+    # plt.title("SARIMAX Forecast of a10 - Drug Sales")
+    # plt.show()
+
 
 # sm.tsa.seasonal_decompose(df.value).plot()
 # result = sm.tsa.stattools.adfuller(df.value)
@@ -95,3 +106,79 @@ plt.show()
 rms = sqrt(mean_squared_error(test.value, y_hat_avg.Holt_Winter))
 print(rms)
 '''
+
+
+# # fig, axes = plt.subplots(3, 2, figsize=(12, 16))
+# # plt.title('MSFT Autocorrelation plot')
+
+# # # The axis coordinates for the plots
+# # ax_idcs = [
+# #     (0, 0),
+# #     (0, 1),
+# #     (1, 0),
+# #     (1, 1),
+# #     (2, 0),
+# #     (2, 1)
+# # ]
+# # from pandas.plotting import lag_plot
+# # for lag, ax_coords in enumerate(ax_idcs, 1):
+# #     ax_row, ax_col = ax_coords
+# #     axis = axes[ax_row][ax_col]
+# #     lag_plot(df['value'], lag=lag, ax=axis)
+# #     axis.set_title(f"Lag={lag}")
+
+# # plt.show()
+
+
+# auto = pm.auto_arima(y_train, d=0, seasonal=False, stepwise=True,
+#                  suppress_warnings=True, error_action="ignore", max_p=6,
+#                  max_order=None, trace=True)
+
+
+# fig, axes = plt.subplots(2, 1, figsize=(12, 12))
+
+# # --------------------- Actual vs. Predicted --------------------------
+# axes[0].plot(y_train, color='blue', label='Training Data')
+# axes[0].plot(test_data.index, forecasts, color='green', marker='o',
+#             label='Predicted Price')
+
+# axes[0].plot(test_data.index, y_test, color='red', label='Actual Price')
+# axes[0].set_title('Microsoft Prices Prediction')
+# axes[0].set_xlabel('Dates')
+# axes[0].set_ylabel('Prices')
+
+# # axes[0].set_xticks(np.arange(0, 7982, 1300).tolist(), df['Date'][0:7982:1300].tolist())
+# axes[0].legend()
+
+# # ------------------ Predicted with confidence intervals ----------------
+# axes[1].plot(y_train, color='blue', label='Training Data')
+# axes[1].plot(test_data.index, forecasts, color='green',
+#             label='Predicted Price')
+
+# axes[1].set_title('Prices Predictions & Confidence Intervals')
+# axes[1].set_xlabel('Dates')
+# axes[1].set_ylabel('Prices')
+
+# conf_int = np.asarray(confidence_intervals)
+# axes[1].fill_between(test_data.index,
+#                     conf_int[:, 0], conf_int[:, 1],
+#                     alpha=0.9, color='orange',
+#                     label="Confidence Intervals")
+
+# # axes[1].set_xticks(np.arange(0, 7982, 1300).tolist(), df['Date'][0:7982:1300].tolist())
+# axes[1].legend()
+# Fit model
+
+# Summarize fitted model
+
+# Fit the model
+# estimator = TBATS(seasonal_periods=[366],
+#                 use_arma_errors=False,  # shall try only models without ARMA
+#                 use_box_cox=False  # will not use Box-Cox
+#                 )
+# model = estimator.fit(df.value)
+# # Forecast 365 days ahead
+# y_forecast = model.forecast(steps=365)
+# plt.plot(df.value)
+# plt.plot(y_forecast, color='darkgreen')
+# plt.show()
