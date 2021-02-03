@@ -20,20 +20,27 @@ def main():
     plot_train_test_forecast(train, test, forecasts)
 
 
-def get_data():
+def get_train_data():
 
     train = pd.read_csv('trainData.csv')
     train['dateTime'] = pd.to_datetime(train['dateTime'])
     train.set_index('dateTime', inplace=True)
     train = train.asfreq('d')
     train = train.bfill()
-    train_two_years = train.loc['2018-01-01':]
+    train = train.loc['2018-01-01':]
 
+    return train
+
+
+def get_test_data():
     test = pd.read_csv('testData.csv')
     test['dateTime'] = pd.to_datetime(test['dateTime'])
     test.set_index('dateTime', inplace=True)
 
-    return train_two_years, test
+    return test
+
+
+# def get_tbats_forecast():
 
 
 def get_auto_arima_model(train):

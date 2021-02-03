@@ -16,7 +16,9 @@ def calculate_acf_pacf(df):
     # Calculate ACF and PACF upto 50 lags
     # Original Series
     plt.rcParams.update({'figure.figsize': (9, 7), 'figure.dpi': 120})
+    # fig,
     fig, axes = plt.subplots(3, 2, sharex=True)
+    print(fig)
     axes[0, 0].plot(df.value)
     axes[0, 0].set_title('Original Series')
     plot_acf(df.value, ax=axes[0, 1])
