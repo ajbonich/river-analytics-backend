@@ -1,20 +1,23 @@
-from tbats import TBATS, BATS
-from statsmodels.tsa.ar_model import AutoReg
+# from tbats import TBATS, BATS
+# from statsmodels.tsa.ar_model import AutoReg
 
-import datetime
-import json
-import numpy as np
+# import datetime
+# import json
+# import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from statsmodels.tools.eval_measures import rmse
+
+# from statsmodels.tools.eval_measures import rmse
+
 # from sklearn.metrics import mean_squared_error
-from math import sqrt
-from statsmodels.tsa.api import ExponentialSmoothing, SimpleExpSmoothing, Holt
-import statsmodels.api as sm
+# from math import sqrt
+# from statsmodels.tsa.api import ExponentialSmoothing, SimpleExpSmoothing, Holt
+# import statsmodels.api as sm
 
 
 def main():
-    train, test = get_data()
+    train = get_train_data()
+    test = get_test_data()
     model = get_auto_arima_model(train)
     forecasts = model.predict(test.shape[0])
     plot_train_test_forecast(train, test, forecasts)
@@ -22,20 +25,20 @@ def main():
 
 def get_train_data():
 
-    train = pd.read_csv('trainData.csv')
-    train['dateTime'] = pd.to_datetime(train['dateTime'])
-    train.set_index('dateTime', inplace=True)
-    train = train.asfreq('d')
+    train = pd.read_csv("trainData.csv")
+    train["dateTime"] = pd.to_datetime(train["dateTime"])
+    train.set_index("dateTime", inplace=True)
+    train = train.asfreq("d")
     train = train.bfill()
-    train = train.loc['2018-01-01':]
+    train = train.loc["2018-01-01":]
 
     return train
 
 
 def get_test_data():
-    test = pd.read_csv('testData.csv')
-    test['dateTime'] = pd.to_datetime(test['dateTime'])
-    test.set_index('dateTime', inplace=True)
+    test = pd.read_csv("testData.csv")
+    test["dateTime"] = pd.to_datetime(test["dateTime"])
+    test.set_index("dateTime", inplace=True)
 
     return test
 
@@ -46,17 +49,22 @@ def get_test_data():
 def get_auto_arima_model(train):
 
     import pmdarima as pm
-    model = pm.auto_arima(train, start_p=1, start_q=1,
-                          test='adf',       # use adftest to find optimal 'd'
-                          #   max_p=5, max_q=5, # maximum p and q
-                          m=365,              # frequency of series
-                          d=1,           # let model determine 'd'
-                          seasonal=True,   # No Seasonality
-                          start_P=0,
-                          D=1,
-                          trace=True,
-                          suppress_warnings=True,
-                          stepwise=True)
+
+    model = pm.auto_arima(
+        train,
+        start_p=1,
+        start_q=1,
+        test="adf",  # use adftest to find optimal 'd'
+        #   max_p=5, max_q=5, # maximum p and q
+        m=365,  # frequency of series
+        d=1,  # let model determine 'd'
+        seasonal=True,  # No Seasonality
+        start_P=0,
+        D=1,
+        trace=True,
+        suppress_warnings=True,
+        stepwise=True,
+    )
 
     print(model.summary())
 
@@ -64,9 +72,9 @@ def get_auto_arima_model(train):
 
 
 def plot_train_test_forecast(train, test, forecast):
-    plt.plot(train, color='darkgreen', label='Training Data')
-    plt.plot(test.index, test, color='blue', label='Expected Flow')
-    plt.plot(test.index, forecast, color='orange', label='Predicted Flow')
+    plt.plot(train, color="darkgreen", label="Training Data")
+    plt.plot(test.index, test, color="blue", label="Expected Flow")
+    plt.plot(test.index, forecast, color="orange", label="Predicted Flow")
     plt.legend()
     plt.show()
     # Forecast
@@ -98,7 +106,7 @@ def plot_train_test_forecast(train, test, forecast):
 # sm.tsa.seasonal_decompose(df.value).plot()
 # result = sm.tsa.stattools.adfuller(df.value)
 # plt.show()
-'''
+"""
 y_hat_avg = test.copy()
 fit1 = sm(train.value, order=(2, 1, 4), seasonal_order=(0, 1, 1, 7)).fit()
 y_hat_avg['SARIMA'] = fit1.predict(
@@ -112,7 +120,7 @@ plt.show()
 
 rms = sqrt(mean_squared_error(test.value, y_hat_avg.Holt_Winter))
 print(rms)
-'''
+"""
 
 
 # # fig, axes = plt.subplots(3, 2, figsize=(12, 16))
@@ -154,7 +162,7 @@ print(rms)
 # axes[0].set_xlabel('Dates')
 # axes[0].set_ylabel('Prices')
 
-# # axes[0].set_xticks(np.arange(0, 7982, 1300).tolist(), df['Date'][0:7982:1300].tolist())
+# axes[0].set_xticks(np.arange(0, 7982, 1300).tolist(),df['Date'][0:7982:1300].tolist())
 # axes[0].legend()
 
 # # ------------------ Predicted with confidence intervals ----------------
@@ -172,7 +180,7 @@ print(rms)
 #                     alpha=0.9, color='orange',
 #                     label="Confidence Intervals")
 
-# # axes[1].set_xticks(np.arange(0, 7982, 1300).tolist(), df['Date'][0:7982:1300].tolist())
+# axes[1].set_xticks(np.arange(0, 7982, 1300).tolist(),df['Date'][0:7982:1300].tolist())
 # axes[1].legend()
 # Fit model
 
