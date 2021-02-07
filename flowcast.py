@@ -70,9 +70,6 @@ def generateCSV():
     # return df, train, test
 
 
-generateCSV()
-
-
 def cleanUSGSData(jsonData):
     """Clean USGS Data"""
     df = pd.DataFrame(jsonData)
@@ -88,13 +85,3 @@ def cleanUSGSData(jsonData):
     df.index = df.index.map(lambda t: f"{t[0]}/{t[1]}")
     df[df <= 0] = np.nan
     return df
-
-
-# usgsData, data2 = cleanUSGSData(getUSGSData())
-# data = [x + random() for x in range(1, 100)]
-# # fit model
-# model = AutoReg(data, lags=1)
-# model_fit = model.fit()
-# # make prediction
-# yhat = model_fit.predict(len(data), len(data))
-# print(yhat)
