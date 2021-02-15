@@ -75,10 +75,9 @@ def getDailyAverageData(event, object):
     data = getUSGSData(testDataFlag, siteId, startDate, endDate, parameter)
     cleanData = cleanUSGSData(data)
     returnData = pd.DataFrame(cleanData.mean(axis=1), columns=["average"])
-    returnData["middleFifty"] = [
-        cleanData.quantile(0.25, axis=1),
-        cleanData.quantile(0.75, axis=1),
-    ]
+    returnData["middleFifty"] = list(
+        zip(cleanData.quantile(0.25, axis=1), cleanData.quantile(0.75, axis=1))
+    )
     return formatOutput(returnData)
 
 
