@@ -131,7 +131,7 @@ def formatOutput(data: pd.DataFrame, decimals: int = 0) -> dict:
             "Access-Control-Allow-Headers": "Content-Type",
             "Access-Control-Allow-Methods": "GET",
         },
-        "body": data.round(1).reset_index().to_json(orient="records"),
+        "body": data.round(0).reset_index().to_json(orient="records"),
     }
 
     return response
