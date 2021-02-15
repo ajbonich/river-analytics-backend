@@ -17,12 +17,12 @@ import pandas as pd
 # from warnings import catch_warnings
 # from warnings import filterwarnings
 train_start = "1974-10-01"  # "2017-01-01"
-train_end = "2019-04-21"
-test_start = "2019-04-21"
-test_end = "2019-09-14"
+train_end = "2018-05-01"
+test_start = "2018-05-01"
+test_end = "2018-08-01"
 
 
-def ets_forecast(train_data: list, config: list, prediction_count: int) -> list:
+def ets_forecast(train_data: list, config: list, steps: int) -> list:
     """Takes in a test data set and parameters and returns an ETS model"""
     t, d, s, b, r = config
     if s is None:
@@ -44,30 +44,27 @@ def ets_forecast(train_data: list, config: list, prediction_count: int) -> list:
             seasonal_periods=365,
         )
     model_fit = model.fit()
-    # minus 1 to make the correct number of predictions
-    return model_fit.predict(len(train_data), len(train_data) + prediction_count - 1)
+    return model_fit.forecast(steps)
 
 
 def test_model(train: list, test: list, config: list, number_forecasts: int) -> list:
     predicted: list = []
     training_data = list(train)
-    test_data = list(test)
-    print(f"Test length: {len(test)}")
-    for set_start_index in range(0, len(test), number_forecasts):
-        print(f"Current index: {set_start_index}")
+    remaining_test_data = list(test)
+    print(f"Test data length: {len(test)}")
+    while len(remaining_test_data) > 0:
         # make next num_forecasts predictions
-        predicted.extend(ets_forecast(training_data, config, number_forecasts))
+        predicted.extend(
+            ets_forecast(
+                training_data, config, min(number_forecasts, len(remaining_test_data))
+            )
+        )
         # extend training data
-        training_data.extend(test_data[:number_forecasts])
+        training_data.extend(remaining_test_data[:number_forecasts])
         # pop num_forecasts from front of test data
-        test_data = test_data[number_forecasts:]
+        remaining_test_data = remaining_test_data[number_forecasts:]
 
     return predicted
-
-    accuracy = helper.compute_model_accuracy(test, predicted)
-    print(accuracy)
-    return accuracy, predicted
-    # return predicted, helper.compute_model_accuracy(test_data, predicted)
 
 
 def parameter_grid_search():
@@ -83,10 +80,12 @@ def parameter_grid_search():
 
     number_forecasts_list = [7, 14, 30, 60, 90]
     model_type = "ETS"
-    best_forecasts = []
-    best_RMSE = float("inf")
-    results_df = pd.DataFrame(columns=["Model", "Params", "RMSE", "MAPE", "MSE", "MAE"])
-    for number_forecasts in number_forecasts_list:
+    results_df = pd.DataFrame(
+        columns=["RMSE", "MAPE", "MSE", "MAE", "Model", "Steps", "Params"]
+    )
+    results_directory = helper.create_run_directory()
+    number_forecasts_list = [1]
+    for steps in number_forecasts_list:
         for combo in combos:
             config = list(combo)
             config = ["add", True, "add", True, True]
@@ -95,22 +94,18 @@ def parameter_grid_search():
                 continue
 
             print(f"Testing: {config}")
-            predictions = test_model(train_list, test_list, config, number_forecasts)
-            results_dict = helper.create_result_item(
-                model_type, config, test_list, predictions
-            )
-            results_df = results_df.append(results_dict, ignore_index=True)
-            if results_dict["RMSE"] < best_RMSE:
-                best_forecasts = predictions
+            predictions = test_model(train_list, test_list, config, steps)
+
+            figure = helper.plot_train_test_forecast(train_data, test_data, predictions)
+            figure.savefig(f"{results_directory}/{steps}_forecast_steps.png")
+            figure.clf()
+
+            result = helper.compute_model_accuracy(test_list, predictions)
+            result.update({"Model": model_type, "Steps": steps, "Params": config})
+            results_df = results_df.append(result, ignore_index=True)
             break
-        helper.save_results(
-            model_type,
-            results_df,
-            number_forecasts,
-            train_data,
-            test_data,
-            best_forecasts,
-        )
+
+    results_df.to_csv(f"{results_directory}/Performance")
 
 
 if __name__ == "__main__":

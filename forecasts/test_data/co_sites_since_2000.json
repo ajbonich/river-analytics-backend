@@ -1,0 +1,3722 @@
+[
+   {
+      "site_no": "06613950",
+      "station_nm": "HELL CREEK ABV NF NORTH PLATTE RIVER NR WALDEN, CO",
+      "dec_lat_va": "40.73272220",
+      "dec_long_va": "-106.42504440",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06614800",
+      "station_nm": "MICHIGAN RIVER NEAR CAMERON PASS, CO",
+      "dec_lat_va": "40.49609409",
+      "dec_long_va": "-105.86501190",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06618300",
+      "station_nm": "ILLINOIS RIVER BLW ISH BALDWIN DITCH NR WALDEN, CO",
+      "dec_lat_va": "40.57553460",
+      "dec_long_va": "-106.24169200",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06618480",
+      "station_nm": "ILLINOIS RIVER BLW POTTER CREEK NR WALDEN, CO",
+      "dec_lat_va": "40.70858810",
+      "dec_long_va": "-106.28030390",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06620000",
+      "station_nm": "NORTH PLATTE RIVER NEAR NORTHGATE, CO",
+      "dec_lat_va": "40.93663889",
+      "dec_long_va": "-106.33919440",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06659580",
+      "station_nm": "SAND CREEK AT COLORADO-WYOMING STATE LINE",
+      "dec_lat_va": "40.99365000",
+      "dec_long_va": "-105.75970280",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06693800",
+      "station_nm": "MOSQUITO CREEK NEAR ALMA, CO",
+      "dec_lat_va": "39.26998960",
+      "dec_long_va": "-106.05112970",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06696980",
+      "station_nm": "TARRYALL CREEK AT UPPER STATION NEAR COMO, CO",
+      "dec_lat_va": "39.33943296",
+      "dec_long_va": "-105.91168130",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06700000",
+      "station_nm": "SOUTH PLATTE RIVER ABOVE CHEESMAN LAKE, CO.",
+      "dec_lat_va": "39.16276858",
+      "dec_long_va": "-105.31027320",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06701500",
+      "station_nm": "SOUTH PLATTE RIVER BELOW CHEESMAN LAKE, CO",
+      "dec_lat_va": "39.20915718",
+      "dec_long_va": "-105.26777250",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06701550",
+      "station_nm": "FOURMILE CREEK ABOVE MOUTH NEAR DECKERS, CO",
+      "dec_lat_va": "39.23054600",
+      "dec_long_va": "-105.22527130",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06701620",
+      "station_nm": "TROUT CREEK BLW FERN CR NR WESTCREEK, CO.",
+      "dec_lat_va": "39.16749104",
+      "dec_long_va": "-105.12221120",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06701700",
+      "station_nm": "WEST CR. ABV SHREWSBURY GULCH NR WESTCREEK CO",
+      "dec_lat_va": "39.14542500",
+      "dec_long_va": "-105.16001110",
+      "coord_acy_cd": "1",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06701900",
+      "station_nm": "SOUTH PLATTE RIVER BLW BRUSH CRK NEAR TRUMBULL, CO",
+      "dec_lat_va": "39.25999025",
+      "dec_long_va": "-105.22193790",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06701970",
+      "station_nm": "SPRING CREEK ABOVE MOUTH NEAR SOUTH PLATTE, CO",
+      "dec_lat_va": "39.39360037",
+      "dec_long_va": "-105.18415720",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06706400",
+      "station_nm": "N.F. SOUTH PLATTE RIVER ABOVE ELK CRK AT PINE, CO",
+      "dec_lat_va": "39.40748910",
+      "dec_long_va": "-105.31916150",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06706600",
+      "station_nm": "MILLER GULCH NR BUFFALO CREEK, CO.",
+      "dec_lat_va": "39.39193365",
+      "dec_long_va": "-105.28471620",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06706800",
+      "station_nm": "BUFFALO CREEK AT MOUTH AT BUFFALO CREEK",
+      "dec_lat_va": "39.39082250",
+      "dec_long_va": "-105.27138250",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06707500",
+      "station_nm": "SOUTH PLATTE RIVER AT SOUTH PLATTE, CO",
+      "dec_lat_va": "39.40915580",
+      "dec_long_va": "-105.16998990",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06708600",
+      "station_nm": "WEST PLUM CREEK NEAR PERRY PARK, CO",
+      "dec_lat_va": "39.25947220",
+      "dec_long_va": "-104.95190280",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06708690",
+      "station_nm": "WEST PLUM CREEK AT SEDALIA, CO",
+      "dec_lat_va": "39.42927778",
+      "dec_long_va": "-104.96777780",
+      "coord_acy_cd": "1",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06708800",
+      "station_nm": "EAST PLUM CR ABV HASKINS GULCH NR CASTLE ROCK, CO",
+      "dec_lat_va": "39.42300000",
+      "dec_long_va": "-104.90461110",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06709000",
+      "station_nm": "PLUM CREEK NEAR SEDALIA, CO.",
+      "dec_lat_va": "39.43832246",
+      "dec_long_va": "-104.98303870",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06709530",
+      "station_nm": "PLUM CREEK AT TITAN ROAD NEAR LOUVIERS, CO",
+      "dec_lat_va": "39.50736944",
+      "dec_long_va": "-105.02446670",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06709740",
+      "station_nm": "LEE GULCH AT LITTLETON, CO",
+      "dec_lat_va": "39.59611110",
+      "dec_long_va": "-105.01602780",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06709910",
+      "station_nm": "DUTCH CR AT PLATTE CANYON DRIVE NEAR LITTLETON, CO",
+      "dec_lat_va": "39.60011110",
+      "dec_long_va": "-105.04192220",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06710150",
+      "station_nm": "BIG DRY CREEK BELOW C-470 AT HIGHLANDS RANCH, CO",
+      "dec_lat_va": "39.56332160",
+      "dec_long_va": "-104.92775800",
+      "coord_acy_cd": "R",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06710247",
+      "station_nm": "SOUTH PLATTE RIVER BELOW UNION AVE, AT ENGLEWOOD,C",
+      "dec_lat_va": "39.63248760",
+      "dec_long_va": "-105.01498300",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06710385",
+      "station_nm": "BEAR CREEK ABOVE EVERGREEN, CO",
+      "dec_lat_va": "39.63316667",
+      "dec_long_va": "-105.33694440",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06710500",
+      "station_nm": "BEAR CREEK AT MORRISON, CO",
+      "dec_lat_va": "39.65304330",
+      "dec_long_va": "-105.19582190",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06710605",
+      "station_nm": "BEAR CREEK ABOVE BEAR CREEK LAKE NEAR MORRISON, CO",
+      "dec_lat_va": "39.65202778",
+      "dec_long_va": "-105.17325000",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06710992",
+      "station_nm": "TURKEY CREEK NEAR INDIAN HILLS, CO",
+      "dec_lat_va": "39.61748790",
+      "dec_long_va": "-105.22387860",
+      "coord_acy_cd": "R",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06710995",
+      "station_nm": "TURKEY CR. AT MOUTH OF CANYON, NR. MORRISON, CO",
+      "dec_lat_va": "39.62026566",
+      "dec_long_va": "-105.19526660",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06711040",
+      "station_nm": "TURKEY CREEK ABOVE BEAR CREEK LAKE NEAR MORRISON C",
+      "dec_lat_va": "39.64070830",
+      "dec_long_va": "-105.15935000",
+      "coord_acy_cd": "T",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06711500",
+      "station_nm": "BEAR CREEK AT MOUTH AT SHERIDAN, CO",
+      "dec_lat_va": "39.65220970",
+      "dec_long_va": "-105.03303900",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06711515",
+      "station_nm": "LITTLE DRY CREEK NR ARAPAHOE RD AT CENTENNIAL, CO",
+      "dec_lat_va": "39.59373610",
+      "dec_long_va": "-104.90650000",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06711555",
+      "station_nm": "LITTLE DRY CREEK ABOVE ENGLEWOOD, CO",
+      "dec_lat_va": "39.64915420",
+      "dec_long_va": "-104.97887050",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06711565",
+      "station_nm": "SOUTH PLATTE RIVER AT ENGLEWOOD, CO.",
+      "dec_lat_va": "39.66498738",
+      "dec_long_va": "-105.00414900",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06711570",
+      "station_nm": "HARVARD GULCH AT COLORADO BLVD. AT DENVER, CO",
+      "dec_lat_va": "39.66920278",
+      "dec_long_va": "-104.94250830",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06711575",
+      "station_nm": "HARVARD GULCH AT HARVARD PARK AT DENVER, CO",
+      "dec_lat_va": "39.67172220",
+      "dec_long_va": "-104.97702780",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06711618",
+      "station_nm": "WEIR GULCH UPSTREAM FROM 1ST AVE. AT DENVER, CO",
+      "dec_lat_va": "39.71724720",
+      "dec_long_va": "-105.04201110",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06711770",
+      "station_nm": "DRY GULCH AT DENVER, CO",
+      "dec_lat_va": "39.73437500",
+      "dec_long_va": "-105.03955560",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06711780",
+      "station_nm": "LAKEWOOD GULCH AT DENVER, CO",
+      "dec_lat_va": "39.73519444",
+      "dec_long_va": "-105.03136110",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06712000",
+      "station_nm": "CHERRY CREEK NEAR FRANKTOWN, CO.",
+      "dec_lat_va": "39.35582340",
+      "dec_long_va": "-104.76330920",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06713000",
+      "station_nm": "CHERRY CREEK BELOW CHERRY CREEK LAKE, CO",
+      "dec_lat_va": "39.65359899",
+      "dec_long_va": "-104.86303260",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06713300",
+      "station_nm": "CHERRY CREEK AT GLENDALE, CO",
+      "dec_lat_va": "39.70609840",
+      "dec_long_va": "-104.93747950",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06713500",
+      "station_nm": "CHERRY CREEK AT DENVER, CO.",
+      "dec_lat_va": "39.74248685",
+      "dec_long_va": "-104.99998170",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06714000",
+      "station_nm": "SOUTH PLATTE RIVER AT DENVER, CO.",
+      "dec_lat_va": "39.75989720",
+      "dec_long_va": "-105.00368610",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06714215",
+      "station_nm": "SOUTH PLATTE R AT 64TH AVE. COMMERCE CITY, CO.",
+      "dec_lat_va": "39.81220846",
+      "dec_long_va": "-104.95831290",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06714360",
+      "station_nm": "SAND CRK ABV BURLINGTON DITCH NR COMMERCE CITY, CO",
+      "dec_lat_va": "39.81025000",
+      "dec_long_va": "-104.95033330",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06714400",
+      "station_nm": "S CLEAR CR ABV LOWER CABIN CR RES NR GEORGETOWN,CO",
+      "dec_lat_va": "39.64900556",
+      "dec_long_va": "-105.70748330",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06714500",
+      "station_nm": "S CLEAR CR ABV LWR CABIN CR RES SPILWY NR GEORGTWN",
+      "dec_lat_va": "39.66310000",
+      "dec_long_va": "-105.70632780",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06714800",
+      "station_nm": "LEAVENWORTH CREEK AT MOUTH NEAR GEORGETOWN, CO",
+      "dec_lat_va": "39.68720955",
+      "dec_long_va": "-105.70028210",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06715000",
+      "station_nm": "CLEAR CREEK ABV WEST FORK CLEAR CREEK NR EMPIRE CO",
+      "dec_lat_va": "39.75193190",
+      "dec_long_va": "-105.66194700",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06716100",
+      "station_nm": "WEST FORK CLEAR CREEK ABV MOUTH NR EMPIRE, CO",
+      "dec_lat_va": "39.75887636",
+      "dec_long_va": "-105.66000250",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06716500",
+      "station_nm": "CLEAR CREEK NEAR LAWSON, CO",
+      "dec_lat_va": "39.76582090",
+      "dec_long_va": "-105.62611230",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06717400",
+      "station_nm": "CHICAGO CREEK BLW DEVILS CANYON NR IDAHO SPRGS, CO",
+      "dec_lat_va": "39.71637678",
+      "dec_long_va": "-105.57138830",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06718300",
+      "station_nm": "CLEAR CREEK ABV JOHNSON GULCH NR IDAHO SPRINGS, CO",
+      "dec_lat_va": "39.74637680",
+      "dec_long_va": "-105.43610580",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06718550",
+      "station_nm": "NORTH CLEAR CREEK ABOVE MOUTH NR BLACK HAWK, CO",
+      "dec_lat_va": "39.74887674",
+      "dec_long_va": "-105.39971590",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06719505",
+      "station_nm": "CLEAR CREEK AT GOLDEN, CO",
+      "dec_lat_va": "39.75304299",
+      "dec_long_va": "-105.23526670",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06719560",
+      "station_nm": "LENA GULCH AT LAKEWOOD, CO",
+      "dec_lat_va": "39.74040278",
+      "dec_long_va": "-105.14883330",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06719840",
+      "station_nm": "LITTLE DRY CREEK AT WESTMINSTER, CO",
+      "dec_lat_va": "39.82655278",
+      "dec_long_va": "-105.04006390",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06719845",
+      "station_nm": "LITTLE DRY CRK BLW FEDERAL BLVD AT WESTMINSTER, CO",
+      "dec_lat_va": "39.81936667",
+      "dec_long_va": "-105.02144720",
+      "coord_acy_cd": "T",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06720255",
+      "station_nm": "UVALDA INTERCEPT BL 56TH AV AT ROCKY MTN ARS, CO",
+      "dec_lat_va": "39.79943105",
+      "dec_long_va": "-104.83636360",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06720280",
+      "station_nm": "PEORIA INTERCEPT BL 56TH AV, AT ROCKY MTN ARS, CO",
+      "dec_lat_va": "39.79887546",
+      "dec_long_va": "-104.86164240",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06720285",
+      "station_nm": "HAVANA INTERCEPT BL 56TH AV, AT ROCKY MTN ARS, CO",
+      "dec_lat_va": "39.80109764",
+      "dec_long_va": "-104.86442030",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06720460",
+      "station_nm": "FIRST CR BEL BUCKLEY RD, AT ROCKY MTN ARSENAL, CO",
+      "dec_lat_va": "39.80804210",
+      "dec_long_va": "-104.79386180",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06720480",
+      "station_nm": "FIRST CR AB 96TH AVE, AT ROCKY MTN ARSENAL, CO",
+      "dec_lat_va": "39.86748564",
+      "dec_long_va": "-104.83219630",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06720490",
+      "station_nm": "FIRST CR AT HWY 2, NEAR ROCKY MTN ARSENAL, CO",
+      "dec_lat_va": "39.87776328",
+      "dec_long_va": "-104.85608600",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06720500",
+      "station_nm": "SOUTH PLATTE RIVER AT HENDERSON, CO",
+      "dec_lat_va": "39.92192936",
+      "dec_long_va": "-104.86886400",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06720820",
+      "station_nm": "BIG DRY CREEK AT WESTMINSTER, CO",
+      "dec_lat_va": "39.90568056",
+      "dec_long_va": "-105.03538890",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06720990",
+      "station_nm": "BIG DRY CREEK AT MOUTH NEAR FORT LUPTON, CO",
+      "dec_lat_va": "40.06883330",
+      "dec_long_va": "-104.83198610",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06721000",
+      "station_nm": "SOUTH PLATTE RIVER AT FORT LUPTON, CO.",
+      "dec_lat_va": "40.11609435",
+      "dec_long_va": "-104.81858310",
+      "coord_acy_cd": "R",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06721500",
+      "station_nm": "NORTH ST. VRAIN CREEK NEAR ALLENS PARK, CO.",
+      "dec_lat_va": "40.21887370",
+      "dec_long_va": "-105.52833290",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06724970",
+      "station_nm": "LEFT HAND CREEK AT HOVER ROAD NEAR LONGMONT, CO",
+      "dec_lat_va": "40.13427778",
+      "dec_long_va": "-105.13081940",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06725450",
+      "station_nm": "ST. VRAIN CREEK BELOW LONGMONT, CO",
+      "dec_lat_va": "40.15742220",
+      "dec_long_va": "-105.01539440",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06727410",
+      "station_nm": "FOURMILE CREEK AT LOGAN MILL ROAD NEAR CRISMAN, CO",
+      "dec_lat_va": "40.04202778",
+      "dec_long_va": "-105.36491670",
+      "coord_acy_cd": "1",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06727500",
+      "station_nm": "FOURMILE CREEK AT ORODELL, CO",
+      "dec_lat_va": "40.01866667",
+      "dec_long_va": "-105.32625000",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06730160",
+      "station_nm": "FOURMILE CANYON CREEK NEAR SUNSHINE, CO",
+      "dec_lat_va": "40.05761110",
+      "dec_long_va": "-105.34877780",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06730200",
+      "station_nm": "BOULDER CREEK AT NORTH 75TH ST. NEAR BOULDER, CO",
+      "dec_lat_va": "40.05165184",
+      "dec_long_va": "-105.17887540",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06730400",
+      "station_nm": "COAL CREEK NEAR LOUISVILLE, CO",
+      "dec_lat_va": "39.97609620",
+      "dec_long_va": "-105.11720680",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06730500",
+      "station_nm": "BOULDER CREEK AT MOUTH NEAR LONGMONT, CO",
+      "dec_lat_va": "40.13877778",
+      "dec_long_va": "-105.02022220",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06730525",
+      "station_nm": "ST VRAIN CR BLW BOULDER CR AT HWY 119 NR LONGMONT",
+      "dec_lat_va": "40.16046667",
+      "dec_long_va": "-105.00793610",
+      "coord_acy_cd": "T",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06738000",
+      "station_nm": "BIG THOMPSON RIVER AT MOUTH OF CANYON NR DRAKE, CO",
+      "dec_lat_va": "40.42165038",
+      "dec_long_va": "-105.22665220",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06741510",
+      "station_nm": "BIG THOMPSON RIVER AT LOVELAND, CO.",
+      "dec_lat_va": "40.37859460",
+      "dec_long_va": "-105.06109090",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06746095",
+      "station_nm": "JOE WRIGHT CREEK ABOVE JOE WRIGHT RESERVOIR, CO",
+      "dec_lat_va": "40.53998220",
+      "dec_long_va": "-105.88279000",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06746110",
+      "station_nm": "JOE WRIGHT CREEK BELOW JOE WRIGHT RESERVOIR, CO",
+      "dec_lat_va": "40.56192640",
+      "dec_long_va": "-105.86390000",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06751150",
+      "station_nm": "N FK CACHE LA POUDRE R BLW HALLIGAN RES NR VA DALE",
+      "dec_lat_va": "40.87831637",
+      "dec_long_va": "-105.33804110",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06751490",
+      "station_nm": "NORTH FORK CACHE LA POUDRE RIVER AT LIVERMORE, CO",
+      "dec_lat_va": "40.78748150",
+      "dec_long_va": "-105.25220470",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06752000",
+      "station_nm": "CACHE LA POUDRE RIV AT MO OF CN, NR FT COLLINS, CO",
+      "dec_lat_va": "40.66442620",
+      "dec_long_va": "-105.22442710",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06752260",
+      "station_nm": "CACHE LA POUDRE RIVER AT FORT COLLINS, CO",
+      "dec_lat_va": "40.58808330",
+      "dec_long_va": "-105.06922220",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06752280",
+      "station_nm": "CACHE LA POUDRE RIV AB BOXELDER CRK NR TIMNATH, CO",
+      "dec_lat_va": "40.55192690",
+      "dec_long_va": "-105.01136500",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06753600",
+      "station_nm": "LITTLE OWL CREEK NEAR NUNN, CO",
+      "dec_lat_va": "40.80525000",
+      "dec_long_va": "-104.76219440",
+      "coord_acy_cd": "1",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06753990",
+      "station_nm": "LONETREE CREEK NEAR GREELEY, CO.",
+      "dec_lat_va": "40.44248080",
+      "dec_long_va": "-104.58884870",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06754000",
+      "station_nm": "SOUTH PLATTE RIVER NEAR KERSEY, CO",
+      "dec_lat_va": "40.41192530",
+      "dec_long_va": "-104.56273660",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06758500",
+      "station_nm": "SOUTH PLATTE RIVER NEAR WELDONA, CO",
+      "dec_lat_va": "40.32138889",
+      "dec_long_va": "-103.92027780",
+      "coord_acy_cd": "R",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06759500",
+      "station_nm": "SOUTH PLATTE RIVER AT FORT MORGAN, CO",
+      "dec_lat_va": "40.26840278",
+      "dec_long_va": "-103.80119170",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06764000",
+      "station_nm": "SOUTH PLATTE RIVER AT JULESBURG, CO",
+      "dec_lat_va": "40.97499276",
+      "dec_long_va": "-102.25185170",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "06821360",
+      "station_nm": "ARIKAREE RIVER ABV SPRING CANYON NR IDALIA CO",
+      "dec_lat_va": "39.75193556",
+      "dec_long_va": "-102.41214290",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07079300",
+      "station_nm": "EF ARKANSAS R AT US HIGHWAY 24, NR LEADVILLE, CO.",
+      "dec_lat_va": "39.27248920",
+      "dec_long_va": "-106.30641330",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07081200",
+      "station_nm": "ARKANSAS RIVER NEAR LEADVILLE, CO",
+      "dec_lat_va": "39.24900000",
+      "dec_long_va": "-106.34811110",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07083000",
+      "station_nm": "HALFMOON CREEK NEAR MALTA, CO",
+      "dec_lat_va": "39.17221259",
+      "dec_long_va": "-106.38919260",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07083200",
+      "station_nm": "HALFMOON CR BL HALFMOON DIVERSION NR LEADVILLE, CO",
+      "dec_lat_va": "39.18572220",
+      "dec_long_va": "-106.38336110",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07083710",
+      "station_nm": "ARKANSAS RIVER BELOW EMPIRE GULCH NEAR MALTA, CO",
+      "dec_lat_va": "39.16387980",
+      "dec_long_va": "-106.32002400",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07086000",
+      "station_nm": "ARKANSAS RIVER AT GRANITE, CO.",
+      "dec_lat_va": "39.04277116",
+      "dec_long_va": "-106.26585530",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07087050",
+      "station_nm": "ARKANSAS RIVER BELOW GRANITE, CO",
+      "dec_lat_va": "38.99499430",
+      "dec_long_va": "-106.22029830",
+      "coord_acy_cd": "R",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07091200",
+      "station_nm": "ARKANSAS RIVER NEAR NATHROP, CO",
+      "dec_lat_va": "38.65221880",
+      "dec_long_va": "-106.05112600",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07093700",
+      "station_nm": "ARKANSAS RIVER NEAR WELLSVILLE, CO.",
+      "dec_lat_va": "38.50277496",
+      "dec_long_va": "-105.93973330",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07093740",
+      "station_nm": "BADGER CREEK, UPPER STATION, NEAR HOWARD, CO",
+      "dec_lat_va": "38.65888469",
+      "dec_long_va": "-105.81389420",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07093775",
+      "station_nm": "BADGER CREEK, LOWER STATION, NEAR HOWARD, CO.",
+      "dec_lat_va": "38.46721949",
+      "dec_long_va": "-105.86000830",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07094500",
+      "station_nm": "ARKANSAS RIVER AT PARKDALE, CO.",
+      "dec_lat_va": "38.48721890",
+      "dec_long_va": "-105.37360400",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07096000",
+      "station_nm": "ARKANSAS RIVER AT CANON CITY, CO.",
+      "dec_lat_va": "38.43388674",
+      "dec_long_va": "-105.25721280",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07096250",
+      "station_nm": "FOURMILE CREEK BELOW CRIPPLE CREEK NEAR VICTOR, CO",
+      "dec_lat_va": "38.66388094",
+      "dec_long_va": "-105.22804100",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07097000",
+      "station_nm": "ARKANSAS RIVER AT PORTLAND, CO.",
+      "dec_lat_va": "38.38833418",
+      "dec_long_va": "-105.01609610",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07099050",
+      "station_nm": "BEAVER CR ABV UPPER BEAVER CEMETERY NR PENROSE, CO",
+      "dec_lat_va": "38.56166228",
+      "dec_long_va": "-105.02192570",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07099060",
+      "station_nm": "BEAVER CREEK ABOVE HIGHWAY 115 NEAR PENROSE, CO",
+      "dec_lat_va": "38.48916580",
+      "dec_long_va": "-104.99748320",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07099080",
+      "station_nm": "RED CREEK BELOW SULLIVAN PARK AT FORT CARSON, CO",
+      "dec_lat_va": "38.49972220",
+      "dec_long_va": "-104.91333330",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07099085",
+      "station_nm": "RED CREEK ABOVE SALT CANYON AT FORT CARSON, CO",
+      "dec_lat_va": "38.47897220",
+      "dec_long_va": "-104.94055560",
+      "coord_acy_cd": "B",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07099215",
+      "station_nm": "TURKEY CREEK NEAR FOUNTAIN, CO",
+      "dec_lat_va": "38.61166168",
+      "dec_long_va": "-104.89469900",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07099230",
+      "station_nm": "TURKEY CREEK AB TELLER RES NEAR STONE CITY, CO.",
+      "dec_lat_va": "38.46499989",
+      "dec_long_va": "-104.82720090",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07099235",
+      "station_nm": "TURKEY CREEK NR STONE CITY, CO",
+      "dec_lat_va": "38.43222260",
+      "dec_long_va": "-104.83331250",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07099238",
+      "station_nm": "TELLER RESERVOIR SPILLWAY NEAR STONE CITY, CO",
+      "dec_lat_va": "38.43888889",
+      "dec_long_va": "-104.82083330",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07099400",
+      "station_nm": "ARKANSAS RIVER ABOVE PUEBLO, CO",
+      "dec_lat_va": "38.27166940",
+      "dec_long_va": "-104.71803300",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07099970",
+      "station_nm": "ARKANSAS RIVER AT MOFFAT STREET AT PUEBLO, CO",
+      "dec_lat_va": "38.25361396",
+      "dec_long_va": "-104.60608540",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07099973",
+      "station_nm": "ARKANSAS RIVER TRIBUTARY ABOVE HWY 227 AT PUEBLO",
+      "dec_lat_va": "38.25388889",
+      "dec_long_va": "-104.59583330",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07099990",
+      "station_nm": "FOUNTAIN CREEK AT GREEN MOUNTAIN FALLS, CO",
+      "dec_lat_va": "38.93887944",
+      "dec_long_va": "-105.01581530",
+      "coord_acy_cd": "R",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07100300",
+      "station_nm": "FOUNTAIN CREEK AT CASCADE, CO",
+      "dec_lat_va": "38.89708330",
+      "dec_long_va": "-104.97177780",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07100750",
+      "station_nm": "WALDO CANYON ABV MOUTH NEAR MANITOU SPRINGS, CO",
+      "dec_lat_va": "38.88811110",
+      "dec_long_va": "-104.93569440",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103100",
+      "station_nm": "WILLIAMS CANYON ABV MOUTH NEAR MANITOU SPRINGS, CO",
+      "dec_lat_va": "38.88880278",
+      "dec_long_va": "-104.91882500",
+      "coord_acy_cd": "T",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103700",
+      "station_nm": "FOUNTAIN CREEK NEAR COLORADO SPRINGS, CO.",
+      "dec_lat_va": "38.85471357",
+      "dec_long_va": "-104.87803140",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103702",
+      "station_nm": "CAMP CREEK ABOVE GLEN EYRIE NEAR COLO SPRINGS, CO",
+      "dec_lat_va": "38.90755278",
+      "dec_long_va": "-104.90372780",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103703",
+      "station_nm": "CAMP CREEK AT GARDEN OF THE GODS, CO",
+      "dec_lat_va": "38.87693609",
+      "dec_long_va": "-104.87275430",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103740",
+      "station_nm": "NORTH MONUMENT CRK AT SPRING ST AT PALMER LAKE, CO",
+      "dec_lat_va": "39.11554720",
+      "dec_long_va": "-104.91248160",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103747",
+      "station_nm": "MONUMENT CREEK AT PALMER LAKE, CO",
+      "dec_lat_va": "39.10255556",
+      "dec_long_va": "-104.89227780",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103755",
+      "station_nm": "MONUMENT CREEK BELOW MONUMENT LAKE NR MONUMENT, CO",
+      "dec_lat_va": "39.08750000",
+      "dec_long_va": "-104.87916670",
+      "coord_acy_cd": "1",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103780",
+      "station_nm": "MONUMENT C AB N.GATE BLVD AT USAF ACADEMY, CO.",
+      "dec_lat_va": "39.03102778",
+      "dec_long_va": "-104.84661110",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103784",
+      "station_nm": "GOAT CAMP CREEK ABV RESERVOIR NO. 4 AT USAFA, CO",
+      "dec_lat_va": "39.00888889",
+      "dec_long_va": "-104.89810000",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103785",
+      "station_nm": "DEADMANS CR ABV DEADMANS LAKE AT USAF ACADEMY, CO",
+      "dec_lat_va": "39.02416667",
+      "dec_long_va": "-104.90083330",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103790",
+      "station_nm": "MONUMENT CR BEL SEWAGE TR PLANT AT USAF ACADEMY,CO",
+      "dec_lat_va": "38.98138889",
+      "dec_long_va": "-104.83055560",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103791",
+      "station_nm": "LEHMAN RUN BLW STADIUM BLVD AT USAFA, CO",
+      "dec_lat_va": "39.00007778",
+      "dec_long_va": "-104.83784170",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103792",
+      "station_nm": "RESERVOIR NO. 1 SPILLWAY AT HUSTED RD AT USAFA, CO",
+      "dec_lat_va": "39.00123330",
+      "dec_long_va": "-104.83401110",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103797",
+      "station_nm": "WEST MONUMENT CREEK BELOW RAMPART RESERVOIR, CO",
+      "dec_lat_va": "38.97499176",
+      "dec_long_va": "-104.95553740",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103800",
+      "station_nm": "WEST MONUMENT CREEK AT U.S. AIR FORCE ACADEMY, CO",
+      "dec_lat_va": "38.97054766",
+      "dec_long_va": "-104.90275800",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103930",
+      "station_nm": "WEST MONUMENT CR AT MOUTH AT USAF ACADEMY, CO",
+      "dec_lat_va": "38.95888889",
+      "dec_long_va": "-104.83555560",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103940",
+      "station_nm": "MONUMENT CR AT SOUTH BOUNDARY USAF ACADEMY, CO",
+      "dec_lat_va": "38.95416667",
+      "dec_long_va": "-104.83333330",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103960",
+      "station_nm": "KETTLE CREEK ABOVE USAF ACADEMY, CO",
+      "dec_lat_va": "38.97611110",
+      "dec_long_va": "-104.79861110",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103965",
+      "station_nm": "PINE CREEK ABV BRIARGATE PKWY,ABV COLO SPRINGS, CO",
+      "dec_lat_va": "38.96750278",
+      "dec_long_va": "-104.79401670",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103970",
+      "station_nm": "MONUMENT CR ABV WOODMEN RD AT COLORADO SPRINGS, CO",
+      "dec_lat_va": "38.93388170",
+      "dec_long_va": "-104.81719920",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103977",
+      "station_nm": "COTTONWOOD CR AT COWPOKE RD. AT COLO SPRINGS, CO",
+      "dec_lat_va": "38.95110464",
+      "dec_long_va": "-104.71358570",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103980",
+      "station_nm": "COTTONWOOD CREEK AT WOODMEN RD NR COLO SPRINGS, CO",
+      "dec_lat_va": "38.93943809",
+      "dec_long_va": "-104.74108630",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103985",
+      "station_nm": "COTTONWOOD CR TRIB AB RANGEWOOD DR AT CO SPRGS, CO",
+      "dec_lat_va": "38.92916040",
+      "dec_long_va": "-104.74719740",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103987",
+      "station_nm": "COTTONWOOD CK AT UNION BLVD, AT COLO SPRINGS, CO",
+      "dec_lat_va": "38.93036110",
+      "dec_long_va": "-104.77615000",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07103990",
+      "station_nm": "COTTONWOOD CREEK AT MOUTH AT PIKEVIEW, CO",
+      "dec_lat_va": "38.92722220",
+      "dec_long_va": "-104.81416670",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07104000",
+      "station_nm": "MONUMENT CREEK AT PIKEVIEW, CO.",
+      "dec_lat_va": "38.91777057",
+      "dec_long_va": "-104.81858770",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07104905",
+      "station_nm": "MONUMENT CREEK AT BIJOU ST. AT COLO. SPRINGS, CO",
+      "dec_lat_va": "38.83721474",
+      "dec_long_va": "-104.82941920",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07105000",
+      "station_nm": "BEAR CREEK NEAR COLORADO SPRINGS, CO",
+      "dec_lat_va": "38.82249078",
+      "dec_long_va": "-104.88858600",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07105490",
+      "station_nm": "CHEYENNE CREEK AT EVANS AVE AT COLORADO SPRINGS,CO",
+      "dec_lat_va": "38.79054685",
+      "dec_long_va": "-104.86414040",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07105500",
+      "station_nm": "FOUNTAIN CREEK AT COLORADO SPRINGS, CO",
+      "dec_lat_va": "38.81638158",
+      "dec_long_va": "-104.82275190",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07105530",
+      "station_nm": "FOUNTAIN CR BLW JANITELL RD BLW COLO. SPRINGS, CO",
+      "dec_lat_va": "38.80304910",
+      "dec_long_va": "-104.79580690",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07105600",
+      "station_nm": "SAND CREEK ABOVE MOUTH AT COLORADO SPRINGS, CO",
+      "dec_lat_va": "38.78832768",
+      "dec_long_va": "-104.77386200",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07105780",
+      "station_nm": "B DITCH DRAIN NEAR SECURITY, CO.",
+      "dec_lat_va": "38.75249500",
+      "dec_long_va": "-104.76247230",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07105800",
+      "station_nm": "FOUNTAIN CREEK AT SECURITY, CO",
+      "dec_lat_va": "38.72944040",
+      "dec_long_va": "-104.73386110",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07105815",
+      "station_nm": "CLOVER DITCH DRAIN AT QUINN ST NR WIDEFIELD, CO",
+      "dec_lat_va": "38.72972220",
+      "dec_long_va": "-104.76763890",
+      "coord_acy_cd": "1",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07105820",
+      "station_nm": "CLOVER DITCH DRAIN NEAR WIDEFIELD, CO.",
+      "dec_lat_va": "38.71860726",
+      "dec_long_va": "-104.72913900",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07105900",
+      "station_nm": "JIMMY CAMP CREEK AT FOUNTAIN, CO.",
+      "dec_lat_va": "38.68444130",
+      "dec_long_va": "-104.68858300",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07105940",
+      "station_nm": "LITTLE FOUNTAIN CREEK NEAR FOUNTAIN, CO",
+      "dec_lat_va": "38.64265000",
+      "dec_long_va": "-104.74838330",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07105945",
+      "station_nm": "ROCK CREEK ABOVE FORT CARSON RESERVATION, CO",
+      "dec_lat_va": "38.70749300",
+      "dec_long_va": "-104.84664030",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07106000",
+      "station_nm": "FOUNTAIN CREEK NEAR FOUNTAIN, CO.",
+      "dec_lat_va": "38.60166470",
+      "dec_long_va": "-104.67025030",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07106200",
+      "station_nm": "FOUNTAIN CREEK ABOVE YOUNG HOLLOW NEAR WIGWAM, CO",
+      "dec_lat_va": "38.50225000",
+      "dec_long_va": "-104.60644440",
+      "coord_acy_cd": "R",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07106300",
+      "station_nm": "FOUNTAIN CREEK NEAR PINON, CO",
+      "dec_lat_va": "38.42944444",
+      "dec_long_va": "-104.59805560",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07106500",
+      "station_nm": "FOUNTAIN CREEK AT PUEBLO, CO.",
+      "dec_lat_va": "38.28778010",
+      "dec_long_va": "-104.60108490",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07107900",
+      "station_nm": "GREENHORN CREEK NEAR RYE, CO.",
+      "dec_lat_va": "37.92056386",
+      "dec_long_va": "-104.95637830",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07108100",
+      "station_nm": "GRANEROS CREEK NEAR RYE, CO",
+      "dec_lat_va": "37.91306400",
+      "dec_long_va": "-104.92582180",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07108900",
+      "station_nm": "ST. CHARLES RIVER AT VINELAND, CO.",
+      "dec_lat_va": "38.24555835",
+      "dec_long_va": "-104.48635970",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07109500",
+      "station_nm": "ARKANSAS RIVER NEAR AVONDALE, CO.",
+      "dec_lat_va": "38.24805799",
+      "dec_long_va": "-104.39913560",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07116500",
+      "station_nm": "HUERFANO RIVER NEAR BOONE, CO.",
+      "dec_lat_va": "38.22500240",
+      "dec_long_va": "-104.26079960",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07119500",
+      "station_nm": "APISHAPA RIVER NEAR FOWLER, CO",
+      "dec_lat_va": "38.10850000",
+      "dec_long_va": "-103.96761110",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07119700",
+      "station_nm": "ARKANSAS RIVER AT CATLIN DAM, NEAR FOWLER, CO.",
+      "dec_lat_va": "38.12583934",
+      "dec_long_va": "-103.91190060",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07121500",
+      "station_nm": "TIMPAS CREEK AT MOUTH NEAR SWINK, CO.",
+      "dec_lat_va": "38.00306440",
+      "dec_long_va": "-103.65605880",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07123000",
+      "station_nm": "ARKANSAS RIVER AT LA JUNTA, CO",
+      "dec_lat_va": "37.99055556",
+      "dec_long_va": "-103.53194440",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07124000",
+      "station_nm": "ARKANSAS RIVER AT LAS ANIMAS, CO.",
+      "dec_lat_va": "38.08083990",
+      "dec_long_va": "-103.21965230",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07124200",
+      "station_nm": "PURGATOIRE RIVER AT MADRID, CO.",
+      "dec_lat_va": "37.12946459",
+      "dec_long_va": "-104.63998880",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07124410",
+      "station_nm": "PURGATOIRE RIVER BELOW TRINIDAD LAKE, CO.",
+      "dec_lat_va": "37.14390846",
+      "dec_long_va": "-104.54776440",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07126140",
+      "station_nm": "VAN BREMER ARROYO NEAR TYRONE, CO",
+      "dec_lat_va": "37.39945990",
+      "dec_long_va": "-104.11580200",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07126200",
+      "station_nm": "VAN BREMER ARROYO NEAR MODEL, CO",
+      "dec_lat_va": "37.34557255",
+      "dec_long_va": "-103.95801860",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07126300",
+      "station_nm": "PURGATOIRE RIVER NEAR THATCHER, CO.",
+      "dec_lat_va": "37.35640590",
+      "dec_long_va": "-103.90023830",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07126325",
+      "station_nm": "TAYLOR ARROYO BL ROCK CROSSING, NR THATCHER, CO.",
+      "dec_lat_va": "37.42418269",
+      "dec_long_va": "-103.92023820",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07126390",
+      "station_nm": "LOCKWOOD CANYON CREEK NEAR THATCHER, CO",
+      "dec_lat_va": "37.49279316",
+      "dec_long_va": "-103.82801140",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07126415",
+      "station_nm": "RED ROCK CANYON CREEK AT MOUTH NR THATCHER, CO.",
+      "dec_lat_va": "37.51529314",
+      "dec_long_va": "-103.72550710",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07126480",
+      "station_nm": "BENT CANYON CREEK AT MOUTH NEAR TIMPAS, CO",
+      "dec_lat_va": "37.58918109",
+      "dec_long_va": "-103.64828150",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07126485",
+      "station_nm": "PURGATOIRE RIVER AT ROCK CROSSING NR TIMPAS, CO.",
+      "dec_lat_va": "37.61834740",
+      "dec_long_va": "-103.59355700",
+      "coord_acy_cd": "R",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07128500",
+      "station_nm": "PURGATOIRE RIVER NEAR LAS ANIMAS, CO",
+      "dec_lat_va": "38.03422220",
+      "dec_long_va": "-103.20141670",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07130500",
+      "station_nm": "ARKANSAS RIVER BELOW JOHN MARTIN RESERVOIR, CO.",
+      "dec_lat_va": "38.06639635",
+      "dec_long_va": "-102.93242280",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07133000",
+      "station_nm": "ARKANSAS RIVER AT LAMAR, CO",
+      "dec_lat_va": "38.10579167",
+      "dec_long_va": "-102.61820560",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07134100",
+      "station_nm": "BIG SANDY CREEK NEAR LAMAR, CO.",
+      "dec_lat_va": "38.11417565",
+      "dec_long_va": "-102.48380230",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07134180",
+      "station_nm": "ARKANSAS RIVER NEAR GRANADA, CO.",
+      "dec_lat_va": "38.09556490",
+      "dec_long_va": "-102.31074530",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "07134990",
+      "station_nm": "WILD HORSE CREEK ABOVE HOLLY, CO",
+      "dec_lat_va": "38.05702778",
+      "dec_long_va": "-102.13847220",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "08217500",
+      "station_nm": "RIO GRANDE AT WAGON WHEEL GAP, CO",
+      "dec_lat_va": "37.76694638",
+      "dec_long_va": "-106.83143300",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "08219500",
+      "station_nm": "SOUTH FORK RIO GRANDE AT SOUTH FORK, CO",
+      "dec_lat_va": "37.65694884",
+      "dec_long_va": "-106.64920820",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "08220000",
+      "station_nm": "RIO GRANDE NEAR DEL NORTE, CO",
+      "dec_lat_va": "37.68861110",
+      "dec_long_va": "-106.45986110",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "08224500",
+      "station_nm": "KERBER CR ABV LITTLE KERBER CR NR VILLA GROVE, CO",
+      "dec_lat_va": "38.22027745",
+      "dec_long_va": "-106.08974100",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "08227000",
+      "station_nm": "SAGUACHE CREEK NEAR SAGUACHE, CO",
+      "dec_lat_va": "38.16333294",
+      "dec_long_va": "-106.29058300",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "08231000",
+      "station_nm": "LA GARITA CREEK NEAR LA GARITA, CO",
+      "dec_lat_va": "37.81333480",
+      "dec_long_va": "-106.31864400",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "08242500",
+      "station_nm": "UTE CREEK NEAR FORT GARLAND, CO",
+      "dec_lat_va": "37.44722220",
+      "dec_long_va": "-105.42583330",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "08245000",
+      "station_nm": "CONEJOS RIVER BELOW PLATORO RESERVOIR, CO",
+      "dec_lat_va": "37.35490278",
+      "dec_long_va": "-106.54416670",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "08246500",
+      "station_nm": "CONEJOS RIVER NEAR MOGOTE, CO.",
+      "dec_lat_va": "37.05390016",
+      "dec_long_va": "-106.18752690",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "08249000",
+      "station_nm": "CONEJOS RIVER NEAR LASAUSES, CO",
+      "dec_lat_va": "37.30028754",
+      "dec_long_va": "-105.74696270",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "08250000",
+      "station_nm": "CULEBRA CREEK AT SAN LUIS, CO",
+      "dec_lat_va": "37.18388889",
+      "dec_long_va": "-105.42583330",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "08251500",
+      "station_nm": "RIO GRANDE NEAR LOBATOS, CO",
+      "dec_lat_va": "37.07861110",
+      "dec_long_va": "-105.75694440",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09010500",
+      "station_nm": "COLORADO RIVER BELOW BAKER GULCH NR GRAND LAKE, CO",
+      "dec_lat_va": "40.32581784",
+      "dec_long_va": "-105.85667910",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09012500",
+      "station_nm": "NORTH INLET AT GRAND LAKE, CO",
+      "dec_lat_va": "40.25085000",
+      "dec_long_va": "-105.81444440",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09014050",
+      "station_nm": "GRAND LAKE OUTLET BLW CHIPMUNK LN AT GRAND LK, CO",
+      "dec_lat_va": "40.24611110",
+      "dec_long_va": "-105.82883330",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09015000",
+      "station_nm": "COLORADO RIVER BL SHADOW MOUNTAIN RESERVOIR, CO.",
+      "dec_lat_va": "40.20519444",
+      "dec_long_va": "-105.83756110",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09016500",
+      "station_nm": "ARAPAHO CREEK AT MONARCH LAKE OUTLET, CO",
+      "dec_lat_va": "40.11248610",
+      "dec_long_va": "-105.74972970",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09019000",
+      "station_nm": "COLORADO RIVER BELOW LAKE GRANBY, CO.",
+      "dec_lat_va": "40.14415240",
+      "dec_long_va": "-105.86723480",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09019500",
+      "station_nm": "COLORADO RIVER NEAR GRANBY, CO",
+      "dec_lat_va": "40.12081915",
+      "dec_long_va": "-105.90056940",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09021000",
+      "station_nm": "WILLOW CREEK BELOW WILLOW CREEK RESERVOIR, CO.",
+      "dec_lat_va": "40.14581899",
+      "dec_long_va": "-105.94001560",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09022000",
+      "station_nm": "FRASER RIVER AT UPPER STA, NEAR WINTER PARK, CO.",
+      "dec_lat_va": "39.84582040",
+      "dec_long_va": "-105.75195070",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09024000",
+      "station_nm": "FRASER RIVER AT WINTER PARK, CO.",
+      "dec_lat_va": "39.89998695",
+      "dec_long_va": "-105.77667410",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09025000",
+      "station_nm": "VASQUEZ CREEK AT WINTER PARK, CO",
+      "dec_lat_va": "39.92026468",
+      "dec_long_va": "-105.78528570",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09025300",
+      "station_nm": "ELK CREEK AT UPPER STATION, NEAR FRASER, CO",
+      "dec_lat_va": "39.88943120",
+      "dec_long_va": "-105.83250980",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09026500",
+      "station_nm": "ST. LOUIS CREEK NEAR FRASER, CO.",
+      "dec_lat_va": "39.90998657",
+      "dec_long_va": "-105.87834510",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09027100",
+      "station_nm": "FRASER RIVER AT TABERNASH, CO",
+      "dec_lat_va": "39.99033330",
+      "dec_long_va": "-105.82977780",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09032000",
+      "station_nm": "RANCH CREEK NEAR FRASER, CO.",
+      "dec_lat_va": "39.94998694",
+      "dec_long_va": "-105.76556270",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09032050",
+      "station_nm": "LITTLE CABIN CREEK NEAR TABERNASH, CO",
+      "dec_lat_va": "39.97454444",
+      "dec_long_va": "-105.73953610",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09032100",
+      "station_nm": "CABIN CREEK NEAR FRASER, CO.",
+      "dec_lat_va": "39.98582030",
+      "dec_long_va": "-105.74500640",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09032200",
+      "station_nm": "HAMILTON CREEK NEAR TABERNASH, CO",
+      "dec_lat_va": "39.99727778",
+      "dec_long_va": "-105.74680560",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09032300",
+      "station_nm": "HURD CREEK NEAR TABERNASH, CO",
+      "dec_lat_va": "40.01325000",
+      "dec_long_va": "-105.76169440",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09032400",
+      "station_nm": "TRAIL CREEK NEAR TABERNASH, CO",
+      "dec_lat_va": "40.02841667",
+      "dec_long_va": "-105.78063890",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09032990",
+      "station_nm": "MEADOW CREEK BLW MEADOW CREEK RES NR TABERNASH, CO",
+      "dec_lat_va": "40.05202778",
+      "dec_long_va": "-105.75416670",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09033010",
+      "station_nm": "MEADOW CREEK DIVERSION NEAR TABERNASH, CO",
+      "dec_lat_va": "40.05028610",
+      "dec_long_va": "-105.77970560",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09033100",
+      "station_nm": "RANCH CREEK BLW MEADOW CR NR TABERNASH, CO",
+      "dec_lat_va": "39.99908610",
+      "dec_long_va": "-105.82655830",
+      "coord_acy_cd": "U",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09033300",
+      "station_nm": "FRASER RIVER BLW CROOKED CR AT TABERNASH CO",
+      "dec_lat_va": "40.00689167",
+      "dec_long_va": "-105.84827220",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09034250",
+      "station_nm": "COLORADO RIVER AT WINDY GAP, NEAR GRANBY, CO.",
+      "dec_lat_va": "40.10831900",
+      "dec_long_va": "-106.00418470",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09034900",
+      "station_nm": "BOBTAIL CREEK NEAR JONES PASS, CO",
+      "dec_lat_va": "39.76026447",
+      "dec_long_va": "-105.90640140",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09035500",
+      "station_nm": "WILLIAMS FORK BELOW STEELMAN CREEK, CO.",
+      "dec_lat_va": "39.77887549",
+      "dec_long_va": "-105.92834690",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09035700",
+      "station_nm": "WILLIAMS FORK ABOVE DARLING CREEK, NEAR LEAL, CO",
+      "dec_lat_va": "39.79719444",
+      "dec_long_va": "-106.02563890",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09035800",
+      "station_nm": "DARLING CREEK NEAR LEAL, CO.",
+      "dec_lat_va": "39.80054180",
+      "dec_long_va": "-106.02640660",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09035900",
+      "station_nm": "SOUTH FORK OF WILLIAMS FORK NEAR LEAL, CO",
+      "dec_lat_va": "39.79581958",
+      "dec_long_va": "-106.03057340",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09036000",
+      "station_nm": "WILLIAMS FORK NEAR LEAL, CO.",
+      "dec_lat_va": "39.83387500",
+      "dec_long_va": "-106.05640790",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09037500",
+      "station_nm": "WILLIAMS FORK NEAR PARSHALL, CO",
+      "dec_lat_va": "40.00020000",
+      "dec_long_va": "-106.18036670",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09038500",
+      "station_nm": "WILLIAMS FORK BELOW WILLIAMS FORK RESERVOIR, CO",
+      "dec_lat_va": "40.03592778",
+      "dec_long_va": "-106.20501390",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09041090",
+      "station_nm": "MUDDY CREEK ABOVE ANTELOPE CREEK NR. KREMMLING, CO",
+      "dec_lat_va": "40.20248440",
+      "dec_long_va": "-106.42253350",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09041400",
+      "station_nm": "MUDDY CRK BLW WOLFORD MTN RESER. NR KREMMLING, CO",
+      "dec_lat_va": "40.10859628",
+      "dec_long_va": "-106.41392120",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09041900",
+      "station_nm": "MONTE CRISTO DIVERSION NEAR HOOSIER PASS, CO",
+      "dec_lat_va": "39.38082156",
+      "dec_long_va": "-106.07140820",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09044300",
+      "station_nm": "BEMROSE-HOOSIER DIVERSION NEAR HOOSIER PASS, CO",
+      "dec_lat_va": "39.38054378",
+      "dec_long_va": "-106.07085260",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09044800",
+      "station_nm": "MCCULLOUGH-SP-CRYS-DIVERSION NEAR HOOSIER PASS, CO",
+      "dec_lat_va": "39.38082156",
+      "dec_long_va": "-106.07113040",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09046400",
+      "station_nm": "INDIANA CREEK ABOVE MOUTH AT BLUE RIVER, CO",
+      "dec_lat_va": "39.44944444",
+      "dec_long_va": "-106.02361110",
+      "coord_acy_cd": "R",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09046490",
+      "station_nm": "BLUE RIVER AT BLUE RIVER, CO.",
+      "dec_lat_va": "39.45582067",
+      "dec_long_va": "-106.03168490",
+      "coord_acy_cd": "R",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09046530",
+      "station_nm": "FRENCH GULCH AT BRECKENRIDGE, CO",
+      "dec_lat_va": "39.49304240",
+      "dec_long_va": "-106.04474090",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09046600",
+      "station_nm": "BLUE RIVER NEAR DILLON, CO",
+      "dec_lat_va": "39.56665329",
+      "dec_long_va": "-106.04946320",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09047500",
+      "station_nm": "SNAKE RIVER NEAR MONTEZUMA, CO",
+      "dec_lat_va": "39.60536110",
+      "dec_long_va": "-105.94313060",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09047700",
+      "station_nm": "KEYSTONE GULCH NEAR DILLON, CO.",
+      "dec_lat_va": "39.59443117",
+      "dec_long_va": "-105.97251580",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09050100",
+      "station_nm": "TENMILE CREEK BL NORTH TENMILE C, AT FRISCO, CO.",
+      "dec_lat_va": "39.57526424",
+      "dec_long_va": "-106.11057650",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09050700",
+      "station_nm": "BLUE RIVER BELOW DILLON, CO.",
+      "dec_lat_va": "39.62554200",
+      "dec_long_va": "-106.06640820",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09051050",
+      "station_nm": "STRAIGHT CR BLW LASKEY GULCH NR DILLON, CO",
+      "dec_lat_va": "39.63970870",
+      "dec_long_va": "-106.04029600",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09056500",
+      "station_nm": "ELLIOTT CREEK FEEDER CANAL TO GREEN MTN RES, CO",
+      "dec_lat_va": "39.87372500",
+      "dec_long_va": "-106.33059720",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09057500",
+      "station_nm": "BLUE RIVER BELOW GREEN MOUNTAIN RESERVOIR, CO",
+      "dec_lat_va": "39.88026354",
+      "dec_long_va": "-106.33391750",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09058000",
+      "station_nm": "COLORADO RIVER NEAR KREMMLING, CO",
+      "dec_lat_va": "40.03665248",
+      "dec_long_va": "-106.44003240",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09058500",
+      "station_nm": "PINEY RIVER BELOW PINEY LAKE, NEAR MINTURN, CO.",
+      "dec_lat_va": "39.70804158",
+      "dec_long_va": "-106.42669680",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09058610",
+      "station_nm": "DICKSON CREEK NEAR VAIL, CO",
+      "dec_lat_va": "39.70411110",
+      "dec_long_va": "-106.45725000",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09058700",
+      "station_nm": "FREEMAN CREEK NEAR MINTURN, CO.",
+      "dec_lat_va": "39.69831939",
+      "dec_long_va": "-106.44558600",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09058800",
+      "station_nm": "EAST MEADOW CREEK NEAR MINTURN CO.",
+      "dec_lat_va": "39.73165269",
+      "dec_long_va": "-106.42669690",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09059500",
+      "station_nm": "PINEY RIVER NEAR STATE BRIDGE, CO",
+      "dec_lat_va": "39.79572220",
+      "dec_long_va": "-106.57434720",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09060799",
+      "station_nm": "COLORADO RIVER AT CATAMOUNT BRIDGE, CO",
+      "dec_lat_va": "39.89110000",
+      "dec_long_va": "-106.83169440",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09061600",
+      "station_nm": "EAST FORK EAGLE RIVER NEAR CLIMAX, CO",
+      "dec_lat_va": "39.41026540",
+      "dec_long_va": "-106.24974680",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09063000",
+      "station_nm": "EAGLE RIVER AT RED CLIFF, CO.",
+      "dec_lat_va": "39.50831949",
+      "dec_long_va": "-106.36669480",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09063200",
+      "station_nm": "WEARYMAN CREEK NEAR RED CLIFF, CO.",
+      "dec_lat_va": "39.52220840",
+      "dec_long_va": "-106.32363840",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09063400",
+      "station_nm": "TURKEY CREEK NEAR RED CLIFF, CO",
+      "dec_lat_va": "39.52260278",
+      "dec_long_va": "-106.33655000",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09063900",
+      "station_nm": "MISSOURI CREEK NEAR GOLD PARK, CO.",
+      "dec_lat_va": "39.39026486",
+      "dec_long_va": "-106.47002940",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09064000",
+      "station_nm": "HOMESTAKE CREEK AT GOLD PARK, CO.",
+      "dec_lat_va": "39.40554260",
+      "dec_long_va": "-106.43336200",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09064500",
+      "station_nm": "HOMESTAKE CREEK NEAR RED CLIFF, CO.",
+      "dec_lat_va": "39.47331980",
+      "dec_long_va": "-106.36780560",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09064600",
+      "station_nm": "EAGLE RIVER NEAR MINTURN, CO",
+      "dec_lat_va": "39.55387495",
+      "dec_long_va": "-106.40252900",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09065100",
+      "station_nm": "CROSS CREEK NEAR MINTURN, CO",
+      "dec_lat_va": "39.56829167",
+      "dec_long_va": "-106.41243060",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09065500",
+      "station_nm": "GORE CREEK AT UPPER STATION, NEAR MINTURN, CO.",
+      "dec_lat_va": "39.62581930",
+      "dec_long_va": "-106.27808230",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09066000",
+      "station_nm": "BLACK GORE CREEK NEAR MINTURN, CO.",
+      "dec_lat_va": "39.59637495",
+      "dec_long_va": "-106.26502640",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09066100",
+      "station_nm": "BIGHORN CREEK NEAR MINTURN, CO",
+      "dec_lat_va": "39.63998590",
+      "dec_long_va": "-106.29336050",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09066150",
+      "station_nm": "PITKIN CREEK NEAR MINTURN, CO.",
+      "dec_lat_va": "39.64359705",
+      "dec_long_va": "-106.30252730",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09066200",
+      "station_nm": "BOOTH CREEK NEAR MINTURN, CO.",
+      "dec_lat_va": "39.64831927",
+      "dec_long_va": "-106.32308330",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09066300",
+      "station_nm": "MIDDLE CREEK NEAR MINTURN, CO.",
+      "dec_lat_va": "39.64581930",
+      "dec_long_va": "-106.38225120",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09066325",
+      "station_nm": "GORE CREEK ABV RED SANDSTONE CREEK AT VAIL, CO",
+      "dec_lat_va": "39.64109710",
+      "dec_long_va": "-106.39475150",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09066400",
+      "station_nm": "RED SANDSTONE CREEK NEAR MINTURN, CO.",
+      "dec_lat_va": "39.68276376",
+      "dec_long_va": "-106.40141840",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09066510",
+      "station_nm": "GORE CREEK AT MOUTH NEAR MINTURN, CO",
+      "dec_lat_va": "39.60943048",
+      "dec_long_va": "-106.44780800",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09067000",
+      "station_nm": "BEAVER CREEK AT AVON, CO",
+      "dec_lat_va": "39.62970826",
+      "dec_long_va": "-106.52280960",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09067020",
+      "station_nm": "EAGLE R BLW WASTEWATER TREATMENT PLANT AT AVON, CO",
+      "dec_lat_va": "39.63486110",
+      "dec_long_va": "-106.53194440",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09067200",
+      "station_nm": "LAKE CREEK NEAR EDWARDS, CO",
+      "dec_lat_va": "39.64748600",
+      "dec_long_va": "-106.60920030",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09070000",
+      "station_nm": "EAGLE RIVER BELOW GYPSUM, CO.",
+      "dec_lat_va": "39.64942954",
+      "dec_long_va": "-106.95365540",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09070500",
+      "station_nm": "COLORADO RIVER NEAR DOTSERO, CO",
+      "dec_lat_va": "39.64461110",
+      "dec_long_va": "-107.07801390",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09072550",
+      "station_nm": "ROARING FORK RIVER ABV LOST MAN CR NEAR ASPEN, CO",
+      "dec_lat_va": "39.11936110",
+      "dec_long_va": "-106.62391670",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09073005",
+      "station_nm": "LINCOLN CREEK BELOW GRIZZLY RESERVOIR NR ASPEN, CO",
+      "dec_lat_va": "39.08023610",
+      "dec_long_va": "-106.61658330",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09073300",
+      "station_nm": "ROARING FORK RIVER AB DIFFICULT C NR ASPEN, CO.",
+      "dec_lat_va": "39.14109959",
+      "dec_long_va": "-106.77420390",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09073400",
+      "station_nm": "ROARING FORK RIVER NEAR ASPEN, CO.",
+      "dec_lat_va": "39.17998755",
+      "dec_long_va": "-106.80198260",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09073721",
+      "station_nm": "HUNTER CREEK CONDUIT BYPASS NEAR ASPEN, CO",
+      "dec_lat_va": "39.20756944",
+      "dec_long_va": "-106.68039170",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09073791",
+      "station_nm": "MIDWAY CREEK CONDUIT BYPASS NEAR ASPEN, CO",
+      "dec_lat_va": "39.19102778",
+      "dec_long_va": "-106.68590000",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09073891",
+      "station_nm": "NO NAME CREEK CONDUIT BYPASS NEAR ASPEN, CO",
+      "dec_lat_va": "39.18360738",
+      "dec_long_va": "-106.71985770",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09074000",
+      "station_nm": "HUNTER CREEK NEAR ASPEN, CO",
+      "dec_lat_va": "39.20582037",
+      "dec_long_va": "-106.79753800",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09074500",
+      "station_nm": "HUNTER CREEK AT ASPEN, CO",
+      "dec_lat_va": "39.19688889",
+      "dec_long_va": "-106.81891670",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09075400",
+      "station_nm": "CASTLE CREEK AT ASPEN, CO",
+      "dec_lat_va": "39.19383330",
+      "dec_long_va": "-106.83366670",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09076000",
+      "station_nm": "MAROON CREEK NEAR ASPEN, CO.",
+      "dec_lat_va": "39.16340830",
+      "dec_long_va": "-106.88074720",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09076300",
+      "station_nm": "ROARING FORK RIVER BLW MAROON CREEK NR ASPEN, CO",
+      "dec_lat_va": "39.22320000",
+      "dec_long_va": "-106.85730830",
+      "coord_acy_cd": "T",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09078141",
+      "station_nm": "NORTH CUNNINGHAM CREEK CONDUIT BYPASS NR NORRIE,CO",
+      "dec_lat_va": "39.33596219",
+      "dec_long_va": "-106.54421150",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09078475",
+      "station_nm": "LAST CHANCE CREEK NEAR NORRIE, CO",
+      "dec_lat_va": "39.34388889",
+      "dec_long_va": "-106.65652780",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09079450",
+      "station_nm": "LIME CREEK NEAR THOMASVILLE, CO",
+      "dec_lat_va": "39.36041110",
+      "dec_long_va": "-106.68524440",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09080400",
+      "station_nm": "FRYINGPAN RIVER NEAR RUEDI, CO.",
+      "dec_lat_va": "39.36554075",
+      "dec_long_va": "-106.82559480",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09081000",
+      "station_nm": "ROARING FORK RIVER NEAR EMMA, CO",
+      "dec_lat_va": "39.37331729",
+      "dec_long_va": "-107.08393670",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09081600",
+      "station_nm": "CRYSTAL RIVER ABV AVALANCHE CRK, NEAR REDSTONE, CO",
+      "dec_lat_va": "39.23263889",
+      "dec_long_va": "-107.22750000",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09083800",
+      "station_nm": "CRYSTAL RIVER BELOW CARBONDALE, CO",
+      "dec_lat_va": "39.40803866",
+      "dec_long_va": "-107.23033000",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09085000",
+      "station_nm": "ROARING FORK RIVER AT GLENWOOD SPRINGS, CO.",
+      "dec_lat_va": "39.54359307",
+      "dec_long_va": "-107.32949840",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09085100",
+      "station_nm": "COLORADO RIVER BELOW GLENWOOD SPRINGS, CO",
+      "dec_lat_va": "39.55498190",
+      "dec_long_va": "-107.33755400",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09089500",
+      "station_nm": "WEST DIVIDE CREEK NEAR RAVEN, CO",
+      "dec_lat_va": "39.33109185",
+      "dec_long_va": "-107.58005620",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09095300",
+      "station_nm": "DRY FORK AT UPPER STATION, NEAR DE BEQUE CO.",
+      "dec_lat_va": "39.37470070",
+      "dec_long_va": "-108.31786360",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09095500",
+      "station_nm": "COLORADO RIVER NEAR CAMEO, CO.",
+      "dec_lat_va": "39.23914630",
+      "dec_long_va": "-108.26619460",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09097900",
+      "station_nm": "PLATEAU CREEK BELOW COLLBRAN, CO",
+      "dec_lat_va": "39.23970087",
+      "dec_long_va": "-107.97145900",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09105000",
+      "station_nm": "PLATEAU CREEK NEAR CAMEO, CO",
+      "dec_lat_va": "39.18361110",
+      "dec_long_va": "-108.26833330",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09106150",
+      "station_nm": "COLO RIVER BELOW GRAND VALLEY DIV NR PALISADE, CO",
+      "dec_lat_va": "39.09859226",
+      "dec_long_va": "-108.35508600",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09106200",
+      "station_nm": "LEWIS WASH NEAR GRAND JUNCTION, CO.",
+      "dec_lat_va": "39.06053714",
+      "dec_long_va": "-108.47786830",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09107000",
+      "station_nm": "TAYLOR RIVER AT TAYLOR PARK, CO.",
+      "dec_lat_va": "38.86027127",
+      "dec_long_va": "-106.56669660",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09109000",
+      "station_nm": "TAYLOR RIVER BELOW TAYLOR PARK RESERVOIR, CO.",
+      "dec_lat_va": "38.81832690",
+      "dec_long_va": "-106.60919770",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09110000",
+      "station_nm": "TAYLOR RIVER AT ALMONT, CO.",
+      "dec_lat_va": "38.66443715",
+      "dec_long_va": "-106.84531720",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09110990",
+      "station_nm": "ELK CREEK AT COAL CREEK ABV CRESTED BUTTE, CO",
+      "dec_lat_va": "38.85665000",
+      "dec_long_va": "-107.05977220",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09111250",
+      "station_nm": "COAL CREEK ABV MCCORMICK DTCH AT CRESTED BUTTE, CO",
+      "dec_lat_va": "38.87155556",
+      "dec_long_va": "-106.98529720",
+      "coord_acy_cd": "T",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09111500",
+      "station_nm": "SLATE RIVER NEAR CRESTED BUTTE, CO",
+      "dec_lat_va": "38.86971460",
+      "dec_long_va": "-106.96948900",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09112200",
+      "station_nm": "EAST RIVER BELOW CEMENT CREEK NR CRESTED BUTTE, CO",
+      "dec_lat_va": "38.78415990",
+      "dec_long_va": "-106.87087360",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09112500",
+      "station_nm": "EAST RIVER AT ALMONT, CO",
+      "dec_lat_va": "38.66443715",
+      "dec_long_va": "-106.84809500",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09113500",
+      "station_nm": "OHIO CREEK NEAR BALDWIN, CO.",
+      "dec_lat_va": "38.70304167",
+      "dec_long_va": "-106.99994720",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09113980",
+      "station_nm": "OHIO CREEK ABOVE MOUTH NR GUNNISON, CO",
+      "dec_lat_va": "38.58776960",
+      "dec_long_va": "-106.93143200",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09114500",
+      "station_nm": "GUNNISON RIVER NEAR GUNNISON, CO.",
+      "dec_lat_va": "38.54193567",
+      "dec_long_va": "-106.94976610",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09114520",
+      "station_nm": "GUNNISON RIVER AT GUNNISON WHITEWATER PARK, CO",
+      "dec_lat_va": "38.53327220",
+      "dec_long_va": "-106.94908610",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09115500",
+      "station_nm": "TOMICHI CREEK AT SARGENTS, CO",
+      "dec_lat_va": "38.39502778",
+      "dec_long_va": "-106.42262500",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09118450",
+      "station_nm": "COCHETOPA CREEK BELOW ROCK CREEK NEAR PARLIN, CO",
+      "dec_lat_va": "38.33722220",
+      "dec_long_va": "-106.77361110",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09119000",
+      "station_nm": "TOMICHI CREEK AT GUNNISON, CO",
+      "dec_lat_va": "38.52111110",
+      "dec_long_va": "-106.94095830",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09123450",
+      "station_nm": "LAKE FORK BLW LAKE SAN CRISTOBAL NR LAKE CITY, CO",
+      "dec_lat_va": "37.98436110",
+      "dec_long_va": "-107.29209720",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09124010",
+      "station_nm": "HENSON CREEK AT LAKE CITY, CO",
+      "dec_lat_va": "38.02566944",
+      "dec_long_va": "-107.31634720",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09124500",
+      "station_nm": "LAKE FORK AT GATEVIEW, CO.",
+      "dec_lat_va": "38.29888340",
+      "dec_long_va": "-107.23005570",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09126000",
+      "station_nm": "CIMARRON RIVER NEAR CIMARRON, CO",
+      "dec_lat_va": "38.25819444",
+      "dec_long_va": "-107.54611110",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09127000",
+      "station_nm": "CIMARRON RIVER BLW SQUAW CREEK AT CIMARRON, CO",
+      "dec_lat_va": "38.44694444",
+      "dec_long_va": "-107.55522220",
+      "coord_acy_cd": "1",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09128000",
+      "station_nm": "GUNNISON RIVER BELOW GUNNISON TUNNEL, CO",
+      "dec_lat_va": "38.52915336",
+      "dec_long_va": "-107.64894700",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09129600",
+      "station_nm": "SMITH FORK NEAR LAZEAR, CO",
+      "dec_lat_va": "38.70744444",
+      "dec_long_va": "-107.71013890",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09132095",
+      "station_nm": "ANTHRACITE CREEK ABOVE MOUTH NEAR SOMERSET",
+      "dec_lat_va": "38.93722220",
+      "dec_long_va": "-107.35833330",
+      "coord_acy_cd": "U",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09132500",
+      "station_nm": "NORTH FORK GUNNISON RIVER NEAR SOMERSET, CO.",
+      "dec_lat_va": "38.92582280",
+      "dec_long_va": "-107.43422110",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09132940",
+      "station_nm": "HUBBARD CREEK ABOVE IRON POINT GULCH NR BOWIE, CO",
+      "dec_lat_va": "38.98248738",
+      "dec_long_va": "-107.53172270",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09132960",
+      "station_nm": "HUBBARD CREEK AT HIGHWAY 133 AT MOUTH NR BOWIE, CO",
+      "dec_lat_va": "38.92554385",
+      "dec_long_va": "-107.51838940",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09132985",
+      "station_nm": "E FORK TERROR CR BLW COTTONWOOD STOMP NR BOWIE, CO",
+      "dec_lat_va": "38.96470886",
+      "dec_long_va": "-107.56700100",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09132995",
+      "station_nm": "TERROR CREEK AT MOUTH NEAR BOWIE, CO",
+      "dec_lat_va": "38.90387630",
+      "dec_long_va": "-107.56200120",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09134000",
+      "station_nm": "MINNESOTA CREEK NEAR PAONIA, CO.",
+      "dec_lat_va": "38.86998920",
+      "dec_long_va": "-107.50422270",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09134100",
+      "station_nm": "NORTH FORK GUNNISON RIVER BELOW PAONIA, CO",
+      "dec_lat_va": "38.85750000",
+      "dec_long_va": "-107.62194440",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09135950",
+      "station_nm": "N.F. GUNNISON R BLW LEROUX CR, NR HOTCHKISS, CO",
+      "dec_lat_va": "38.78831784",
+      "dec_long_va": "-107.73978120",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09136100",
+      "station_nm": "NORTH FK GUNNISON RIVER ABOVE MOUTH NR LAZEAR, CO",
+      "dec_lat_va": "38.78516667",
+      "dec_long_va": "-107.83341670",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09143000",
+      "station_nm": "SURFACE CREEK NEAR CEDAREDGE, CO",
+      "dec_lat_va": "38.98470340",
+      "dec_long_va": "-107.85450770",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09143500",
+      "station_nm": "SURFACE CREEK AT CEDAREDGE, CO.",
+      "dec_lat_va": "38.90164870",
+      "dec_long_va": "-107.92117600",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09144250",
+      "station_nm": "GUNNISON RIVER AT DELTA, CO",
+      "dec_lat_va": "38.75303944",
+      "dec_long_va": "-108.07840300",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09146020",
+      "station_nm": "UNCOMPAHGRE RIVER NEAR OURAY, CO",
+      "dec_lat_va": "38.04332665",
+      "dec_long_va": "-107.68311540",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09146200",
+      "station_nm": "UNCOMPAHGRE RIVER NEAR RIDGWAY, CO.",
+      "dec_lat_va": "38.18387910",
+      "dec_long_va": "-107.74589240",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09147000",
+      "station_nm": "DALLAS CREEK NEAR RIDGWAY, CO",
+      "dec_lat_va": "38.17776806",
+      "dec_long_va": "-107.75839270",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09147025",
+      "station_nm": "UNCOMPAHGRE RIVER BELOW RIDGWAY RESERVOIR, CO",
+      "dec_lat_va": "38.24055556",
+      "dec_long_va": "-107.76030560",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09147500",
+      "station_nm": "UNCOMPAHGRE RIVER AT COLONA, CO",
+      "dec_lat_va": "38.33143056",
+      "dec_long_va": "-107.77922500",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09149500",
+      "station_nm": "UNCOMPAHGRE RIVER AT DELTA, CO",
+      "dec_lat_va": "38.74194444",
+      "dec_long_va": "-108.08041670",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09152500",
+      "station_nm": "GUNNISON RIVER NEAR GRAND JUNCTION, CO.",
+      "dec_lat_va": "38.98331575",
+      "dec_long_va": "-108.45064460",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09152520",
+      "station_nm": "CALLOW CREEK AT WHITEWATER, CO",
+      "dec_lat_va": "38.98914900",
+      "dec_long_va": "-108.44870020",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09153290",
+      "station_nm": "REED WASH NEAR MACK, CO.",
+      "dec_lat_va": "39.21136920",
+      "dec_long_va": "-108.80371330",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09163500",
+      "station_nm": "COLORADO RIVER NEAR COLORADO-UTAH STATE LINE",
+      "dec_lat_va": "39.13276047",
+      "dec_long_va": "-109.02705460",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09165000",
+      "station_nm": "DOLORES RIVER BELOW RICO, CO.",
+      "dec_lat_va": "37.63888428",
+      "dec_long_va": "-108.06035170",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09166500",
+      "station_nm": "DOLORES RIVER AT DOLORES, CO.",
+      "dec_lat_va": "37.47249296",
+      "dec_long_va": "-108.49759080",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09166950",
+      "station_nm": "LOST CANYON CREEK NEAR DOLORES, CO.",
+      "dec_lat_va": "37.44610459",
+      "dec_long_va": "-108.46925620",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09168730",
+      "station_nm": "DOLORES RIVER NEAR SLICK ROCK, CO",
+      "dec_lat_va": "38.04443666",
+      "dec_long_va": "-108.90538200",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09169500",
+      "station_nm": "DOLORES RIVER AT BEDROCK, CO",
+      "dec_lat_va": "38.31026750",
+      "dec_long_va": "-108.88538050",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09171100",
+      "station_nm": "DOLORES RIVER NEAR BEDROCK, CO.",
+      "dec_lat_va": "38.35693370",
+      "dec_long_va": "-108.83343470",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09171240",
+      "station_nm": "LAKE FORK SAN MIGUEL RV ABV TROUT LAKE NR OPHIR CO",
+      "dec_lat_va": "37.81783330",
+      "dec_long_va": "-107.87911110",
+      "coord_acy_cd": "T",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09171310",
+      "station_nm": "SOUTH FORK SAN MIGUEL RIVER NEAR OPHIR, CO",
+      "dec_lat_va": "37.87311110",
+      "dec_long_va": "-107.89444440",
+      "coord_acy_cd": "T",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09172500",
+      "station_nm": "SAN MIGUEL RIVER NEAR PLACERVILLE, CO",
+      "dec_lat_va": "38.03070556",
+      "dec_long_va": "-108.11028890",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09174600",
+      "station_nm": "SAN MIGUEL RIVER AT BROOKS BRIDGE NEAR NUCLA CO",
+      "dec_lat_va": "38.24415710",
+      "dec_long_va": "-108.50203430",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09177000",
+      "station_nm": "SAN MIGUEL RIVER AT URAVAN, CO.",
+      "dec_lat_va": "38.35721157",
+      "dec_long_va": "-108.71287500",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09179450",
+      "station_nm": "DOLORES RIVER NEAR GATEWAY, CO",
+      "dec_lat_va": "38.66803889",
+      "dec_long_va": "-108.96551940",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09237450",
+      "station_nm": "YAMPA RIVER ABOVE STAGECOACH RESERVOIR, CO",
+      "dec_lat_va": "40.26426110",
+      "dec_long_va": "-106.89176670",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09237500",
+      "station_nm": "YAMPA RIVER BELOW STAGECOACH RESERVOIR, CO",
+      "dec_lat_va": "40.28654444",
+      "dec_long_va": "-106.82905560",
+      "coord_acy_cd": "T",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09238900",
+      "station_nm": "FISH CR AT UPPER STA NR STEAMBOAT SPRINGS, CO",
+      "dec_lat_va": "40.47497750",
+      "dec_long_va": "-106.78699260",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09239500",
+      "station_nm": "YAMPA RIVER AT STEAMBOAT SPRINGS, CO",
+      "dec_lat_va": "40.48298610",
+      "dec_long_va": "-106.83243060",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09240020",
+      "station_nm": "YAMPA RIVER BELOW SODA CREEK AT STEAMBOAT SPGS, CO",
+      "dec_lat_va": "40.48922220",
+      "dec_long_va": "-106.84152780",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09240900",
+      "station_nm": "ELK RIVER ABOVE CLARK, CO",
+      "dec_lat_va": "40.74330600",
+      "dec_long_va": "-106.85532540",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09241000",
+      "station_nm": "ELK RIVER AT CLARK, CO.",
+      "dec_lat_va": "40.71747260",
+      "dec_long_va": "-106.91588320",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09242500",
+      "station_nm": "ELK RIVER NEAR MILNER, CO.",
+      "dec_lat_va": "40.51469750",
+      "dec_long_va": "-106.95394070",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09243700",
+      "station_nm": "MIDDLE CREEK NEAR OAK CREEK, CO",
+      "dec_lat_va": "40.38553335",
+      "dec_long_va": "-106.99310700",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09243800",
+      "station_nm": "FOIDEL CREEK NEAR OAK CREEK, CO",
+      "dec_lat_va": "40.34581144",
+      "dec_long_va": "-107.08505300",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09243900",
+      "station_nm": "FOIDEL CREEK AT MOUTH NEAR OAK CREEK, CO",
+      "dec_lat_va": "40.39025545",
+      "dec_long_va": "-106.99477380",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09244490",
+      "station_nm": "YAMPA RIVER ABOVE ELKHEAD CREEK NEAR HAYDEN, CO",
+      "dec_lat_va": "40.51793056",
+      "dec_long_va": "-107.39894440",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09246200",
+      "station_nm": "ELKHEAD CREEK ABOVE LONG GULCH, NEAR HAYDEN, CO",
+      "dec_lat_va": "40.59163879",
+      "dec_long_va": "-107.32089330",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09246400",
+      "station_nm": "ELKHEAD CREEK BELOW MAYNARD GULCH, NEAR CRAIG, CO",
+      "dec_lat_va": "40.54472220",
+      "dec_long_va": "-107.39805560",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09246500",
+      "station_nm": "ELKHEAD CREEK NEAR CRAIG, CO",
+      "dec_lat_va": "40.53108290",
+      "dec_long_va": "-107.43617350",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09246920",
+      "station_nm": "FORTIFICATION CREEK NEAR FORTIFICATION, CO",
+      "dec_lat_va": "40.74385785",
+      "dec_long_va": "-107.54089960",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09247600",
+      "station_nm": "YAMPA RIVER BELOW CRAIG, CO.",
+      "dec_lat_va": "40.48080479",
+      "dec_long_va": "-107.61423380",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09249750",
+      "station_nm": "WILLIAMS FORK AT MOUTH, NEAR HAMILTON, CO.",
+      "dec_lat_va": "40.43719419",
+      "dec_long_va": "-107.64784560",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09251000",
+      "station_nm": "YAMPA RIVER NEAR MAYBELL, CO",
+      "dec_lat_va": "40.50274666",
+      "dec_long_va": "-108.03341520",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09251100",
+      "station_nm": "YAMPA RIVER ABV. LITTLE SNAKE R. NR. MAYBELL, CO",
+      "dec_lat_va": "40.46080078",
+      "dec_long_va": "-108.42565280",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09253000",
+      "station_nm": "LITTLE SNAKE RIVER NEAR SLATER, CO",
+      "dec_lat_va": "40.99941048",
+      "dec_long_va": "-107.14338800",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09255000",
+      "station_nm": "SLATER FORK NEAR SLATER, CO",
+      "dec_lat_va": "40.98246570",
+      "dec_long_va": "-107.38283910",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09260000",
+      "station_nm": "LITTLE SNAKE RIVER NEAR LILY, CO",
+      "dec_lat_va": "40.54901667",
+      "dec_long_va": "-108.42432220",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09260050",
+      "station_nm": "YAMPA RIVER AT DEERLODGE PARK, CO",
+      "dec_lat_va": "40.45163387",
+      "dec_long_va": "-108.52510100",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09303000",
+      "station_nm": "NORTH FORK WHITE RIVER AT BUFORD, CO",
+      "dec_lat_va": "39.98747720",
+      "dec_long_va": "-107.61450760",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09304115",
+      "station_nm": "WHITE RIVER BELOW NORTH ELK CREEK NEAR BUFORD, CO",
+      "dec_lat_va": "39.94997674",
+      "dec_long_va": "-107.69478780",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09304200",
+      "station_nm": "WHITE RIVER ABOVE COAL CREEK NEAR MEEKER, CO",
+      "dec_lat_va": "40.00497428",
+      "dec_long_va": "-107.82534860",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09304500",
+      "station_nm": "WHITE RIVER NEAR MEEKER, CO.",
+      "dec_lat_va": "40.03358490",
+      "dec_long_va": "-107.86229460",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09304800",
+      "station_nm": "WHITE RIVER BELOW MEEKER, CO",
+      "dec_lat_va": "40.02258330",
+      "dec_long_va": "-108.11994440",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09306200",
+      "station_nm": "PICEANCE CREEK BL RYAN GULCH, NR RIO BLANCO, CO.",
+      "dec_lat_va": "39.92108330",
+      "dec_long_va": "-108.29758760",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09306222",
+      "station_nm": "PICEANCE CREEK AT WHITE RIVER, CO",
+      "dec_lat_va": "40.07802640",
+      "dec_long_va": "-108.23647530",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09306224",
+      "station_nm": "WHITE RIV AB CROOKED WASH NR WHITE RIVER CITY, CO",
+      "dec_lat_va": "40.16250000",
+      "dec_long_va": "-108.34500000",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09306242",
+      "station_nm": "CORRAL GULCH NEAR RANGELY, CO",
+      "dec_lat_va": "39.92025020",
+      "dec_long_va": "-108.47287190",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09306255",
+      "station_nm": "YELLOW CREEK NEAR WHITE RIVER, CO.",
+      "dec_lat_va": "40.16858130",
+      "dec_long_va": "-108.40120460",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09306290",
+      "station_nm": "WHITE RIVER BELOW BOISE CREEK, NEAR RANGELY, CO.",
+      "dec_lat_va": "40.17969335",
+      "dec_long_va": "-108.56537750",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09339900",
+      "station_nm": "EF SAN JUAN R AB SAND CREEK, NR PAGOSA SPGS, CO.",
+      "dec_lat_va": "37.38972959",
+      "dec_long_va": "-106.84115090",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09342500",
+      "station_nm": "SAN JUAN RIVER AT PAGOSA SPRINGS, CO",
+      "dec_lat_va": "37.26552778",
+      "dec_long_va": "-107.01100000",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09346400",
+      "station_nm": "SAN JUAN RIVER NEAR CARRACAS, CO.",
+      "dec_lat_va": "37.01361667",
+      "dec_long_va": "-107.31226700",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09349800",
+      "station_nm": "PIEDRA RIVER NEAR ARBOLES, CO.",
+      "dec_lat_va": "37.08833797",
+      "dec_long_va": "-107.39782600",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09352800",
+      "station_nm": "LOS PINOS R ABV VALLECITO RES NR BAYFIELD, CO",
+      "dec_lat_va": "37.41472420",
+      "dec_long_va": "-107.51338930",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09352900",
+      "station_nm": "VALLECITO CREEK NEAR BAYFIELD, CO.",
+      "dec_lat_va": "37.47750126",
+      "dec_long_va": "-107.54366880",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09353800",
+      "station_nm": "LOS PINOS RIVER NEAR IGNACIO, CO",
+      "dec_lat_va": "37.16611110",
+      "dec_long_va": "-107.58250000",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09354500",
+      "station_nm": "LOS PINOS RIVER AT LA BOCA, CO.",
+      "dec_lat_va": "37.00944840",
+      "dec_long_va": "-107.59949970",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09355000",
+      "station_nm": "SPRING CREEK AT LA BOCA, CO",
+      "dec_lat_va": "37.01527778",
+      "dec_long_va": "-107.59533330",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09358000",
+      "station_nm": "ANIMAS RIVER AT SILVERTON, CO.",
+      "dec_lat_va": "37.81110770",
+      "dec_long_va": "-107.65922780",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09358550",
+      "station_nm": "CEMENT CREEK AT SILVERTON, CO",
+      "dec_lat_va": "37.81971870",
+      "dec_long_va": "-107.66367230",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09359010",
+      "station_nm": "MINERAL CREEK AT SILVERTON, CO",
+      "dec_lat_va": "37.80277440",
+      "dec_long_va": "-107.67283920",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09359020",
+      "station_nm": "ANIMAS RIVER BELOW SILVERTON, CO",
+      "dec_lat_va": "37.78833330",
+      "dec_long_va": "-107.66822220",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09359080",
+      "station_nm": "CASCADE CR ABV CASCADE CR DIVERSION NR ROCKWOOD CO",
+      "dec_lat_va": "37.66727778",
+      "dec_long_va": "-107.82262500",
+      "coord_acy_cd": "1",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09359082",
+      "station_nm": "CASCADE CR BLW CASCADE CR DIVERSION NR ROCKWOOD CO",
+      "dec_lat_va": "37.66700000",
+      "dec_long_va": "-107.82225000",
+      "coord_acy_cd": "T",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09359500",
+      "station_nm": "ANIMAS RIVER AT TALL TIMBER RESORT ABOVE TACOMA,CO",
+      "dec_lat_va": "37.59741667",
+      "dec_long_va": "-107.77696670",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09361000",
+      "station_nm": "HERMOSA CREEK NEAR HERMOSA, CO.",
+      "dec_lat_va": "37.42196110",
+      "dec_long_va": "-107.84509440",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09361500",
+      "station_nm": "ANIMAS RIVER AT DURANGO, CO",
+      "dec_lat_va": "37.27916880",
+      "dec_long_va": "-107.88034450",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09362520",
+      "station_nm": "ANIMAS RIVER BLW DURANGO PUMP PLANT NR DURANGO, CO",
+      "dec_lat_va": "37.24926389",
+      "dec_long_va": "-107.87258330",
+      "coord_acy_cd": "T",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09362550",
+      "station_nm": "WILSON GULCH NEAR DURANGO, CO",
+      "dec_lat_va": "37.22666667",
+      "dec_long_va": "-107.84286110",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09363500",
+      "station_nm": "ANIMAS RIVER NEAR CEDAR HILL, NM",
+      "dec_lat_va": "37.03656944",
+      "dec_long_va": "-107.87533330",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09365500",
+      "station_nm": "LA PLATA RIVER AT HESPERUS, CO",
+      "dec_lat_va": "37.28972246",
+      "dec_long_va": "-108.04062770",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09366500",
+      "station_nm": "LA PLATA RIVER AT COLORADO-NEW MEXICO STATE LINE",
+      "dec_lat_va": "36.99972239",
+      "dec_long_va": "-108.18868820",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09370600",
+      "station_nm": "MANCOS RIVER AT ANITAS FLAT BELOW MANCOS, CO",
+      "dec_lat_va": "37.25249640",
+      "dec_long_va": "-108.35786180",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09371000",
+      "station_nm": "MANCOS RIVER NEAR TOWAOC, CO.",
+      "dec_lat_va": "37.02749425",
+      "dec_long_va": "-108.74148380",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09371010",
+      "station_nm": "SAN JUAN RIVER AT FOUR CORNERS, CO",
+      "dec_lat_va": "37.00113889",
+      "dec_long_va": "-109.02958330",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09371492",
+      "station_nm": "MUD CREEK AT STATE HIGHWAY 32, NEAR CORTEZ, CO.",
+      "dec_lat_va": "37.31277160",
+      "dec_long_va": "-108.66120670",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09371520",
+      "station_nm": "MCELMO CREEK ABOVE TRAIL CANYON NEAR CORTEZ, CO",
+      "dec_lat_va": "37.32666010",
+      "dec_long_va": "-108.70065270",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09372000",
+      "station_nm": "MCELMO CREEK NEAR COLORADO-UTAH STATE LINE",
+      "dec_lat_va": "37.32415968",
+      "dec_long_va": "-109.01566600",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "09378490",
+      "station_nm": "COAL BED CANYON NEAR DOVE CREEK, CO",
+      "dec_lat_va": "37.81137960",
+      "dec_long_va": "-109.02427590",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "372833105455800",
+      "station_nm": "CLOSED BASIN PROJECT CANAL NEAR ALAMOSA, CO",
+      "dec_lat_va": "37.47583860",
+      "dec_long_va": "-105.76668580",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "373947105421101",
+      "station_nm": "CLOSED BASIN PROJECT CANAL ABV HWY 150 NR MOSCA CO",
+      "dec_lat_va": "37.66311110",
+      "dec_long_va": "-105.70311110",
+      "coord_acy_cd": "1",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "382628104493700",
+      "station_nm": "TURKEY CR WEST SEEP BL TELLER RES NR STONE CITY,CO",
+      "dec_lat_va": "38.44111110",
+      "dec_long_va": "-104.82694440",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "382629104493000",
+      "station_nm": "TURKEY C EAST SEEP BL TELLER RES NR STONE CITY, CO",
+      "dec_lat_va": "38.44138889",
+      "dec_long_va": "-104.82583330",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "383103106594200",
+      "station_nm": "GUNNISON RIVER AT CNTY RD 32 BELOW GUNNISON, CO",
+      "dec_lat_va": "38.51725556",
+      "dec_long_va": "-106.99545000",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "383619104520401",
+      "station_nm": "LYTLE DITCH AT FT. CARSON, CO",
+      "dec_lat_va": "38.60527350",
+      "dec_long_va": "-104.86830990",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "383637104531301",
+      "station_nm": "STROBEL DITCH FROM TURKEY CR AT FT. CARSON, CO",
+      "dec_lat_va": "38.61027298",
+      "dec_long_va": "-104.88747670",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "383926107593001",
+      "station_nm": "LOUTSENHIZER ARROYO AT HWY 50 NEAR OLATHE CO",
+      "dec_lat_va": "38.65720700",
+      "dec_long_va": "-107.99228860",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "383944104474201",
+      "station_nm": "MERRIAMS L. FOUNTAIN DITCH AT FT. CARSON, CO",
+      "dec_lat_va": "38.66249570",
+      "dec_long_va": "-104.79608520",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "383946107595301",
+      "station_nm": "LOUTSENHIZER ARROYO BLW N. RIVER ROAD NR DELTA, CO",
+      "dec_lat_va": "38.66434167",
+      "dec_long_va": "-108.00314170",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "384037104472001",
+      "station_nm": "MERRIAMS ROCK CREEK DITCH AT FT. CARSON, CO",
+      "dec_lat_va": "38.67694000",
+      "dec_long_va": "-104.78941820",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "384047104510301",
+      "station_nm": "RIPLEY DITCH FROM L. FOUNTAIN CR AT FT. CARSON, CO",
+      "dec_lat_va": "38.67971594",
+      "dec_long_va": "-104.85136320",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "384048104504901",
+      "station_nm": "WOMACK DITCH FROM L. FOUNTAIN CR NR FT. CARSON, CO",
+      "dec_lat_va": "38.67999380",
+      "dec_long_va": "-104.84802980",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "384220104503701",
+      "station_nm": "GALE DITCH FROM ROCK CR NR FORT CARSON, CO",
+      "dec_lat_va": "38.70582646",
+      "dec_long_va": "-104.84469580",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "385106106571000",
+      "station_nm": "SLATE R AB BAXTER GL @HWY 135 NR CRESTED BUTTE, CO",
+      "dec_lat_va": "38.85165929",
+      "dec_long_va": "-106.95337730",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "392547106023400",
+      "station_nm": "BLUE RIVER ABV PENNSYLVANIA CR NR BLUE RIVER, CO",
+      "dec_lat_va": "39.42972220",
+      "dec_long_va": "-106.04277780",
+      "coord_acy_cd": "R",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "393109104464500",
+      "station_nm": "CHERRY CREEK NEAR PARKER, CO",
+      "dec_lat_va": "39.51915570",
+      "dec_long_va": "-104.77969750",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "394220106431500",
+      "station_nm": "EAGLE RIVER BELOW MILK CREEK NEAR WOLCOTT, CO",
+      "dec_lat_va": "39.70500000",
+      "dec_long_va": "-106.72583330",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "394308105413800",
+      "station_nm": "CLEAR CR. ABV. GEORGETOWN LAKE NR GEORGETOWN, CO",
+      "dec_lat_va": "39.71887625",
+      "dec_long_va": "-105.69444840",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "394329104490101",
+      "station_nm": "TOLL GATE CREEK ABOVE 6TH AVE AT AURORA, CO",
+      "dec_lat_va": "39.72508889",
+      "dec_long_va": "-104.81789440",
+      "coord_acy_cd": "5",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "394359105411900",
+      "station_nm": "CLEAR CR. BLW. GEORGETOWN LAKE NR GEORGETOWN, CO.",
+      "dec_lat_va": "39.73304294",
+      "dec_long_va": "-105.68917030",
+      "coord_acy_cd": "F",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "394634105465800",
+      "station_nm": "HOOP CREEK AT MOUTH NEAR BERTHOUD FALLS, CO",
+      "dec_lat_va": "39.77609815",
+      "dec_long_va": "-105.78334070",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "394839104570300",
+      "station_nm": "SAND CREEK AT MOUTH NR COMMERCE CITY,CO",
+      "dec_lat_va": "39.81097220",
+      "dec_long_va": "-104.95158330",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "401707105395000",
+      "station_nm": "ICY BROOK-LOCH VALE-RMNP",
+      "dec_lat_va": "40.28666667",
+      "dec_long_va": "-105.66416670",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "401723105400000",
+      "station_nm": "ANDREWS CREEK-LOCH VALE-RMNP",
+      "dec_lat_va": "40.29000000",
+      "dec_long_va": "-105.66666670",
+      "coord_acy_cd": "S",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "401733105392404",
+      "station_nm": "THE LOCH OUTLET - LOCH VALE",
+      "dec_lat_va": "40.29305556",
+      "dec_long_va": "-105.65444440",
+      "coord_acy_cd": "M",
+      "dec_lat_long_datum_cd": "NAD83"
+   },
+   {
+      "site_no": "402114105350101",
+      "station_nm": "BIG THOMPSON BL MORAINE PARK NR ESTES PARK, CO",
+      "dec_lat_va": "40.35387290",
+      "dec_long_va": "-105.58416790",
+      "coord_acy_cd": "R",
+      "dec_lat_long_datum_cd": "NAD83"
+   }
+]

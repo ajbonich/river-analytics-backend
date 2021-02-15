@@ -1,4 +1,0 @@
-Params: [None, False, None, True, True] Accuracy: {'RMSE': 44.45, 'MSE': 1976.08, 'MAE': 29.27, 'MAPE': 0.08}
-Params: [None, False, None, True, False] Accuracy: {'RMSE': 44.45, 'MSE': 1976.04, 'MAE': 29.27, 'MAPE': 0.08}
-Params: [None, False, None, False, True] Accuracy: {'RMSE': 42.58, 'MSE': 1812.89, 'MAE': 28.06, 'MAPE': 0.08}
-Params: [None, False, None, False, False] Accuracy: {'RMSE': 42.58, 'MSE': 1812.78, 'MAE': 28.06, 'MAPE': 0.08}

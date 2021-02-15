@@ -1,5 +1,0 @@
-,Model,Params,RMSE,MAPE,MSE,MAE
-0,ETS,"[None, False, None, True, True]",44.45,0.08,1976.08,29.27
-1,ETS,"[None, False, None, True, False]",44.45,0.08,1976.04,29.27
-2,ETS,"[None, False, None, False, True]",42.58,0.08,1812.89,28.06
-3,ETS,"[None, False, None, False, False]",42.58,0.08,1812.78,28.06

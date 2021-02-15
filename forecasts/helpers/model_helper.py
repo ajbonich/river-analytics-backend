@@ -7,6 +7,7 @@ from sklearn.metrics import (
 import datetime
 import json
 import numpy as np
+import os
 import pandas as pd
 import time
 import urllib3
@@ -111,14 +112,6 @@ def compute_mape(expected: list, predicted: list) -> float:
     return round(mean_absolute_percentage_error(expected, predicted), 2)
 
 
-def create_result_item(
-    model_type: str, model_params: list, test_data: list, predictions: list
-) -> dict:
-    result = {"Model": model_type, "Params": model_params}
-    result.update(compute_model_accuracy(test_data, predictions))
-    return result
-
-
 def write_simple_results_to_file(results: list) -> None:
     current_time = time.strftime("%b-%d-%y_%H-%M-%S", time.localtime())
     with open(f"{current_time}", "w") as f:
@@ -126,18 +119,9 @@ def write_simple_results_to_file(results: list) -> None:
             f.write(f"{result}\n")
 
 
-def save_results(
-    model_type: str,
-    results: pd.DataFrame,
-    number_forecasts: int,
-    train: pd.DataFrame,
-    test: pd.DataFrame,
-    best_forecast: list,
-) -> None:
-
+def create_run_directory():
     current_time = time.strftime("%b-%d-%y_%H-%M-%S", time.localtime())
-    results.to_csv(f"./run_results/{model_type}_{current_time}")
-    figure = plot_train_test_forecast(train, test, best_forecast)
-    figure.savefig(
-        f"./run_results/{model_type}_{number_forecasts}_forecasts_{current_time}.png"
-    )
+    results_directory = f"./run_results/{current_time}"
+    if not os.path.exists(results_directory):
+        os.makedirs(results_directory)
+    return results_directory

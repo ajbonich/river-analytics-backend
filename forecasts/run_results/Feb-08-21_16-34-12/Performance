@@ -1,0 +1,2 @@
+,RMSE,MAPE,MSE,MAE,Model,Steps,Params
+0,46.79,0.1,2189.36,30.75,ETS,3,"['add', True, 'add', True, True]"

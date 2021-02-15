@@ -1,0 +1,5 @@
+,Model,Params,RMSE,MAPE,MSE,MAE
+0,ETS,"['add', True, 'add', True, True]",99.92,0.18,9983.47,68.02
+1,ETS,"['add', True, 'add', True, True]",136.73,0.24,18694.43,95.8
+2,ETS,"['add', True, 'add', True, True]",79.18,0.17,6269.45,54.04
+3,ETS,"['add', True, 'add', True, True]",140.8,0.26,19824.52,96.25
