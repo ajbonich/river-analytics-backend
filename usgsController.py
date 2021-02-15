@@ -74,9 +74,12 @@ def getDailyAverageData(event, object):
 
     data = getUSGSData(testDataFlag, siteId, startDate, endDate, parameter)
     cleanData = cleanUSGSData(data)
-    returnData = pd.DataFrame(cleanData.mean(axis=1), columns=["average"])
+    returnData = pd.DataFrame(cleanData.mean(axis=1).astype(int), columns=["average"])
     returnData["middleFifty"] = list(
-        zip(cleanData.quantile(0.25, axis=1), cleanData.quantile(0.75, axis=1))
+        zip(
+            cleanData.quantile(0.25, axis=1).astype(int),
+            cleanData.quantile(0.75, axis=1).astype(int),
+        )
     )
     return formatOutput(returnData)
 
@@ -131,7 +134,7 @@ def formatOutput(data: pd.DataFrame, decimals: int = 0) -> dict:
             "Access-Control-Allow-Headers": "Content-Type",
             "Access-Control-Allow-Methods": "GET",
         },
-        "body": data.round(0).reset_index().to_json(orient="records"),
+        "body": data.reset_index().to_json(orient="records"),
     }
 
     return response
