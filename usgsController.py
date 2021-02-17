@@ -22,10 +22,7 @@ defaultMaxFlow = 1000
 
 defaultStatsDate = datetime.date(1000, 6, 4)
 
-# app = Flask(__name__)
 
-
-# @app.after_request
 def add_headers(response):
     response.headers["Access-Control-Allow-Origin"] = "*"
     response.headers["Access-Control-Allow-Headers"] = "Content-Type"
@@ -36,7 +33,6 @@ def add_headers(response):
 # test from console with exec(open('usgs-controller.py').read())
 
 
-# @app.route('/')
 def getUSGSDefaultData(event, object):
     cleanData = cleanUSGSData(getUSGSData())
     print("Data cleaned")
@@ -44,7 +40,6 @@ def getUSGSDefaultData(event, object):
     return formatOutput(avg)
 
 
-# @app.route('/getDailyAverageData')
 def getDailyAverageData(event, object):
     """Makes a usgs call with given or default parameters
     to create a clean dataframe object"""
@@ -84,7 +79,6 @@ def getDailyAverageData(event, object):
     return formatOutput(returnData)
 
 
-# @ app.route('/getRunnablePercentages')
 def getDailyRunnablePercentage(event, object):
     """Takes in a mimimum and maximum value for the section and returns
     a graph displaying the odds the section is runnable for each day
