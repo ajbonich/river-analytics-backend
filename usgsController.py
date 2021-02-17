@@ -48,39 +48,38 @@ def getUSGSDefaultData(event, object):
 def getDailyAverageData(event, object):
     """Makes a usgs call with given or default parameters
     to create a clean dataframe object"""
-
     try:
         siteId = event["queryStringParameters"]["siteId"]
-    except:  # noqa
+    except Exception:
         siteId = defaultSiteId
 
     try:
         startDate = event["queryStringParameters"]["startDate"]
-    except:  # noqa
-        startDate = defaultStartDate  # included for future ability to filter on years
+    except Exception:
+        startDate = defaultStartDate
 
     try:
         endDate = event["queryStringParameters"]["endDate"]
-    except:  # noqa
-        endDate = defaultEndDate  # included for future ability to filter on years
-
+    except Exception:
+        endDate = defaultEndDate
     try:
-        gaugeParameter = event["queryStringParameters"]["gaugeParameter"]
-    except:  # noqa
-        # included for future ability to use other params
-        gaugeParameter = defaultParameter
+        parameter = event["queryStringParameters"]["gaugeParameter"]
+    except Exception:
+        parameter = defaultParameter
 
     try:
         testDataFlag = event["queryStringParameters"]["testDataFlag"]
-    except:  # noqa
+    except Exception:
         testDataFlag = False
 
-    data = getUSGSData(testDataFlag, siteId, startDate, endDate, gaugeParameter)
+    data = getUSGSData(testDataFlag, siteId, startDate, endDate, parameter)
     cleanData = cleanUSGSData(data)
-    returnData = pd.DataFrame(cleanData.mean(axis=1), columns=["average"])
-    returnData["quantile20"] = cleanData.quantile(0.2, axis=1)
-    returnData["quantile80minus20"] = (
-        cleanData.quantile(0.8, axis=1) - returnData["quantile20"]
+    returnData = pd.DataFrame(cleanData.mean(axis=1).astype(int), columns=["average"])
+    returnData["middleFifty"] = list(
+        zip(
+            cleanData.quantile(0.25, axis=1).astype(int),
+            cleanData.quantile(0.75, axis=1).astype(int),
+        )
     )
     return formatOutput(returnData)
 
@@ -93,22 +92,22 @@ def getDailyRunnablePercentage(event, object):
 
     try:
         siteId = event["queryStringParameters"]["siteId"]
-    except:  # noqa
+    except Exception:
         siteId = defaultSiteId
 
     try:
         minFlow = int(event["queryStringParameters"]["minFlow"])
-    except:  # noqa
+    except Exception:
         minFlow = defaultMinFlow
 
     try:
         maxFlow = int(event["queryStringParameters"]["maxFlow"])
-    except:  # noqa
+    except Exception:
         maxFlow = defaultMaxFlow
 
     try:
         testDataFlag = event["queryStringParameters"]["testDataFlag"]
-    except:  # noqa
+    except Exception:
         testDataFlag = False
 
     data = getUSGSData(testDataFlag, siteId)
@@ -135,7 +134,7 @@ def formatOutput(data: pd.DataFrame, decimals: int = 0) -> dict:
             "Access-Control-Allow-Headers": "Content-Type",
             "Access-Control-Allow-Methods": "GET",
         },
-        "body": data.round(1).reset_index().to_json(orient="records"),
+        "body": data.reset_index().to_json(orient="records"),
     }
 
     return response
@@ -172,8 +171,6 @@ def cleanUSGSData(jsonData):
     df = df.drop("qualifiers", axis=1)
     df["value"] = df["value"].astype(float)
     df["dateTime"] = pd.to_datetime(df["dateTime"])
-
-    # make below its own method
     months, days, years = zip(*[(d.month, d.day, d.year) for d in df["dateTime"]])
     df = df.assign(month=months, day=days, year=years)
     df = df.drop("dateTime", axis=1)
