@@ -1,4 +1,9 @@
 from helpers import controller_helper as helper
+from services import model_service as service
+
+
+success_code = 200
+error_code = 401
 
 
 def get_forecast(event: dict, object: object) -> dict:
@@ -12,8 +17,11 @@ def get_forecast(event: dict, object: object) -> dict:
     except Exception:
         return helper.format_output(400, "Bad inputs")
 
+    if model_type == "holtwinters":
+        forecast = service.generate_forecast(site_id, model_type, number_of_days)
+
+        return helper.format_output(success_code, data=forecast)
+
     return helper.format_output(
-        200,
-        f"site_id: {site_id} model_type: {model_type}"
-        + f"number_of_days: {number_of_days}",
+        error_code, f"'{model_type}' is not a valid model type."
     )
