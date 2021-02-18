@@ -38,7 +38,7 @@ def get_forecast(event: dict, object: object) -> dict:
     of forecast values and 80% confidence interval for the given number of days"""
 
     try:
-        site_id = event["queryStringParameters"]["siteId"]
+        site_id = event["pathParameters"]["siteId"]
         model2 = event.get("modelType", "other model")
         model_type = event["pathParameters"]["modelType"]
         number_of_days = event["queryStringParameters"]["days"]
