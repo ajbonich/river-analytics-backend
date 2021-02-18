@@ -39,12 +39,14 @@ def get_forecast(event: dict, object: object) -> dict:
 
     try:
         site_id = event["queryStringParameters"]["siteId"]
-        model_type = event["queryStringParameters"]["modelType"]
+        model_type = event["pathParameters"]["modelType"]
+        model2 = event.get("modelType", "other model")
         number_of_days = event["queryStringParameters"]["days"]
     except Exception:
         return format_output(400, "Bad inputs")
 
     return format_output(
         200,
-        f"site_id: {site_id} model_type: {model_type} number_of_days: {number_of_days}",
+        f"site_id: {site_id} model_type: {model_type} model2: {model2}"
+        + f"number_of_days: {number_of_days}",
     )
