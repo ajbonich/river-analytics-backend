@@ -1,10 +1,10 @@
-from models import holt_winter_exponential_smoothing as hwes
-from services import usgs_service
+from .models import holt_winters as hwes
+import usgs_service
 import pandas as pd
 import datetime as dt
 
 
-def generate_holt_winters_forecast(site_id: int, forecast_length: int) -> pd.DataFrame:
+def generate_holt_winters_forecast(site_id: str, forecast_length: int) -> pd.DataFrame:
     """Given a site, model, and length, returns a forecast DataFrame"""
 
     site_data = usgs_service.get_daily_average_data(site_id)
