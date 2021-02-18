@@ -1,36 +1,4 @@
-import pandas as pd
-
-bad_request = {
-    "status_code": 400,
-    "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Credentials": True,
-        "Access-Control-Allow-Headers": "Content-Type",
-        "Access-Control-Allow-Methods": "GET",
-    },
-    "body": "Bad parameters passed.",
-}
-
-
-def format_output(
-    status_code: int, error_message: str, data: pd.DataFrame = None
-) -> dict:
-    """Creates json dictionary with value label on value objects"""
-    body = (
-        error_message if data is None else data.reset_index().to_json(orient="records")
-    )
-    response = {
-        "statusCode": status_code,
-        "headers": {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Credentials": True,
-            "Access-Control-Allow-Headers": "Content-Type",
-            "Access-Control-Allow-Methods": "GET",
-        },
-        "body": body,
-    }
-
-    return response
+from helpers import controller_helper as helper
 
 
 def get_forecast(event: dict, object: object) -> dict:
@@ -42,9 +10,9 @@ def get_forecast(event: dict, object: object) -> dict:
         model_type = event["pathParameters"]["modelType"]
         number_of_days = event["queryStringParameters"]["days"]
     except Exception:
-        return format_output(400, "Bad inputs")
+        return helper.format_output(400, "Bad inputs")
 
-    return format_output(
+    return helper.format_output(
         200,
         f"site_id: {site_id} model_type: {model_type}"
         + f"number_of_days: {number_of_days}",
