@@ -2,9 +2,10 @@ import pandas as pd
 
 
 def format_output(
-    status_code: int, error_message: str, data: pd.DataFrame = None
+    status_code: int, error_message: str = None, data: pd.DataFrame = None
 ) -> dict:
     """Creates json dictionary with value label on value objects"""
+
     body = (
         error_message if data is None else data.reset_index().to_json(orient="records")
     )
