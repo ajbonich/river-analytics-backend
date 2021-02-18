@@ -53,3 +53,10 @@ functions:
                   path: /getRunnablePercentage
                   method: get
                   cors: true
+    generateSiteForecast:
+        handler: forecast_controller.get_forecast
+        events:
+            - http:
+                  path: /forecast
+                  method: get
+                  cors: true
