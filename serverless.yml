@@ -29,6 +29,7 @@ custom:
                   - usgsDefaultDataAccess
                   - usgsDailyAverageData
                   - usgsDailyRunnablePercentage
+                  - generateSiteForecast
               arn: arn:aws:lambda:us-east-2:770693421928:layer:Klayers-python38-pandas:23
 
 functions:
