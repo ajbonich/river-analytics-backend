@@ -58,6 +58,6 @@ functions:
         handler: forecast_controller.get_forecast
         events:
             - http:
-                  path: /forecast{modelType}
+                  path: /forecast/{modelType}
                   method: get
                   cors: true
