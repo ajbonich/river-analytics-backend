@@ -1,5 +1,5 @@
-from helpers import controller_helper as helper
-from services import model_service as service
+from app.helpers import controller_helper as helper
+from app.services import model_service as service
 
 
 success_code = 200
