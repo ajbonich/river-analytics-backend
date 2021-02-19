@@ -55,7 +55,7 @@ functions:
                   method: get
                   cors: true
     generateSiteForecast:
-        handler: controllers/forecast_controller.get_forecast
+        handler: app/controllers/forecast_controller.get_forecast
         events:
             - http:
                   path: /forecast/{modelType}/{siteId}
