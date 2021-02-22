@@ -15,8 +15,11 @@ provider:
 plugins:
     - serverless-layers
     - serverless-deployment-bucket
+    - serverless-python-requirements
 
 custom:
+    pythonRequirements:
+        dockerizePip: non-linux
     serverless-layers:
         - NumpyArn:
               functions:
