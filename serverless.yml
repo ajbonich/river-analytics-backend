@@ -20,6 +20,7 @@ plugins:
 custom:
     pythonRequirements:
         dockerizePip: non-linux
+        layer: true
     serverless-layers:
         - NumpyArn:
               functions:
