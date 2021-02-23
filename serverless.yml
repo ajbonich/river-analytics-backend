@@ -21,6 +21,9 @@ custom:
     pythonRequirements:
         dockerizePip: non-linux
         layer: true
+        zip: true
+        slim: true
+        strip: false
     serverless-layers:
         - NumpyArn:
             functions:
