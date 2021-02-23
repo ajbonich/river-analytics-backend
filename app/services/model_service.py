@@ -12,7 +12,7 @@ def generate_holt_winters_forecast(site_id: str, forecast_length: int) -> pd.Dat
     offset_days = int((dt.datetime.today() - clean_data.tail(1).index).days[0])
     offset_days += int(forecast_length)
 
-    forecast_list = hwes.ets_forecast(site_data, offset_days)
+    forecast_list = hwes.ets_forecast(clean_data["value"].tolist(), offset_days)
     forecast_dates = pd.date_range(
         clean_data.tail(1).index[0] + dt.timedelta(days=1),
         periods=offset_days,
