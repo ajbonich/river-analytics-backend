@@ -1,3 +1,8 @@
+try:
+    import unzip_requirements  # noqa: F401
+except ImportError:
+    pass
+
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 
 
