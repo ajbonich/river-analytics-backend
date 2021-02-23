@@ -9,7 +9,7 @@ def generate_holt_winters_forecast(site_id: str, forecast_length: int) -> pd.Dat
 
     site_data = usgs_service.get_daily_average_data(site_id)
     clean_data = usgs_service.clean_USGS_data(site_data)
-    offset_days = (dt.datetime.today() - clean_data.tail(1).index).days[0]
+    offset_days = int((dt.datetime.today() - clean_data.tail(1).index).days[0])
     offset_days += forecast_length
 
     forecast_list = hwes.ets_forecast(site_data, offset_days)
