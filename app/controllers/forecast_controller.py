@@ -18,9 +18,7 @@ def get_forecast(event: dict, object: object) -> dict:
         return helper.format_output(400, "Bad inputs")
 
     if model_type == "holtwinters":
-        forecast = service.generate_holt_winters_forecast(
-            site_id, model_type, number_of_days
-        )
+        forecast = service.generate_holt_winters_forecast(site_id, number_of_days)
 
         return helper.format_output(success_code, data=forecast)
 
