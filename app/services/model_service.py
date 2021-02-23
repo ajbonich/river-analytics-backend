@@ -1,5 +1,5 @@
 from app.models import holt_winters as hwes
-import usgs_service
+from app.services import usgs_service
 import pandas as pd
 import datetime as dt
 
