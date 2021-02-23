@@ -61,8 +61,6 @@ functions:
                   cors: true
     generateSiteForecast:
         handler: app/controllers/forecast_controller.get_forecast
-        layers:
-            - arn:aws:lambda:us-east-2:746562334669:layer:python-api-dev-python-requirements:1
         events:
             - http:
                   path: /forecast/{modelType}/{siteId}
