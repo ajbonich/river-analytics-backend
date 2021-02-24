@@ -62,7 +62,7 @@ functions:
                   cors: true
     generateSiteForecast:
         handler: app/controllers/forecast_controller.get_forecast
-        memorySize: 2048
+        memorySize: 10240
         events:
             - http:
                   path: /forecast/{modelType}/{siteId}
