@@ -6,8 +6,8 @@ except ImportError:
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 
 
-def ets_forecast(
-    train_data: list, steps: int = 100, config: list = ["add", True, "add", True, True]
+def ets_fit_model(
+    train_data: list, config: list = ["add", True, "add", True, True]
 ) -> list:
     """Takes in a test data set and parameters and returns a list of predictions"""
     t, d, s, b, r = config
@@ -29,5 +29,4 @@ def ets_forecast(
             seasonal=s,
             seasonal_periods=365,
         )
-    model_fit = model.fit()
-    return model_fit.forecast(steps)
+    return model.fit()
