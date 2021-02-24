@@ -12,11 +12,12 @@ def generate_holt_winters_forecast(site_id: str, forecast_length: int) -> pd.Dat
     offset_days = int((dt.datetime.today() - clean_data.tail(1).index).days[0])
     offset_days += int(forecast_length)
 
-    forecast_list = hwes.ets_forecast(clean_data["value"].tolist(), offset_days)
+    fitted_model = hwes.ets_fit_model(clean_data["value"].tolist())
+    forecast_list = fitted_model.forecast(offset_days)
     forecast_dates = pd.date_range(
         clean_data.tail(1).index[0] + dt.timedelta(days=1),
         periods=offset_days,
     )
     formatted_dates = [date.strftime("%m/%d") for date in forecast_dates]
 
-    return pd.DataFrame({"date": formatted_dates, "forecast": forecast_list})
+    return pd.DataFrame({"forecast": forecast_list}, index=formatted_dates)
