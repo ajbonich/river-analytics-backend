@@ -11,7 +11,7 @@ provider:
     region: us-east-2
     deploymentBucket:
         name: static-arn-bucket
-    timeout: 25
+    timeout: 30
 
 plugins:
     - serverless-layers
