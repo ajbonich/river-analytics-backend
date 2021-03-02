@@ -27,6 +27,6 @@ def ets_fit_model(
             use_boxcox=b,
             initialization_method="estimated",
             seasonal=s,
-            seasonal_periods=365,
+            seasonal_periods=366,
         )
     return model.fit()
