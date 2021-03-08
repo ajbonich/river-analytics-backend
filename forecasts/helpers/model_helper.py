@@ -1,9 +1,10 @@
 from matplotlib import pyplot as plt
-from sklearn.metrics import (
-    mean_squared_error,
-    mean_absolute_error,
-    mean_absolute_percentage_error,
-)
+
+# from sklearn.metrics import (
+#     mean_squared_error,
+#     mean_absolute_error,
+#     mean_absolute_percentage_error,
+# )
 import datetime
 import json
 import numpy as np
@@ -55,61 +56,38 @@ def create_golden_data_csv():
     df = df.ffill()
     df = df.bfill()
     df.set_index("dateTime", inplace=True)
-    df.to_csv("./test_data/goldenUSGSData.csv")
-    return jsonData
+    # df.to_csv("./test_data/goldenUSGSData.csv")
+    return df
 
 
 def load_train_test_data(
-    trainStart: str, trainEnd: str, testStart: str, testEnd: str
+    trainStart: str,
+    trainEnd: str,
+    testStart: str,
+    testEnd: str,
+    from_file: bool = False,
 ) -> list:
     """Returns a train DataFrame and a test DataFrame"""
-    data = pd.read_csv("test_data/goldenUSGSData.csv")
-    data["dateTime"] = pd.to_datetime(data["dateTime"])
-    data.set_index("dateTime", inplace=True)
+    if from_file:
+        data = pd.read_csv("app/forecast_data/test_data/goldenUSGSData.csv")
+    else:
+        data = create_golden_data_csv()
     return data[trainStart:trainEnd], data[testStart:testEnd]  # type: ignore
 
 
 def plot_train_test_forecast(
-    train: pd.DataFrame, test: pd.DataFrame, forecast: list
+    train: pd.DataFrame, test: pd.DataFrame, forecast_lists: list
 ) -> plt:
-    # plt.plot(train, color="darkgreen", label="Training Data")
-    plt.plot(test.index, test, color="blue", label="Expected Flow")
-    plt.plot(test.index, forecast, color="orange", label="Predicted Flow")
-    plt.legend()
+    fig, axs = plt.subplots(len(forecast_lists))
+
+    for i in range(len(forecast_lists)):
+        # axs[i].plot(train.loc["2015-11-01":], color="darkgreen", label="Training Data"
+        # )
+        axs[i].plot(test[i].index, test[i], color="blue", label="Expected Flow")
+        axs[i].plot(
+            test[i].index, forecast_lists[i], color="orange", label="Predicted Flow"
+        )
     return plt
-
-
-def compute_model_accuracy(expected: list, predicted: list) -> dict:
-    return {
-        "RMSE": compute_rmse(expected, predicted),
-        "MAPE": compute_mape(expected, predicted),
-        "MSE": compute_mse(expected, predicted),
-        "MAE": compute_mae(expected, predicted),
-    }
-
-
-def compute_rmse(expected: list, predicted: list) -> float:
-    """Takes in a list of expected and predicted values
-    and returns the Root Mean Squared Error"""
-    return round(mean_squared_error(expected, predicted, squared=False), 2)
-
-
-def compute_mse(expected: list, predicted: list) -> float:
-    """Takes in a list of expected and predicted values
-    and returns the Mean Squared Error"""
-    return round(mean_squared_error(expected, predicted), 2)
-
-
-def compute_mae(expected: list, predicted: list) -> float:
-    """Takes in a list of expected and predicted values
-    and returns the Mean Absolute Error"""
-    return round(mean_absolute_error(expected, predicted), 2)
-
-
-def compute_mape(expected: list, predicted: list) -> float:
-    """Takes in a list of expected and predicted values
-    and returns the Mean Absolute Percentage Error"""
-    return round(mean_absolute_percentage_error(expected, predicted), 2)
 
 
 def write_simple_results_to_file(results: list) -> None:
