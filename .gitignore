@@ -14,6 +14,9 @@ __pycache__/
 # Ser5verless directories
 .serverless
 
+# test data
+forecast_data
+
 # Distribution / packaging
 .Python
 build/
