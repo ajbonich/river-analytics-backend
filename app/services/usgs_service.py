@@ -26,7 +26,7 @@ def get_daily_average_data(
 
 
 def clean_USGS_data(jsonData: dict) -> pd.DataFrame:
-    """Given json data, cleans the data and returns a DatFrame"""
+    """Given json data, cleans the data and returns a DataFrame"""
 
     df = pd.DataFrame(jsonData)
     df = df.drop("qualifiers", axis=1)
