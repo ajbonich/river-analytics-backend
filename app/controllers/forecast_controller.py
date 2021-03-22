@@ -19,7 +19,10 @@ def get_forecast(event: dict, object: object) -> dict:
 
     if model_type == "holtwinters":
         forecast = service.generate_holt_winters_forecast(site_id, number_of_days)
+        return helper.format_output(success_code, data=forecast)
 
+    if model_type == "fbprophet":
+        forecast = service.generate_fbprophet_forecast(site_id, number_of_days)
         return helper.format_output(success_code, data=forecast)
 
     return helper.format_output(
