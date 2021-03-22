@@ -30,6 +30,6 @@ def generate_fbprophet_forecast(site_id: str, forecast_length: int) -> pd.DataFr
 
     site_data = usgs_service.get_daily_average_data(site_id)
     clean_data = usgs_service.clean_USGS_data(site_data)
-    clean_data.columns = ['ds', 'y']
+    clean_data.columns = ["ds', 'y']
 
     return fbp.generate_forecast(clean_data)
