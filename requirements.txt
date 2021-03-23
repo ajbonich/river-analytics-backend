@@ -1,1 +1,2 @@
 statsmodels==0.12.1
+fbprophet==0.7.1
