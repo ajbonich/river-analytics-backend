@@ -1,7 +1,7 @@
 import datetime as dt
 import pandas as pd
 
-from app.models import fbprophet as fbp
+# from app.models import fbprophet as fbp
 from app.models import holt_winters as hwes
 from app.services import usgs_service
 
@@ -32,4 +32,4 @@ def generate_fbprophet_forecast(site_id: str, forecast_length: int) -> pd.DataFr
     clean_data = usgs_service.clean_USGS_data(site_data)
     clean_data.columns = ["ds", "y"]
 
-    return fbp.generate_forecast(clean_data)
+    return None  # fbp.generate_forecast(clean_data)
