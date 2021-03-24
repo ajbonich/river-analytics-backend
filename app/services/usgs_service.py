@@ -1,3 +1,8 @@
+try:
+    import unzip_requirements  # noqa: F401
+except ImportError:
+    pass
+
 import datetime
 import json
 import numpy as np
