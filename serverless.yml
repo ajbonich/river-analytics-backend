@@ -21,7 +21,6 @@ plugins:
 custom:
     pythonRequirements:
         dockerizePip: non-linux
-        dockerFile: /docker_file
         zip: true
         slim: true
         strip: false
