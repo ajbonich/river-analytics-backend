@@ -25,6 +25,9 @@ def get_forecast(event: dict, object: object) -> dict:
         forecast = service.generate_fbprophet_forecast(site_id, number_of_days)
         return helper.format_output(success_code, data=forecast)
 
+    if model_type == "pystantest":
+        return helper.format_output(200, service.test_pystan())
+
     return helper.format_output(
         error_code, f"'{model_type}' is not a valid model type."
     )
