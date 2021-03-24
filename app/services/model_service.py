@@ -1,3 +1,8 @@
+try:
+    import unzip_requirements  # noqa: F401
+except ImportError:
+    pass
+
 import datetime as dt
 import pandas as pd
 
