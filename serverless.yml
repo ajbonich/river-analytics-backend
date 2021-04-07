@@ -24,6 +24,18 @@ custom:
         zip: true
         slim: true
         strip: false
+        noDeploy:
+            - boto3
+            - botocore
+            - docutils
+            - jmespath
+            - pip
+            - python-dateutil
+            - s3transfer
+            - setuptools
+            - six
+            - tensorboard
+
     serverless-layers:
         - PandasArn:
             functions:
