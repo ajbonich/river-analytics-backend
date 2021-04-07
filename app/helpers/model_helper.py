@@ -1,8 +1,3 @@
-try:
-    import unzip_requirements  # noqa: F401
-except ImportError:
-    pass
-
 from matplotlib import pyplot as plt
 from sklearn.metrics import (
     mean_squared_error,
