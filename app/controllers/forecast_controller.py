@@ -26,7 +26,17 @@ def get_forecast(event: dict, object: object) -> dict:
         return helper.format_output(success_code, data=forecast)
 
     if model_type == "pystantest":
-        return helper.format_output(200, service.test_pystan())
+
+        test_result = "default_result"
+        try:
+            test_result = service.test_pystan()
+        except Exception as ex:
+            print("Error: ")
+            print(ex)
+            print("Got ENOSPC! Check out df output:\n", exec("df -h"))
+            exec('du -h / 2>&1 | grep -v "Permission denied"')
+
+        return helper.format_output(200, test_result)
 
     return helper.format_output(
         error_code, f"'{model_type}' is not a valid model type."
