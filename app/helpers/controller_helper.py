@@ -1,8 +1,3 @@
-try:
-    import unzip_requirements  # noqa: F401
-except ImportError:
-    pass
-
 import pandas as pd
 
 
