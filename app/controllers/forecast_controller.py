@@ -26,7 +26,9 @@ def get_forecast(event: dict, object: object) -> dict:
         return helper.format_output(success_code, data=forecast)
 
     if model_type == "pystantest":
+        import os
 
+        os.system("gcc --version")
         test_result = "default_result"
         try:
             test_result = service.test_pystan()
