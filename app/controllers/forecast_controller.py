@@ -29,6 +29,7 @@ def get_forecast(event: dict, object: object) -> dict:
         import os
 
         os.system("gcc --version")
+        os.system("which gcc")
         test_result = "default_result"
         try:
             test_result = service.test_pystan()
