@@ -20,7 +20,7 @@ plugins:
 
 custom:
     pythonRequirements:
-        dockerizePip: non-linux
+        dockerizePip: true
         layer: true
         zip: true
         slim: true
