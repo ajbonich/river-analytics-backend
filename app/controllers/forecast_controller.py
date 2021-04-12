@@ -38,7 +38,8 @@ def get_forecast(event: dict, object: object) -> dict:
             print(ex)
             print("Got ENOSPC! Check out df output:\n")
             os.system("df -h")
-            exec('du -h / 2>&1 | grep -v "Permission denied"')
+            os.system('du -h / 2>&1 | grep -v "Permission denied"')
+            print("End catch loop")
 
         return helper.format_output(200, test_result)
 
