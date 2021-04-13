@@ -5,7 +5,6 @@ except ImportError:
 
 import datetime as dt
 import pandas as pd
-import pystan
 
 # from app.models import fbprophet as fbp
 # from app.models import holt_winters as hwes
@@ -41,11 +40,3 @@ def generate_fbprophet_forecast(site_id: str, forecast_length: int) -> pd.DataFr
     clean_data.columns = ["ds", "y"]
 
     return None  # fbp.generate_forecast(clean_data)
-
-
-def test_pystan() -> float:
-
-    model_code = "parameters {real y;} model {y ~ normal(0,1);}"
-    model = pystan.StanModel(model_code=model_code)  # this will take a minute
-    y = model.sampling(n_jobs=1).extract()["y"]
-    return y.mean()  # should be close to 0

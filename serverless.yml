@@ -21,7 +21,6 @@ plugins:
 custom:
     pythonRequirements:
         dockerizePip: non-linux
-        layer: true
         zip: true
         slim: true
         strip: false
@@ -69,8 +68,6 @@ functions:
                   cors: true
     generateSiteForecast:
         handler: app/controllers/forecast_controller.get_forecast
-        layers:
-            - Ref: PythonRequirementsLambdaLayer
         memorySize: 10240
         events:
             - http:

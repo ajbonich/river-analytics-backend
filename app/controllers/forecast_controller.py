@@ -21,27 +21,27 @@ def get_forecast(event: dict, object: object) -> dict:
         forecast = service.generate_holt_winters_forecast(site_id, number_of_days)
         return helper.format_output(success_code, data=forecast)
 
-    if model_type == "fbprophet":
-        forecast = service.generate_fbprophet_forecast(site_id, number_of_days)
-        return helper.format_output(success_code, data=forecast)
+    # if model_type == "fbprophet":
+    #     forecast = service.generate_fbprophet_forecast(site_id, number_of_days)
+    #     return helper.format_output(success_code, data=forecast)
 
-    if model_type == "pystantest":
-        import os
+    # if model_type == "pystantest":
+    #     import os
 
-        # os.system("gcc --version")
-        # os.system("which gcc")
-        test_result = "default_result"
-        try:
-            test_result = service.test_pystan()
-        except Exception as ex:
-            print("Error: ")
-            print(ex)
-            print("Got ENOSPC! Check out df output:\n")
-            os.system("df -h")
-            os.system('du -h / 2>&1 | grep -v "Permission denied"')
-            print("End catch loop")
+    #     # os.system("gcc --version")
+    #     # os.system("which gcc")
+    #     test_result = "default_result"
+    #     try:
+    #         test_result = service.test_pystan()
+    #     except Exception as ex:
+    #         print("Error: ")
+    #         print(ex)
+    #         print("Got ENOSPC! Check out df output:\n")
+    #         os.system("df -h")
+    #         os.system('du -h / 2>&1 | grep -v "Permission denied"')
+    #         print("End catch loop")
 
-        return helper.format_output(200, test_result)
+    #     return helper.format_output(200, test_result)
 
     return helper.format_output(
         error_code, f"'{model_type}' is not a valid model type."
