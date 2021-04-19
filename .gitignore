@@ -157,6 +157,9 @@ dmypy.json
 !.vscode/extensions.json
 *.code-workspace
 
+### pyCharm ###
+.idea
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
