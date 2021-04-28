@@ -16,7 +16,6 @@ provider:
 plugins:
     - serverless-layers
     - serverless-deployment-bucket
-    - serverless-python-requirements
 
 custom:
     serverless-layers:
