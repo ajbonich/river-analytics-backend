@@ -9,59 +9,39 @@ provider:
     runtime: python3.8
     stage: dev
     region: us-east-2
-    deploymentBucket:
-        name: static-arn-bucket
     timeout: 30
 
 plugins:
     - serverless-layers
-    - serverless-deployment-bucket
-    - serverless-python-requirements
 
 custom:
-    pythonRequirements:
-        dockerizePip: non-linux
-        zip: true
-        slim: true
-        strip: false
-        noDeploy:
-            - boto3
-            - botocore
-            - docutils
-            - jmespath
-            - pip
-            - python-dateutil
-            - s3transfer
-            - setuptools
-            - six
-            - tensorboard
-
     serverless-layers:
         - PandasArn:
             functions:
-                - usgsDefaultDataAccess
+            	- usgsDefaultDataAccess
                 - usgsDailyAverageData
                 - usgsDailyRunnablePercentage
             arn: arn:aws:lambda:us-east-2:770693421928:layer:Klayers-python38-pandas:29
+
 functions:
     usgsDefaultDataAccess:
         handler: usgsController.getUSGSDefaultData
         events:
             - http:
-                  path: /
-                  method: get
-                  cors: true
+                path: /
+                method: get
+                cors: true
     usgsDailyAverageData:
         handler: usgsController.getDailyAverageData
         events:
             - http:
-                  path: /getDailyAverageData
-                  method: get
-                  cors: true
+                path: /getDailyAverageData
+                method: get
+                cors: true
     usgsDailyRunnablePercentage:
         handler: usgsController.getDailyRunnablePercentage
         events:
             - http:
-                  path: /getRunnablePercentage
-                  method: get
-                  cors: true
+                path: /getRunnablePercentage
+                method: get
+                cors: true
