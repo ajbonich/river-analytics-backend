@@ -18,6 +18,13 @@ default_min_flow = 300
 default_max_flow = 1000
 
 
+def add_headers(response):
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    response.headers["Access-Control-Allow-Methods"] = "POST, GET, PUT, DELETE, OPTIONS"
+    return response
+
+
 def get_daily_average_data(event, object):
     """Makes a usgs call with given or default parameters
     to create a clean dataframe object"""
