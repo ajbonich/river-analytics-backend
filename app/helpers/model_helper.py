@@ -13,41 +13,41 @@ import time
 import urllib3
 
 # default data
-defaultUseTestData = False
-defaultSiteId = "06719505"  # Clear Creek at Golden
-defaultStartDate = datetime.date(1888, 1, 1)
-defaultEndDate = datetime.date(2100, 12, 31)
+defaultuse_test_data = False
+defaultsite_id = "06719505"  # Clear Creek at Golden
+defaultstart_date = datetime.date(1888, 1, 1)
+defaultend_date = datetime.date(2100, 12, 31)
 defaultParameter = "00060"  # cubic feet per second (cfs)
 
 
-def getUSGSData(
-    useTestData: bool = defaultUseTestData,
-    siteId: str = defaultSiteId,
-    startDate: datetime.date = defaultStartDate,
-    endDate: datetime.date = defaultEndDate,
+def get_usgs_data(
+    use_test_data: bool = defaultuse_test_data,
+    site_id: str = defaultsite_id,
+    start_date: datetime.date = defaultstart_date,
+    end_date: datetime.date = defaultend_date,
     gaugeParameter: str = defaultParameter,
 ) -> pd.DataFrame:
     """Call USGS or get test data"""
 
-    if useTestData:
+    if use_test_data:
         with open("testFile.json") as tf:
             print("Using test data.")
             return json.load(tf)
 
-    url = f"http://waterservices.usgs.gov/nwis/dv/?format=json&site={siteId}&startDT={startDate}&endDT={endDate}&parameterCd={gaugeParameter}"  # noqa: E501
+    url = f"http://waterservices.usgs.gov/nwis/dv/?format=json&site={site_id}&startDT={start_date}&endDT={end_date}&parameterCd={gaugeParameter}"  # noqa: E501
     http = urllib3.PoolManager()
     response = http.request("GET", url)
-    responseJson = json.loads(response.data.decode("utf-8"))
+    response_json = json.loads(response.data.decode("utf-8"))
     # may have to change this if the json format is different
-    valueData = responseJson["value"]["timeSeries"][0]["values"][0]["value"]
+    value_data = response_json["value"]["timeSeries"][0]["values"][0]["value"]
 
-    return valueData
+    return value_data
 
 
 def create_golden_data_csv():
     """Populates goldenUSGSData.csv with data from USGS"""
-    jsonData = getUSGSData()
-    df = pd.DataFrame(jsonData)
+    json_data = get_usgs_data()
+    df = pd.DataFrame(json_data)
     df = df.drop("qualifiers", axis=1)
     df["value"] = df["value"].astype(float)
     df["dateTime"] = pd.to_datetime(df["dateTime"])
@@ -56,7 +56,7 @@ def create_golden_data_csv():
     df = df.bfill()
     df.set_index("dateTime", inplace=True)
     df.to_csv("./test_data/goldenUSGSData.csv")
-    return jsonData
+    return json_data
 
 
 def load_train_test_data(
