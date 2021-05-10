@@ -4,31 +4,30 @@ import numpy as np
 import pandas as pd
 import urllib3
 
-defaultStartDate = datetime.date(1888, 1, 1)
-defaultEndDate = datetime.date(2100, 12, 31)
+defaultstart_date = datetime.date(1888, 1, 1)
+defaultend_date = datetime.date(2100, 12, 31)
 defaultParameter = "00060"  # cubic feet per second (cfs)
 
 
 def get_daily_average_data(
-    siteId: str,
-    startDate: datetime.date = defaultStartDate,
-    endDate: datetime.date = defaultEndDate,
+    site_id: str,
+    start_date: datetime.date = defaultstart_date,
+    end_date: datetime.date = defaultend_date,
     gaugeParameter: str = defaultParameter,
 ) -> pd.DataFrame:
     """Calls USGS api to get daily average values in the given date range"""
 
-    url = f"http://waterservices.usgs.gov/nwis/dv/?format=json&site={siteId}&startDT={startDate}&endDT={endDate}&parameterCd={gaugeParameter}"  # noqa: E501
+    url = f"http://waterservices.usgs.gov/nwis/dv/?format=json&site={site_id}&startDT={start_date}&endDT={end_date}&parameterCd={gaugeParameter}"  # noqa: E501
     http = urllib3.PoolManager()
     response = http.request("GET", url)
-    responseJson = json.loads(response.data.decode("utf-8"))
-    # may have to change this if the json format is different
-    return responseJson["value"]["timeSeries"][0]["values"][0]["value"]
+    response_json = json.loads(response.data.decode("utf-8"))
+    return response_json["value"]["timeSeries"][0]["values"][0]["value"]
 
 
-def clean_USGS_data(jsonData: dict) -> pd.DataFrame:
-    """Given json data, cleans the data and returns a DataFrame"""
+def clean_usgs_data(json_data: dict) -> pd.DataFrame:
+    """Given usgs json data, cleans the data and returns a DataFrame"""
 
-    df = pd.DataFrame(jsonData)
+    df = pd.DataFrame(json_data)
     df = df.drop("qualifiers", axis=1)
     df["value"] = df["value"].astype(float)
     df["dateTime"] = pd.to_datetime(df["dateTime"])
@@ -37,4 +36,20 @@ def clean_USGS_data(jsonData: dict) -> pd.DataFrame:
     df = df.bfill()
     df.set_index("dateTime", inplace=True)
 
+    return df
+
+
+def format_season_average_usgs_data(json_data: dict) -> pd.DataFrame:
+    """Given USGS data, cleans the data and formats to display seasonal averags"""
+
+    df = pd.DataFrame(json_data)
+    df = df.drop("qualifiers", axis=1)
+    df["value"] = df["value"].astype(float)
+    df["dateTime"] = pd.to_datetime(df["dateTime"])
+    months, days, years = zip(*[(d.month, d.day, d.year) for d in df["dateTime"]])
+    df = df.assign(month=months, day=days, year=years)
+    df = df.drop("dateTime", axis=1)
+    df = df.pivot(index=["month", "day"], columns="year", values="value")
+    df.index = df.index.map(lambda t: f"{t[0]}/{t[1]}")
+    df[df <= 0] = np.nan
     return df

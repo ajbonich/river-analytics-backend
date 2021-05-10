@@ -27,23 +27,23 @@ custom:
               arn: arn:aws:lambda:us-east-2:770693421928:layer:Klayers-python38-pandas:29
 functions:
     usgsDefaultDataAccess:
-        handler: usgsController.getUSGSDefaultData
+        handler: usgs_controller.get_usgs_default_data
         events:
             - http:
-                  path: /
+                  path: /app/controllers
                   method: get
                   cors: true
     usgsDailyAverageData:
-        handler: usgsController.getDailyAverageData
+        handler: usgs_controller.get_daily_average_data
         events:
             - http:
-                  path: /getDailyAverageData
+                  path: /app/controllers
                   method: get
                   cors: true
     usgsDailyRunnablePercentage:
-        handler: usgsController.getDailyRunnablePercentage
+        handler: usgs_controller.get_daily_runnable_percentage
         events:
             - http:
-                  path: /getRunnablePercentage
+                  path: /app/controllers
                   method: get
                   cors: true

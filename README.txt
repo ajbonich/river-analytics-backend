@@ -1,37 +1,32 @@
-Objectives:
+This repo is a backend RESTful API for riverflowcast.com.
 
-Seasonal Stats:
-- Calendar of kayak runs and when they run - when to do what run when in the spring runoff
-    - average date of peak for each run
-        - deviation analysis of peak (cfs variance and date variance)
-            - compare different runs to determine trends
-            - is there a "normal" for different historic time periods (after a dam was built?)
-
-- Compare peak runoff/length of runable season to:
-    - Snow water equivalent 
-    - average temperature
-
-- Average day of peak
-- Odds of peak being on a specific day
-- Avererage of daily maxes for every day
+Function:
+Daily data is retrieved from USGS endpoints.
+This data is used to compute the average seasonal flow for a given USGS site.
+The data is also used to create forecasts for the rest of the calendar year.
 
 
-Daily Look-up:
-- Average historic flow for a specific day 
-    - percentile compared to median
-- daily min/max swings
-    - time of day these happen?
+Future Ideas:
+
+    Seasonal Stats:
+    - Calendar of kayak runs and when they run - when to do what run when in the spring runoff
+        - average date of peak for each run
+            - deviation analysis of peak (cfs variance and date variance)
+                - compare different runs to determine trends
+                - is there a "normal" for different historic time periods (after a dam was built?)
+        - Average of daily maxes for every day
 
 
-Trip Planning:
-- Average runnable period
-- 
+    Compare peak runoff/length of runable season to:
+        - Snow water equivalent 
+        - average temperature
 
-Tasks:
-- Determine what gauges
-- Create a call to get data from gauge
-- Calculate the percentage runnable time for each day
 
-Future:
-- List region and runnable time
+    Daily Look-up:
+    - Average historic flow for a specific day 
+        - percentile compared to median
+    - daily min/max swings
+        - time of day these happen?
 
+    Trip Planning:
+    - Average runnable period
