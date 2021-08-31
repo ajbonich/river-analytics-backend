@@ -1,8 +1,5 @@
 import datetime
-import json
-import numpy as np
 import pandas as pd
-import urllib3
 
 from app.helpers import controller_helper as helper
 from app.services import usgs_service
@@ -48,7 +45,7 @@ def get_daily_average_data(event, object):
         parameter = default_parameter
 
     data = usgs_service.get_usgs_data(site_id, start_date, end_date, parameter)
-    clean_data = usgs_service.format_season_average_usgs_data(data)
+    clean_data = usgs_service.format_season_average_data(data)
     return_data = pd.DataFrame(clean_data.mean(axis=1).astype(int), columns=["average"])
     return_data["middleFifty"] = list(
         zip(
@@ -79,12 +76,12 @@ def get_daily_runnable_percentage(event, object):
     except Exception:
         max_flow = default_max_flow
 
-    data = usgs_service.get_usgs_data(site_id)
-    average_data = usgs_service.format_season_average_usgs_data(data)
+    data = usgs_service.get_daily_average_data(site_id)
+    average_data = usgs_service.format_season_average_data(data)
 
-    count_in_range = average_data[(average_data > min_flow) & (average_data < max_flow)].count(
-        axis=1
-    )
+    count_in_range = average_data[
+        (average_data > min_flow) & (average_data < max_flow)
+    ].count(axis=1)
     total_count = average_data[average_data > 0].count(axis=1)
     daily_percent = pd.DataFrame()
     daily_percent["percent"] = count_in_range.div(total_count)

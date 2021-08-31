@@ -17,7 +17,7 @@ start_date = dt.date(1990, 1, 1)  # only train forecast from data since 1990
 #     """Given a site, model, and length, returns a forecast DataFrame"""
 
 #     site_data = usgs_service.get_daily_average_data(site_id, start_date)
-#     clean_data = usgs_service.clean_USGS_data(site_data)
+#     clean_data = usgs_service.clean_data(site_data)
 #     offset_days = int((dt.datetime.today() - clean_data.tail(1).index).days[0])
 #     offset_days += int(forecast_length)
 
@@ -36,7 +36,7 @@ def generate_fbprophet_forecast(site_id: str, forecast_length: int) -> pd.DataFr
     """Given a site, model, and length, returns a forecast DataFrame using fbprophet"""
 
     site_data = usgs_service.get_daily_average_data(site_id)
-    clean_data = usgs_service.clean_USGS_data(site_data)
+    clean_data = usgs_service.clean_data(site_data)
     clean_data.columns = ["ds", "y"]
 
     return None  # fbp.generate_forecast(clean_data)
