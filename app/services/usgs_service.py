@@ -24,7 +24,7 @@ def get_daily_average_data(
     return response_json["value"]["timeSeries"][0]["values"][0]["value"]
 
 
-def clean_usgs_data(json_data: dict) -> pd.DataFrame:
+def clean_data(json_data: dict) -> pd.DataFrame:
     """Given usgs json data, cleans the data and returns a DataFrame"""
 
     df = pd.DataFrame(json_data)
@@ -39,7 +39,7 @@ def clean_usgs_data(json_data: dict) -> pd.DataFrame:
     return df
 
 
-def format_season_average_usgs_data(json_data: dict) -> pd.DataFrame:
+def format_season_average_data(json_data: dict) -> pd.DataFrame:
     """Given USGS data, cleans the data and formats to display seasonal averags"""
 
     df = pd.DataFrame(json_data)
