@@ -37,13 +37,13 @@ functions:
         handler: app/controllers/usgs_controller.get_daily_average_data
         events:
             - http:
-                  path: /GetDailyAverageData
+                  path: /daily-average-data
                   method: get
                   cors: true
     usgsDailyRunnablePercentage:
         handler: app/controllers/usgs_controller.get_daily_runnable_percentage
         events:
             - http:
-                  path: /getRunnablePercentage
+                  path: /runnable-percentage
                   method: get
                   cors: true

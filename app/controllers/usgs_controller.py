@@ -26,17 +26,17 @@ def get_daily_average_data(event, object):
     """Makes a usgs call with given or default parameters
     to create a clean dataframe object"""
     try:
-        site_id = event["queryStringParameters"]["site_id"]
+        site_id = event["queryStringParameters"]["siteId"]
     except Exception:
         site_id = default_site_id
 
     try:
-        start_date = event["queryStringParameters"]["start_date"]
+        start_date = event["queryStringParameters"]["startDate"]
     except Exception:
         start_date = default_start_date
 
     try:
-        end_date = event["queryStringParameters"]["end_date"]
+        end_date = event["queryStringParameters"]["endDate"]
     except Exception:
         end_date = default_end_date
     try:
@@ -62,17 +62,17 @@ def get_daily_runnable_percentage(event, object):
     """
 
     try:
-        site_id = event["queryStringParameters"]["site_id"]
+        site_id = event["queryStringParameters"]["siteId"]
     except Exception:
         site_id = default_site_id
 
     try:
-        min_flow = int(event["queryStringParameters"]["min_flow"])
+        min_flow = int(event["queryStringParameters"]["minFlow"])
     except Exception:
         min_flow = default_min_flow
 
     try:
-        max_flow = int(event["queryStringParameters"]["max_flow"])
+        max_flow = int(event["queryStringParameters"]["maxFlow"])
     except Exception:
         max_flow = default_max_flow
 
@@ -87,4 +87,4 @@ def get_daily_runnable_percentage(event, object):
     daily_percent["percent"] = count_in_range.div(total_count)
     # daysOver50 = percentages[percentages > 50]
 
-    return helper.format_output(daily_percent * 100)
+    return helper.format_output(data=daily_percent * 100)
