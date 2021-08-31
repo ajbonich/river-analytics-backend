@@ -44,7 +44,7 @@ def get_daily_average_data(event, object):
     except Exception:
         parameter = default_parameter
 
-    data = usgs_service.get_usgs_data(site_id, start_date, end_date, parameter)
+    data = usgs_service.get_daily_average_data(site_id, start_date, end_date, parameter)
     clean_data = usgs_service.format_season_average_data(data)
     return_data = pd.DataFrame(clean_data.mean(axis=1).astype(int), columns=["average"])
     return_data["middleFifty"] = list(
