@@ -22,7 +22,6 @@ jobs:
       - name: Install newman
         run: |
           npm install -g newman
-          npm install -g newman-reporter-htmlextra
 
       # Make directory to upload the test results
       - name: Make Directory for results
@@ -32,7 +31,7 @@ jobs:
       # Run the POSTMAN collection
       - name: Run POSTMAN collection
         run: |
-          newman run ./tests/usgs_api_collection.json -e ./tests/dev-api-env.json -r htmlextra --reporter-htmlextra-export devApiTestResults/htmlreport.html --reporter-htmlextra-darkTheme  > devApiTestResults/runreport1.html
+          newman run ./tests/usgs_api_collection.json -e ./tests/dev-api-env.json
 
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
