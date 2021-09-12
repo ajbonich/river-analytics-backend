@@ -16,7 +16,7 @@ jobs:
       - name: Install Node
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '14.x'
 
       # Install the newman command line utility and also install the html extra reporter
       - name: Install newman
@@ -32,11 +32,11 @@ jobs:
       # Run the POSTMAN collection
       - name: Run POSTMAN collection
         run: |
-          newman run ./tests/usgs_api_collection.json -e ./tests/dev-api-env.json -r htmlextra
+          newman run ./tests/usgs_api_collection.json -e ./tests/dev-api-env.json -r htmlextra --reporter-htmlextra-export devApiTestResults/htmlreport.html
 
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
         uses: actions/upload-artifact@v2
         with:
           name: DevRunReports
-          path: newman
+          path: devApiTestResults
