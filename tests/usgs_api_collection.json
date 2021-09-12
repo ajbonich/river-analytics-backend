@@ -109,12 +109,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/getRunnablePercentage?siteId=06719505&minFlow=300&maxFlow=1000",
+					"raw": "{{baseUrl}}/runnable-percentage?siteId=06719505&minFlow=300&maxFlow=1000",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
-						"getRunnablePercentage"
+						"runnable-percentage"
 					],
 					"query": [
 						{
