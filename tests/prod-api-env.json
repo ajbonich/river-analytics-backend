@@ -1,0 +1,10 @@
+{
+	"values": [
+		{
+			"key": "baseUrl",
+			"value": "https://51zjzma9hi.execute-api.us-east-2.amazonaws.com/prod",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment"
+}

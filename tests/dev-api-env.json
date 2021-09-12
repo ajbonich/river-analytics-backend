@@ -1,0 +1,10 @@
+{
+	"values": [
+		{
+			"key": "baseUrl",
+			"value": "https://m3wkpkcp6e.execute-api.us-east-2.amazonaws.com/dev",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment"
+}

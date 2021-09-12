@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "d6c33110-55f0-4249-9266-9f8988b883ae",
+		"name": "Flowcast API Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Average Daily Data from USGS 06719505 (Golden)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"\tpm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 5000ms\", function () {\r",
+							"\tpm.expect(pm.response.responseTime).to.be.below(5000);\r",
+							"});\r",
+							"\r",
+							"const jsonData = pm.response.json();\r",
+							"pm.test(\"Body is a list\", function () {\r",
+							"\tpm.expect(jsonData).to.be.an(\"array\");\r",
+							"});\r",
+							"const schema = {\r",
+							"\t\"properties\": {\r",
+							"\t\t\"index\": {\r",
+							"\t\t\t\"type\": \"string\"\r",
+							"\t\t},\r",
+							"\t\t\"average\": {\r",
+							"\t\t\t\"type\": \"number\"\r",
+							"\t\t},\r",
+							"\t\t\"middleFifty\": {\r",
+							"\t\t\t\"type\": \"array\"\r",
+							"\t\t}\r",
+							"\t}\r",
+							"}\r",
+							"pm.test(\"List item schema is valid\", function () {\r",
+							"\tpm.expect(jsonData[0]).to.have.jsonSchema(schema)\r",
+							"})\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/daily-average-data?siteId=06719505",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"daily-average-data"
+					],
+					"query": [
+						{
+							"key": "siteId",
+							"value": "06719505"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Runnable Percentages for USGS Site 06719505, minFlow=300, and maxFlow=1000",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"\tpm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 5000ms\", function () {\r",
+							"\tpm.expect(pm.response.responseTime).to.be.below(5000);\r",
+							"});\r",
+							"\r",
+							"const jsonData = pm.response.json();\r",
+							"pm.test(\"Body is a list\", function () {\r",
+							"\tpm.expect(jsonData).to.be.an(\"array\");\r",
+							"});\r",
+							"const schema = {\r",
+							"\t\"properties\": {\r",
+							"\t\t\"index\": {\r",
+							"\t\t\t\"type\": \"string\"\r",
+							"\t\t},\r",
+							"\t\t\"percent\": {\r",
+							"\t\t\t\"type\": \"number\"\r",
+							"\t\t}\r",
+							"\t}\r",
+							"}\r",
+							"pm.test(\"List item schema is valid\", function () {\r",
+							"\tpm.expect(jsonData[0]).to.have.jsonSchema(schema)\r",
+							"})\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/getRunnablePercentage?siteId=06719505&minFlow=300&maxFlow=1000",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"getRunnablePercentage"
+					],
+					"query": [
+						{
+							"key": "siteId",
+							"value": "06719505"
+						},
+						{
+							"key": "minFlow",
+							"value": "300"
+						},
+						{
+							"key": "maxFlow",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
