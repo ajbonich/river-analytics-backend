@@ -26,17 +26,17 @@ jobs:
 
       # Make directory to upload the test results
       - name: Make Directory for results
-        run: mkdir -p devTestResults
+        run: mkdir -p devApiTestResults
 
       # Set
       # Run the POSTMAN collection
       - name: Run POSTMAN collection
         run: |
-          newman run ./tests/usgs_api_collection.json -e ./tests/dev-api-env.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme  > testResults/runreport1.html
+          newman run ./tests/usgs_api_collection.json -e ./tests/dev-api-env.json -r htmlextra --reporter-htmlextra-export devApiTestResults/htmlreport.html --reporter-htmlextra-darkTheme  > testResults/runreport1.html
 
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
         uses: actions/upload-artifact@v2
         with:
           name: DevRunReports
-          path: devTestResults
+          path: devApiTestResults
