@@ -12,7 +12,7 @@ provider:
     ecr:
         images:
             neural-prophet:
-                path: ./app/
+                path: ./
 
 functions:
     neural-prophet-forecast:
