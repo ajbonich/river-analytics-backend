@@ -9,15 +9,10 @@ provider:
     runtime: python3.8
     region: us-east-2
     timeout: 30
-    ecr:
-        images:
-            neural-prophet:
-                path: ./
 
 functions:
     neural-prophet-forecast:
-        image:
-            name: neural-prophet
+        image: 746562334669.dkr.ecr.us-east-2.amazonaws.com/river-forecast@sha256:9112c7564266fa7838471ced21e7e5dfda46b99f27efd6d4f4d82d1b439a5107
         events:
             - http:
                   path: /neural_forecast
