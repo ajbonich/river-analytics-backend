@@ -1,49 +1,25 @@
 # serverless.yml
 
 app: flowcasts-backend
-
 service: python-api
 
 provider:
     name: aws
-    runtime: python3.8
     stage: ${sls:stage}
+    runtime: python3.8
     region: us-east-2
-    deploymentBucket:
-        name: static-arn-bucket
     timeout: 30
+    ecr:
+        images:
+            neural-prophet:
+                path: ./
 
-plugins:
-    - serverless-layers
-    - serverless-deployment-bucket
-
-custom:
-    serverless-layers:
-        - PandasArn:
-              functions:
-                  - usgsDefaultDataAccess
-                  - usgsDailyAverageData
-                  - usgsDailyRunnablePercentage
-              arn: arn:aws:lambda:us-east-2:770693421928:layer:Klayers-python38-pandas:29
 functions:
-    usgsDefaultDataAccess:
-        handler: app/controllers/usgs_controller.get_usgs_default_data
+    neural-prophet-forecast:
+        image:
+            name: neural-prophet
         events:
             - http:
-                  path: /
-                  method: get
-                  cors: true
-    usgsDailyAverageData:
-        handler: app/controllers/usgs_controller.get_daily_average_data
-        events:
-            - http:
-                  path: /daily-average-data
-                  method: get
-                  cors: true
-    usgsDailyRunnablePercentage:
-        handler: app/controllers/usgs_controller.get_daily_runnable_percentage
-        events:
-            - http:
-                  path: /runnable-percentage
+                  path: /neural_forecast
                   method: get
                   cors: true
