@@ -7,5 +7,5 @@ RUN yum -y install gcc
 RUN python3 -m pip install -r requirements.txt --target ${LAMBDA_TASK_ROOT}
 RUN rm -r dataclasses*
 
-# Set the CMD to your handler
+# This is the entrypoint
 CMD [ "handler.forecast"]
