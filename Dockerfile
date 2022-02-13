@@ -4,7 +4,6 @@ FROM public.ecr.aws/lambda/python:3.7
 COPY ./ ${LAMBDA_TASK_ROOT}/
 
 RUN yum -y install gcc
-# install our dependencies
 RUN python3 -m pip install -r requirements.txt --target ${LAMBDA_TASK_ROOT}
 RUN rm -r dataclasses*
 
