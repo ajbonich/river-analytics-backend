@@ -12,7 +12,7 @@ provider:
 
 functions:
     neural-prophet-forecast:
-        image: 746562334669.dkr.ecr.us-east-2.amazonaws.com/river-forecast@sha256:9112c7564266fa7838471ced21e7e5dfda46b99f27efd6d4f4d82d1b439a5107
+        image: 746562334669.dkr.ecr.us-east-2.amazonaws.com/river-forecast@sha256:79c4b9d0a06b18f63f39327f3151660cb90d2c5d381110dfc15d58036619bd58
         events:
             - http:
                   path: /neural_forecast
