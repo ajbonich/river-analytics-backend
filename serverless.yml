@@ -6,25 +6,17 @@ service: python-api
 
 provider:
     name: aws
-    runtime: python3.8
+#    deploymentMethod: direct
+    runtime: python3.10
     stage: ${sls:stage}
     region: us-east-2
-    deploymentBucket:
-        name: static-arn-bucket
     timeout: 30
-
-plugins:
-    - serverless-layers
-    - serverless-deployment-bucket
-
-custom:
-    serverless-layers:
-        - PandasArn:
-              functions:
-                  - usgsDefaultDataAccess
-                  - usgsDailyAverageData
-                  - usgsDailyRunnablePercentage
-              arn: arn:aws:lambda:us-east-2:770693421928:layer:Klayers-python38-pandas:29
+    layers:
+      - arn:aws:lambda:us-east-2:770693421928:layer:Klayers-p310-pandas:3
+#    ecr:
+#        images:
+#            prophet_image:
+#                path: ./
 functions:
     usgsDefaultDataAccess:
         handler: app/controllers/usgs_controller.get_usgs_default_data
@@ -47,3 +39,10 @@ functions:
                   path: /runnable-percentage
                   method: get
                   cors: true
+#    prophetForecast:
+#        handler: app/controller/forecast_controller.get_prophet_forecast
+#        events:
+#            - http:
+#                  path: /prophet_forecast
+#                  method: get
+#                  cors: true
