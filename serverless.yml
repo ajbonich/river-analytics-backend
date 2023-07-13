@@ -44,6 +44,6 @@ functions:
         image: prophet-image
         events:
             - http:
-                  path: /prophet_forecast
+                  path: /prophet_base_forecast
                   method: get
                   cors: true
