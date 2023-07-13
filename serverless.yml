@@ -6,7 +6,7 @@ service: python-api
 
 provider:
     name: aws
-#    deploymentMethod: direct
+    deploymentMethod: direct
     runtime: python3.10
     stage: ${sls:stage}
     region: us-east-2
