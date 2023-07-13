@@ -1,14 +1,17 @@
-try:
-    import unzip_requirements  # noqa: F401
-except ImportError:
-    pass
+from app.models.prophet_forecast import generate_forecast
+
+# try:
+#     import unzip_requirements  # noqa: F401
+# except ImportError:
+#     pass
 
 import datetime as dt
 import pandas as pd
 
+from app.services import usgs_service
+
 # from app.models import fbprophet as fbp
 # from app.models import holt_winters as hwes
-from app.services import usgs_service
 
 start_date = dt.date(1990, 1, 1)  # only train forecast from data since 1990
 
@@ -32,11 +35,26 @@ start_date = dt.date(1990, 1, 1)  # only train forecast from data since 1990
 #     return pd.DataFrame({"forecast": forecast_list}, index=formatted_dates)
 
 
-def generate_prophet_forecast(site_id: str, forecast_length: int) -> pd.DataFrame:
+def generate_prophet_forecast(site_id: str) -> pd.DataFrame:
     """Given a site, model, and length, returns a forecast DataFrame using fbprophet"""
 
     site_data = usgs_service.get_daily_average_data(site_id)
     clean_data = usgs_service.clean_data(site_data)
     clean_data.columns = ["ds", "y"]
+    forecast_df = generate_forecast(clean_data)
 
-    return None  # fbp.generate_forecast(clean_data)
+    historic_df = clean_data[
+        clean_data["ds"] >= dt.datetime(dt.date.today().year, 1, 1)
+    ]
+    historic_df = historic_df.drop("ds", axis=1)
+    historic_df.columns = ["past_value"]
+
+    final_df = pd.concat([historic_df, forecast_df], ignore_index=True)
+    today = dt.date.today()
+    dates = pd.date_range(
+        start=dt.date(today.year, 1, 1), end=dt.date(today.year, 12, 31)
+    )
+    final_df.index = [date.strftime("%-m/%-d") for date in dates]  # add formatted dates
+    forecast_df.columns = ["forecast", "lower_error_bound", "upper_error_bound"]
+
+    return final_df
