@@ -32,7 +32,7 @@ start_date = dt.date(1990, 1, 1)  # only train forecast from data since 1990
 #     return pd.DataFrame({"forecast": forecast_list}, index=formatted_dates)
 
 
-def generate_fbprophet_forecast(site_id: str, forecast_length: int) -> pd.DataFrame:
+def generate_prophet_forecast(site_id: str, forecast_length: int) -> pd.DataFrame:
     """Given a site, model, and length, returns a forecast DataFrame using fbprophet"""
 
     site_data = usgs_service.get_daily_average_data(site_id)

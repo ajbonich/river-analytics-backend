@@ -23,7 +23,7 @@ def add_headers(response):
 
 
 def get_daily_average_data(event, object):
-    """Makes a usgs call with given or default parameters
+    """Makes an usgs call with given or default parameters
     to create a clean dataframe object"""
     try:
         site_id = event["queryStringParameters"]["siteId"]
@@ -57,7 +57,7 @@ def get_daily_average_data(event, object):
 
 
 def get_daily_runnable_percentage(event, object):
-    """Takes in a mimimum and maximum value for the section and returns
+    """Takes in a minimum and maximum value for the section and returns
     a graph displaying the odds the section is runnable for each day
     """
 

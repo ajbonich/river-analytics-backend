@@ -1,5 +1,6 @@
 from app.helpers import controller_helper as helper
-from app.services import model_service as service
+
+# from app.services import model_service as service
 
 
 success_code = 200
@@ -11,15 +12,15 @@ def get_forecast(event: dict, object: object) -> dict:
     of forecast values and 80% confidence interval for the given number of days"""
 
     try:
-        site_id = event["pathParameters"]["site_id"]
+        # site_id = event["pathParameters"]["site_id"]
         model_type = event["pathParameters"]["modelType"]
-        number_of_days = event["queryStringParameters"]["days"]
+        # number_of_days = event["queryStringParameters"]["days"]
     except Exception:
         return helper.format_output(400, "Bad inputs")
 
-    if model_type == "holtwinters":
-        forecast = service.generate_holt_winters_forecast(site_id, number_of_days)
-        return helper.format_output(data=forecast)
+    # if model_type == "holtwinters":
+    #     forecast = service.generate_holt_winters_forecast(site_id, number_of_days)
+    #     return helper.format_output(data=forecast)
 
     # if model_type == "fbprophet":
     #     forecast = service.generate_fbprophet_forecast(site_id, number_of_days)
