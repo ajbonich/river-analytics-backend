@@ -13,19 +13,19 @@ import time
 import urllib3
 
 # default data
-defaultuse_test_data = False
-defaultsite_id = "06719505"  # Clear Creek at Golden
-defaultstart_date = datetime.date(1888, 1, 1)
-defaultend_date = datetime.date(2100, 12, 31)
-defaultParameter = "00060"  # cubic feet per second (cfs)
+default_use_test_data = False
+default_site_id = "06719505"  # Clear Creek at Golden
+default_start_date = datetime.date(1888, 1, 1)
+default_end_date = datetime.date(2100, 12, 31)
+default_parameter = "00060"  # cubic feet per second (cfs)
 
 
 def get_usgs_data(
-    use_test_data: bool = defaultuse_test_data,
-    site_id: str = defaultsite_id,
-    start_date: datetime.date = defaultstart_date,
-    end_date: datetime.date = defaultend_date,
-    gaugeParameter: str = defaultParameter,
+    use_test_data: bool = default_use_test_data,
+    site_id: str = default_site_id,
+    start_date: datetime.date = default_start_date,
+    end_date: datetime.date = default_end_date,
+    gauge_parameter: str = default_parameter,
 ) -> pd.DataFrame:
     """Call USGS or get test data"""
 
@@ -34,7 +34,7 @@ def get_usgs_data(
             print("Using test data.")
             return json.load(tf)
 
-    url = f"http://waterservices.usgs.gov/nwis/dv/?format=json&site={site_id}&startDT={start_date}&endDT={end_date}&parameterCd={gaugeParameter}"  # noqa: E501
+    url = f"http://waterservices.usgs.gov/nwis/dv/?format=json&site={site_id}&startDT={start_date}&endDT={end_date}&parameterCd={gauge_parameter}"  # noqa: E501
     http = urllib3.PoolManager()
     response = http.request("GET", url)
     response_json = json.loads(response.data.decode("utf-8"))
@@ -60,13 +60,13 @@ def create_golden_data_csv():
 
 
 def load_train_test_data(
-    trainStart: str, trainEnd: str, testStart: str, testEnd: str
+    train_start: str, train_end: str, test_start: str, test_end: str
 ) -> list:
     """Returns a train DataFrame and a test DataFrame"""
     data = pd.read_csv("test_data/goldenUSGSData.csv")
     data["dateTime"] = pd.to_datetime(data["dateTime"])
     data.set_index("dateTime", inplace=True)
-    return data[trainStart:trainEnd], data[testStart:testEnd]  # type: ignore
+    return data[train_start:train_end], data[test_start:test_end]  # type: ignore
 
 
 def plot_train_test_forecast(
