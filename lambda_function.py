@@ -7,11 +7,11 @@ def handler(event: dict, context: object) -> dict:
     of forecast values and 80% confidence interval for the given number of days"""
 
     try:
-        site_id = event["site_id"]
+        site_id = event["queryStringParameters"]["site_id"]
         # number_of_days = int(event["queryStringParameters"]["days"])
         # include_history = bool(event["queryStringParameters"]["include_history"])
         # interval_width = float(event["queryStringParameters"]["confidence_width"])
     except Exception:
-        return helper.format_output(400, "Bad inputs")
+        return helper.format_output(400, f"Bad inputs. Event: {event}")
 
     return get_forecast(site_id)
