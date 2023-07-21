@@ -4,10 +4,10 @@ import datetime as dt
 import logging
 
 
-def get_forecast_length() -> int:
-    today = dt.date.today()
+def get_forecast_length(last_data_day: dt.date) -> int:
+    first_forecast_date = last_data_day + dt.timedelta(days=1)
     return pd.date_range(
-        start=today, end=dt.date(today.year, 12, 31)
+        start=first_forecast_date, end=dt.date(first_forecast_date.year, 12, 31)
     ).size  # get number of remaining dates in the year including 'today'
 
 
@@ -23,7 +23,8 @@ def generate_forecast(historic_data: pd.DataFrame) -> pd.DataFrame:
     model.fit(historic_data)
     forecast = model.predict(
         model.make_future_dataframe(
-            periods=get_forecast_length(), include_history=False
+            periods=get_forecast_length(historic_data.iloc[-1]["ds"].date()),
+            include_history=False,
         )
     )
     forecast = forecast.round()
