@@ -48,8 +48,11 @@ def generate_prophet_forecast(site_id: str) -> pd.DataFrame:
     ]
     historic_df = historic_df.drop("ds", axis=1)
     historic_df.columns = ["past_value"]
+    print(f"Length of historic_df: {len(historic_df)}")
+    print(f"Length of forecast_df: {len(forecast_df)}")
 
     final_df = pd.concat([historic_df, forecast_df], ignore_index=True)
+    print(f"Length of final_df: {len(final_df)}")
     today = dt.date.today()
     dates = pd.date_range(
         start=dt.date(today.year, 1, 1), end=dt.date(today.year, 12, 31)
