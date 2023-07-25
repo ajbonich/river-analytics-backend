@@ -3,6 +3,9 @@
 app: flowcasts-backend
 
 service: python-api
+package:
+    patterns:
+        - 'app/**'
 
 provider:
     name: aws
@@ -14,7 +17,7 @@ provider:
     ecr:
         images:
             prophet-image:
-                path: .
+                path: ./
 functions:
     usgsDefaultDataAccess:
         handler: app/controllers/usgs_controller.get_usgs_default_data
