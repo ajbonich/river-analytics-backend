@@ -27,6 +27,7 @@ functions:
                     cors: true
         package:
             patterns:
+                - '!*/**'
                 - app/**
     usgsDailyAverageData:
         handler: app/controllers/usgs_controller.get_daily_average_data
@@ -39,6 +40,7 @@ functions:
                     cors: true
         package:
             patterns:
+                - '!**/**'
                 - app/**
     usgsDailyRunnablePercentage:
         handler: app/controllers/usgs_controller.get_daily_runnable_percentage
