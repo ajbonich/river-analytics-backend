@@ -7,7 +7,7 @@ def handler(event: dict, context: object) -> dict:
     of forecast values and 80% confidence interval for the given number of days"""
 
     try:
-        site_id = event["queryStringParameters"]["site_id"]
+        site_id = event["queryStringParameters"]["siteId"]
         # number_of_days = int(event["queryStringParameters"]["days"])
         # include_history = bool(event["queryStringParameters"]["include_history"])
         # interval_width = float(event["queryStringParameters"]["confidence_width"])
