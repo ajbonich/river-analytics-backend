@@ -28,7 +28,6 @@ jobs:
       - name: Make Directory for results
         run: mkdir -p devApiTestResults
 
-      # Set
       # Run the POSTMAN collection
       - name: Run POSTMAN collection
         run: |
