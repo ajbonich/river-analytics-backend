@@ -1,17 +1,17 @@
+import datetime as dt
+
+import pandas as pd
+
 from app.models.prophet_forecast import generate_forecast
+
+# from app.models import fbprophet as fbp
+# from app.models import holt_winters as hwes
+from app.services import usgs_service
 
 # try:
 #     import unzip_requirements  # noqa: F401
 # except ImportError:
 #     pass
-
-import datetime as dt
-import pandas as pd
-
-from app.services import usgs_service
-
-# from app.models import fbprophet as fbp
-# from app.models import holt_winters as hwes
 
 start_date = dt.date(1990, 1, 1)  # only train forecast from data since 1990
 
@@ -49,6 +49,7 @@ def generate_prophet_forecast(site_id: str) -> pd.DataFrame:
     historic_df = historic_df.drop("ds", axis=1)
     historic_df.columns = ["past_value"]
 
+    forecast_df.columns = ["forecast", "lower_error_bound", "upper_error_bound"]
     final_df = pd.concat([historic_df, forecast_df], ignore_index=True)
 
     today = dt.date.today()
@@ -56,6 +57,5 @@ def generate_prophet_forecast(site_id: str) -> pd.DataFrame:
         start=dt.date(today.year, 1, 1), end=dt.date(today.year, 12, 31)
     )
     final_df.index = [date.strftime("%-m/%-d") for date in dates]  # add formatted dates
-    forecast_df.columns = ["forecast", "lower_error_bound", "upper_error_bound"]
 
     return final_df
